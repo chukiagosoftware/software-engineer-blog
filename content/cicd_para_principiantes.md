@@ -14,53 +14,46 @@ IaC se refiere a la definición en código de toda la infraestructura de sistema
     
 1. [Terraform](https://www.terraform.io/intro/index.html)
 
-Terraform brinda un lenguaje de configuración [HCL](https://www.terraform.io/docs/configuration/syntax.html) abstracto encima de las API de proveedores de nube y datacenter comunes como AWS, Azure, GCP, VMWare, DigitalOcean, OpenStack.
+    Terraform brinda un lenguaje de configuración [HCL](https://www.terraform.io/docs/configuration/syntax.html) abstracto encima de las API de proveedores de nube y datacenter comunes como AWS, Azure, GCP, VMWare, DigitalOcean, OpenStack.
 
-...
+    ...
 
-Por debajo, Terraform utiliza *providers* para cada nube, y está escrito en Go. 
-
-
+    Por debajo, Terraform utiliza *providers* para cada nube, y está escrito en Go. 
+    
 1. [Ansible](https://www.ansible.com)
-
-Ansible permite actualizar y configurar servidores, dispositivos de red y nubes completas mediante ssh con una configuración sencilla basado en YAML, Jinja y GNU/Linux. 
-
-Está escrito en Python y utiliza Requests.
-
-
+    
+    Ansible permite actualizar y configurar servidores, dispositivos de red y nubes completas mediante ssh con una configuración sencilla basado en YAML, Jinja y GNU/Linux. 
+ 
+    Está escrito en Python y utiliza Requests.   
+    
 1. [Chef](https://www.chef.io)
 
-Chef es un sistema de manejo de configuración en Ruby, basado en servidores que manejan un entorno (environment) y configuraciones, y agentes que los despliegan.
-
+    Chef es un sistema de manejo de configuración en Ruby, basado en servidores que manejan un entorno (environment) y configuraciones, y agentes que los despliegan.
 
 1. [Packer](https://www.packer.io) 
 
-Packer de Hashicorp es una herramienta para crear imágenes AMI (AWS), OVF (VMware)...
+    Packer de Hashicorp es una herramienta para crear imágenes AMI (AWS), OVF (VMware)...
 
-Se puede partir de un sistema vivo o un .iso y ejecutar un provisioner de forma similar a Terraform, que puede ser Ansible por ejemplo.
-
+    Se puede partir de un sistema vivo o un .iso y ejecutar un provisioner de forma similar a Terraform, que puede ser Ansible por ejemplo.
 
 1. [Fabric](http://www.fabfile.org)  
  
-Fabric es una librería completa en Python para configuración y automatización remota o local del sistema.  
+    Fabric es una librería completa en Python para configuración y automatización remota o local del sistema.  
  
-
 1. Jenkins
 
-...  
-
+    ...  
 
 1. Travis CI  
 
-...  
+    ...  
 
   
 ## Configuration Management
 
 ##CICD  
 
-*Continuous Integration and Continuous Delivery*  
-
+   *Continuous Integration and Continuous Delivery*  
 
 
 ##PaaS  
