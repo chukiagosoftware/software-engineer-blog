@@ -13,6 +13,7 @@ IaC se refiere a la definición en código de toda la infraestructura de sistema
 Esto significa desde redes, load balancers, firewalls, servidores, bases de datos SQL, NoSQL hasta  Elastic Search, Kafka, InfluxDB, etc.
 
 #### Herramientas
+
     
 1. [Terraform](https://www.terraform.io/intro/index.html)
 1. [Ansible](https://www.ansible.com)
@@ -21,10 +22,11 @@ Esto significa desde redes, load balancers, firewalls, servidores, bases de dato
 1. [Fabric](http://www.fabfile.org)
 
 
-
 ## Configuration Management
 
+
 #### Herramientas 
+
 
 1. [Ansible](https://www.ansible.com)
 1. [Chef](https://www.chef.io)
@@ -32,15 +34,17 @@ Esto significa desde redes, load balancers, firewalls, servidores, bases de dato
 1. [Fabric](http://www.fabfile.org)
 
 
-
 ##CICD
 
+
 Continuous Integration and Continuous Delivery
+
 
 #### Herramientas
 
 1. Jenkins
 1. Travis CI
+
 
 ##PaaS
 
@@ -48,11 +52,9 @@ Continuous Integration and Continuous Delivery
 
 ## SDN
 
-Software Defined Networking
+## Software Defined Networking
 
-
-##Site Reliability Engineering (SRE)
-
+##  Site Reliability Engineering (SRE)
 
 ## YAML, JSON
 
