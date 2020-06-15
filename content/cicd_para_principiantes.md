@@ -1,9 +1,19 @@
 Title: CICD para Principiantes
-Date: December 28, 2019
-Category: DevOps
+Date: June 15, 2020
+Category: SRE
 
-# Que es CICD?
+# Key words
 
-*En la vida real*
+## IaC
+
+##CICD
+
+##PaaS
+
+##DevOps
+
+##Site Reliability Engineering (SRE)
+
+
 
 
