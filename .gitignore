@@ -1,1 +1,7 @@
 .venv
+pelican.pid
+.idea
+__pycache__
+*.pyc
+Pipfile
+Pipfile.lock
