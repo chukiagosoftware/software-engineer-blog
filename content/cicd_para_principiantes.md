@@ -18,9 +18,16 @@ Herramientas:
 1. [Ansible](https://www.ansible.com)
 1. [Chef](https://www.chef.io)
 1. [Packer](https://www.packer.io) 
-
+1. [Fabric](http://www.fabfile.org)
 
 ## Configuration Management
+
+Herramientas:  
+
+1. [Ansible](https://www.ansible.com)
+1. [Chef](https://www.chef.io)
+1. [Packer](https://www.packer.io)
+1. [Fabric](http://www.fabfile.org)
 
 
 ##CICD
