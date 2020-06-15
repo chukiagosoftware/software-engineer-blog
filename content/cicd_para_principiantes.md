@@ -19,10 +19,9 @@ Herramientas
 1. [Chef](https://www.chef.io)
 1. [Packer](https://www.packer.io) 
 1. [Fabric](http://www.fabfile.org)  
-  
-  
-    
-  
+ 
+endofline  
+ 
   
 ## Configuration Management
 
