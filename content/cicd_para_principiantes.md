@@ -19,7 +19,7 @@ Esto significa desde redes, load balancers, firewalls, servidores, bases de dato
 1. [Ansible](https://www.ansible.com)
 1. [Chef](https://www.chef.io)
 1. [Packer](https://www.packer.io) 
-1. [Fabric](http://www.fabfile.org)
+1. [Fabric](http://www.fabfile.org)  
 
 
 ## Configuration Management
@@ -31,33 +31,30 @@ Esto significa desde redes, load balancers, firewalls, servidores, bases de dato
 1. [Ansible](https://www.ansible.com)
 1. [Chef](https://www.chef.io)
 1. [Packer](https://www.packer.io)
-1. [Fabric](http://www.fabfile.org)
+1. [Fabric](http://www.fabfile.org)  
 
 
-##CICD
+##CICD  
 
 
-Continuous Integration and Continuous Delivery
+Continuous Integration and Continuous Delivery  
 
 
-#### Herramientas
+#### Herramientas  
 
 1. Jenkins
-1. Travis CI
+1. Travis CI  
 
 
-##PaaS
+##PaaS  
 
-##DevOps
 
-## SDN
+##DevOps  
 
-## Software Defined Networking
+## SDN   
 
-##  Site Reliability Engineering (SRE)
+## Software Defined Networking  
+
+##  Site Reliability Engineering (SRE)  
 
 ## YAML, JSON
-
-
-
-
