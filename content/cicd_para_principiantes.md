@@ -1,6 +1,7 @@
 Title: Glosario DevOps
 Date: June 15, 2020
 Category: SRE
+Tags: Devops, IaC, CICD, PaaS 
 
 ## Glosario Devops
 
@@ -116,14 +117,14 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
 
 1. Vagrant
 
-   ...
+    ...
    
 1. JSON
 
-   Javascript Object Notation.  Así, feo como suena.
+    Javascript Object Notation.  Así, feo como suena.
 
-1. YAML :notes:
-        
+1. YAML       
+       
        id: 0
        name: un archivo YAML contiene datos
        que_no_es: "Yaml Ain't a Markup Language"
@@ -149,3 +150,5 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
          todo
          la misma 
          linea?
+
+         

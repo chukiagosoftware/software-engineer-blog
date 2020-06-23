@@ -1,4 +1,6 @@
-## Añadir Emojis de Github al blog de Pelican
+Title: Añadir Emojis de Github al blog de Pelican
+Category: Emojis
+Tags: Python, Pelican, Markdown
 
 [Pelican](https://docs.getpelican.com/en/stable/) es un generador de microblog estático en Python que utiliza Markdown.
 
