@@ -105,16 +105,28 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
 1. Travis CI :hand:
 
    Integración continua, como un servicio. Quizás, la alternativa más conocida a Jenkins.
-   
    [https://travis-ci.org/](https://travis-ci.org/)
-   
-   ...
-      
-1. YAML :notes:
 
-       ---
+1. Kubernetes
+
+   Algo sobre orquestas y containers y YAML.
+   
+1. Nomad
+
+   Más containers, más YAML. O JSON, alguien quiere JSON?
+
+1. Vagrant
+
+   ...
+   
+1. JSON
+
+   Javascript Object Notation.  Así, feo como suena.
+
+1. YAML :notes:
+        
        id: 0
-       name: un archivo YAML contiene datos en texto
+       name: un archivo YAML contiene datos
        que_no_es: "Yaml Ain't a Markup Language"
        url: "https://yaml.org"
        una_lista: 
@@ -123,35 +135,18 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
          - Rolling Stones
          - Café Tacuba
        diccionario:
-          calle13: Residente
-          cadillacs: Vicentico
-         
+         calle13: Residente
+         cadillacs: Vicentico
        muchas_lineas: |
-       
          "En la Escuela de Computación Poética de Nueva York no importan 
          los resultados, sino la experimentación. 'Hardware', programación
          y arte son los tres pilares de este centro educativo en el que la
          poesía se fusiona con el código." 
-            
        linea_larga: >
-       
+         Marx
+         Keynes
+         Friedman
          esto es
          todo
          la misma 
-         linea
-
-1. JSON :hankey:
-
-1. Kubernetes
-
-   Algo sobre orquestas y containers y YAML.
-
-1. Nomad
-
-   Más containers, más YAML. O JSON, alguien quiere JSON?
-
-1. Vagrant
-
-1. ...
-
-   
+         linea?
