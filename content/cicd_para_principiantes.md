@@ -16,6 +16,9 @@ IaC se refiere a la definición en código de toda la infraestructura de sistema
 
 
 #### Configuration Management
+
+El manejo estructurado y deliberado de la configuración de un sistema (GNU Linux Ño Microsoft)
+
     
 #### CICD  
 
@@ -109,7 +112,6 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
    
 1. YAML :notes: JSON :hankey:
 
-       yaml.txt
        ---
        id: 0
        name: un archivo YAML contiene datos en texto
@@ -126,17 +128,17 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
          
        muchas_lineas: |
        
-            "En la Escuela de Computación Poética de Nueva York no importan 
-            los resultados, sino la experimentación. 'Hardware', programación
-            y arte son los tres pilares de este centro educativo en el que la
-            poesía se fusiona con el código." 
+         "En la Escuela de Computación Poética de Nueva York no importan 
+         los resultados, sino la experimentación. 'Hardware', programación
+         y arte son los tres pilares de este centro educativo en el que la
+         poesía se fusiona con el código." 
             
        linea_larga: >
        
-            esto es
-            todo
-            la misma 
-            linea
+         esto es
+         todo
+         la misma 
+         linea
 
 1. Kubernetes
 
