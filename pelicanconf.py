@@ -36,3 +36,5 @@ RELATIVE_URLS = True
 # BlueIdea
 
 GITHUB_URL='http://www.github.com/ericdanielarellano'
+
+DISPLAY_PAGES_ON_MENU = True

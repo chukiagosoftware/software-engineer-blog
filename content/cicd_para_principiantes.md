@@ -102,10 +102,9 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
     
     ...  
 
-1. Travis CI :hand:
+1. [Travis CI](https://travis-ci.org/)
 
-   Integración continua, como un servicio. Quizás, la alternativa más conocida a Jenkins.
-   [https://travis-ci.org/](https://travis-ci.org/)
+   Integración continua, como un servicio. Quizás, la alternativa más conocida a Jenkins.  
 
 1. Kubernetes
 
