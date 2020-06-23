@@ -17,7 +17,7 @@ IaC se refiere a la definición en código de toda la infraestructura de sistema
 
 #### Configuration Management
 
-El manejo estructurado y deliberado de la configuración de un sistema (GNU Linux Ño Microsoft)
+El manejo estructurado y deliberado de la configuración de un sistema (GNU Linux o Microsoft)
 
     
 #### CICD  
@@ -109,8 +109,8 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
    [https://travis-ci.org/](https://travis-ci.org/)
    
    ...
-   
-1. YAML :notes: JSON :hankey:
+      
+1. YAML :notes:
 
        ---
        id: 0
@@ -139,6 +139,8 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
          todo
          la misma 
          linea
+
+1. JSON :hankey:
 
 1. Kubernetes
 
