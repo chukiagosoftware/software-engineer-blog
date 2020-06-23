@@ -104,15 +104,15 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
 
 1. [Travis CI](https://travis-ci.org/)
 
-   Integración continua, como un servicio. Quizás, la alternativa más conocida a Jenkins.  
+    Integración continua, como un servicio. Quizás, la alternativa más conocida a Jenkins.  
 
 1. Kubernetes
 
-   Algo sobre orquestas y containers y YAML.
+    Algo sobre orquestas y containers y YAML.
    
 1. Nomad
 
-   Más containers, más YAML. O JSON, alguien quiere JSON?
+    Más containers, más YAML. O JSON, alguien quiere JSON?
 
 1. Vagrant
 
