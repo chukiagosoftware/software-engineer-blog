@@ -105,10 +105,11 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
    
    [https://travis-ci.org/](https://travis-ci.org/)
    
+   ...
+   
 1. YAML :notes: JSON :hankey:
 
-   yaml.txt:
-   
+       yaml.txt
        ---
        id: 0
        name: un archivo YAML contiene datos en texto
@@ -133,15 +134,17 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
             todo
             la misma 
             línea
-        
-            
+
 1. Kubernetes
 
    Algo sobre orquestas y containers.
 
 1. Nomad
 
+   Más containers
+
 1. Vagrant
+
 
 1. ...
 
