@@ -118,37 +118,40 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
 1. Vagrant
 
     ...
-   
+       
 1. JSON
 
     Javascript Object Notation.  Así, feo como suena.
 
 1. YAML       
        
-       id: 0
-       name: un archivo YAML contiene datos
-       que_no_es: "Yaml Ain't a Markup Language"
-       url: "https://yaml.org"
-       una_lista: 
-         - Los Beatles
-         - Radiohead
-         - Rolling Stones
-         - Café Tacuba
-       diccionario:
-         calle13: Residente
-         cadillacs: Vicentico
-       muchas_lineas: |
-         "En la Escuela de Computación Poética de Nueva York no importan 
-         los resultados, sino la experimentación. 'Hardware', programación
-         y arte son los tres pilares de este centro educativo en el que la
-         poesía se fusiona con el código." 
-       linea_larga: >
-         Marx
-         Keynes
-         Friedman
-         esto es
-         todo
-         la misma 
-         linea?
+        xid: 0
+          name: un archivo YAML contiene datos
+          que_no_es: "Yaml Ain't a Markup Language"
+          url: "https://yaml.org"
+          una_lista: 
+            - Los Beatles
+            - Radiohead
+            - Rolling Stones
+            - Café Tacuba
+          diccionario:
+            calle13: Residente
+            cadillacs: Vicentico
+          muchas_lineas: |
+            "En la Escuela de Computación Poética de Nueva York no importan 
+            los resultados, sino la experimentación. 'Hardware', programación
+            y arte son los tres pilares de este centro educativo en el que la
+            poesía se fusiona con el código." 
+          linea_larga: >
+            Marx
+            Keynes
+            Friedman
+            esto es
+            todo
+            la misma 
+            linea?
+            
 
-         
+        ..
+ 
+ 
