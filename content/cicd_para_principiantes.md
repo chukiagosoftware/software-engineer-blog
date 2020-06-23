@@ -113,35 +113,38 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
        ---
        id: 0
        name: un archivo YAML contiene datos en texto
-       que_no_es: Yaml Ain't a Markup Language
+       que_no_es: "Yaml Ain't a Markup Language"
        url: "https://yaml.org"
        una_lista: 
          - Los Beatles
          - Radiohead
          - Rolling Stones
          - Café Tacuba
+       diccionario:
+          calle13: Residente
+          cadillacs: Vicentico
          
        muchas_lineas: |
        
-            En la Escuela de Computación Poética de Nueva York no importan 
+            "En la Escuela de Computación Poética de Nueva York no importan 
             los resultados, sino la experimentación. 'Hardware', programación
             y arte son los tres pilares de este centro educativo en el que la
-            poesía se fusiona con el código. 
+            poesía se fusiona con el código." 
             
        linea_larga: >
        
             esto es
             todo
             la misma 
-            línea
+            linea
 
 1. Kubernetes
 
-   Algo sobre orquestas y containers.
+   Algo sobre orquestas y containers y YAML.
 
 1. Nomad
 
-   Más containers
+   Más containers, más YAML. O JSON, alguien quiere JSON?
 
 1. Vagrant
 
