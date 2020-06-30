@@ -1,7 +1,7 @@
 Title: Glosario DevOps
 Date: June 15, 2020
 Category: SRE
-Tags: Devops, IaC, CICD, PaaS 
+Tags: DevOps, IaC, CICD, PaaS 
 
 ## Glosario Devops
 
@@ -109,7 +109,7 @@ Todo lo anterior, y lo de abajo también. Lo principal es que no duermes mucho.
 
 1. Kubernetes
 
-    Algo sobre orquestas y containers y YAML.
+    Algo sobre orquestas y containers y YAML. (TBD)
    
 1. Nomad
 

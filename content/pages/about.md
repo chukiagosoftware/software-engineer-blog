@@ -2,22 +2,29 @@ Title: About
 
 ## About
 
-Eric Arellano Martinez es ingeniero de software.
+> Soy un ingeniero de software con formación en electrónica y redes. Estas son mis notas.  
 
 
-#### Telecomunicaciones 
+#### Interests
 
-PBX, VoIP, WebRTC, SIP, Unified Communications, Freeswitch, OpenSIPS, Cisco Unified Communications Manager, CUBE
+> Kubernetes, Nomad/Consul, Ansible, Python, Terraform, IoT, AI/ML, Web frameworks
 
-#### Contact Center
+Past projects: 
 
-Cisco Unified Contact Center Enterprise (UCCE), IPsoft Contact Center, experiencia en varias soluciones e integraciones de Contact Center de alta capacidad.  
-
-#### Infraestructura y Datacenter
-
-VMware, AWS, GCP, Terraform, Ansible, Ubuntu, Debian, CentOS...
-
-#### DevOps, SRE, PaaS/IaaS
-
-Experiencia comprobada en la implementación y perfeccionamiento de pipelines, CICD, plataformas y mantenimiento de sistemas globales distribuidos con 99.999% de uptime.
- 
+> * Telco, cloud and on-premises IP telephony integration
+>
+> * Enterprise IT process automation
+>
+> * IaC deployment of production distributed platforms in AWS/GCP
+>
+> * PaaS/IaaS platform operation
+>
+> * Global voice/video media platform operation 
+>
+> * Contact Center speech recognition interface
+> 
+> * Internet Rights, Municipal Internet Access
+>
+> * SMS/Toll Free social media platform backend engineer
+>
+> * Wordpress/Drupal web developer
