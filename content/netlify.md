@@ -1,5 +1,6 @@
 Title: Netlify en 10 Minutos
-Category: CICD,PaaS,DevOps,Web
+Category: CICD
+Tags: PaaS, DevOps, Web, CICD, Pelican, Python
 
      "The fastest way to build the fastest sites." 
 

@@ -2,7 +2,7 @@ Title: About
 
 ## About
 
-> Soy un ingeniero de software con formación en electrónica y redes. Estas son mis notas.  
+Soy un ingeniero de software con formación en electrónica y redes. Estas son mis notas.  
 
 
 #### Interests
