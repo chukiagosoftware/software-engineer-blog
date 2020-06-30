@@ -38,3 +38,5 @@ RELATIVE_URLS = True
 GITHUB_URL='http://www.github.com/ericdanielarellano'
 
 DISPLAY_PAGES_ON_MENU = True
+
+USE_FOLDER_AS_CATEGORY = False

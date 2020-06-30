@@ -30,6 +30,8 @@ para generar HTML de nuestro Markdown, luego de descargar el repo de Github, cla
 y zas, le decimos a Netlify que publique este directorio.
 
 
+![publicado]({attach}images/netlify_published.png)
+
 #### más detalles
 
 ... próximamente ...
