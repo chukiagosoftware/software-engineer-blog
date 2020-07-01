@@ -10,8 +10,13 @@ Los emojis existen en unicode directamente, pero me gustan más los de Github.
 
 En proceso...
 
+
 Referencias: 
 
 https://github.com/Dellos7/github-emoji-list
+
 https://api.github.com/emojis
-https://bytefish.de/blog/markdown_emoji_extension/
+
+https://bytefish.de/blog/markdown_emoji_extension
+
+https://github.com/Python-Markdown/markdown/wiki/Tutorial:-Writing-Extensions-for-Python-Markdown

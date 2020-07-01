@@ -7,24 +7,25 @@ Soy un ingeniero de software con formación en electrónica y redes. Estas son m
 
 #### Interests
 
-> Kubernetes, Nomad/Consul, Ansible, Python, Terraform, IoT, AI/ML, Web frameworks
+Enjoy working with software, principally open source.
+
 
 Past projects: 
 
-> * Telco, cloud and on-premises IP telephony integration
+> * Concurrent enterprise process & network device automation 
 >
-> * Enterprise IT process automation
+> * Design and implementation of applications in AWS & GCP
 >
-> * IaC deployment of production distributed platforms in AWS/GCP
+> * PaaS/IaaS & IaC cloud platform operation/scaling
 >
-> * PaaS/IaaS platform operation
+> * DevOps & CICD FOR Voice & video platforms 
 >
-> * Global voice/video media platform operation 
->
-> * Contact Center speech recognition interface
+> * Cisco/SIP/Telco Contact Center speech recognition interface
 > 
 > * Internet Rights, Municipal Internet Access
 >
-> * SMS/Toll Free social media platform backend engineer
+> * SMS/Toll-Free social platform backend
 >
-> * Wordpress/Drupal web developer
+> * Wordpress/Drupal content management
+>
+> * HTML5/CSS, Jquery, Flask, Ruby on Rails webs

@@ -20,13 +20,13 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pagina Siete (Bolivia)', 'http://www.paginasiete.bo'),
+# Links
+LINKS = (('Pagina Siete', 'http://www.paginasiete.bo'),
          ('Fundación Solón', 'https://www.fundacionsolon.org'),
          ('Rimay Pampa', 'http://www.rimaypampa.com'))
 
 # Social widget
-SOCIAL = [('Github', 'http://www.github.com/ericdanielarellano')]
+SOCIAL = [('Github', 'http://www.github.com/edam-software')]
 
 DEFAULT_PAGINATION = 10
 
@@ -34,8 +34,7 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 # BlueIdea
-
-GITHUB_URL='http://www.github.com/ericdanielarellano'
+GITHUB_URL='http://www.github.com/edam-software'
 
 DISPLAY_PAGES_ON_MENU = True
 
