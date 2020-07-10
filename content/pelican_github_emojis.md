@@ -37,14 +37,14 @@ Pero en este caso quiero los emojis de Github.
 
      a. Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN def load_from_github():  
    
-        def load_from_github():
-           try:
-             resp = requests.get(SOURCE)
-             payload = resp.content
-             data = json.loads((payload.decode('utf-8')))
-             return GheEmoji(emoji=data)
-           except Exception as e:
-             print(e)
+       def load_from_github():
+          try:
+            resp = requests.get(SOURCE)
+            payload = resp.content
+            data = json.loads((payload.decode('utf-8')))
+            return GheEmoji(emoji=data)
+          except Exception as e:
+            print(e)
 
      b. Haremos un método para esto pero inicialmente, vamos a simplemente descargar y usar los enlaces desde Github.  
    
@@ -100,8 +100,6 @@ Pero en este caso quiero los emojis de Github.
     Netlify nos permite ejecutar cualquier comando Linux, que generalmente será alguna herramienta para builds y en este caso es ``` pelican content ```
    
     Intentaremos replicar el entorno de desarrollo y correr ``` python3 setup.py install && pelican content ```
-      
-   A ver si funciona..  
 
 1.  Referencias 
 
