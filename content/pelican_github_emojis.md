@@ -9,37 +9,37 @@ La versión 4.2.0 es muy robusta e incluye scripts para subir tu código a cualq
 
 Sólo que nos demoramos un poco, y ahora en lugar de Google AppEngine vamos a probar Netlify.
 
-    # Arma tu blog así, y luego no hagas nada 2 años
-    
-    http://www.craigjperry.com/pelican-hosting-on-appengine.html  
+Armamos el blog según http://www.craigjperry.com/pelican-hosting-on-appengine.html y luego lo dejamos cuajar un año.  
+
 
 #### Reto
 
 No podemos utilizar emojis directamente en Pelican (es decir, con Python Markdown), pero existen algunos plugins para lo mismo, y varios repositorios de los códigos Unicode en la web.
 
-Python también maneja Unicode directamente ¡¡lo cual es genial!! 
+Python también maneja Unicode directamente ¡¡lo cual es genial!!  
 
     >>> n = "\N{FIRE}"
     >>> n
     '🔥'
     
-    # en caso de fuego, usar la máscara
+    # en caso de fuego, usar la mascara
     
     >>> u = "\U0001F637"
     >>> u
     '😷'
 
-Pero en este caso quiero los emojis de Github.
+Pero en este caso quiero los emojis de Github.  
 
 
-### Código      
+#### Código  
     
 1. Conseguimos los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.  Creamos nuestra clase. Python Markdown incluye varios handlers para generar tags HTML de patrones comunes, que podemos heredar y así no hacer el trabajo nosotros mismos. Usamos ``` ImageInlineProcessor ``` para crear tags ``` <img> ``` .
    
    :note: Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN.
    
-        @staticmethod
-        def load_from_github():
+   ```
+   @staticmethod
+    def load_from_github():
             try:
                 resp = requests.get(SOURCE)
                 payload = resp.content
@@ -47,6 +47,7 @@ Pero en este caso quiero los emojis de Github.
                 return GheEmoji(emoji=data)
             except Exception as e:
                 print(e)
+   ```
                 
    Haremos un método para esto pero inicialmente, vamos a simplemente descargar y usar los enlaces desde Github.  
    
@@ -54,11 +55,11 @@ Pero en este caso quiero los emojis de Github.
 
      a. Pelican se configura con un archivo Python sencillo que pasa las opciones deseadas  
   
-       from github_emojis import GheEmoji
+        from github_emojis import GheEmoji
        
-       MARKDOWN = { 
-        'extensions' : [GheEmoji.load_from_github()], # ...
-       }
+        MARKDOWN = { 
+         'extensions' : [GheEmoji.load_from_github()], # ...
+        }
        
      b. Markdown requiere una expresión regular **regex** para buscar nuestro tag de Emoticon ``` \:robot\: ``` => :robot:
    
@@ -85,18 +86,19 @@ Pero en este caso quiero los emojis de Github.
          
    Markdown nos regala un objeto Match dónde el grupo 1 es reservado, el 2 es nuestro primer ``` : ``` y el tag el 3.    
 
-1. Ahora podemos configurar el setup.py
+1. Ahora configuramos el setup.py
 
        from setuptools import setup
-       ....
        
-   E instalar el módulo en el entorno virtual (creado con pipenv):
+       ...
        
-       python3 setup.py develop  
-
+   E instalamos el módulo en el entorno virtual (creado con pipenv):
+       
+    ``` python3 setup.py develop ```
+   
 1.  Listo! https://github.com/edam-software/pelican_github_emoji
 
-1.  Bueno, ahora debemos desplegar esto en Netlify. 
+1.  Bueno, ahora a desplegar esto en Netlify. 
 
         # TODO
         
@@ -104,11 +106,11 @@ Pero en este caso quiero los emojis de Github.
 
     Netlify nos permite ejecutar cualquier comando Linux, que generalmente será alguna herramienta para builds y en este caso es ``` pelican content ```
    
-    Intentamos replicar el entorno de desarrollo y correr 
-   
-   ``` python3 setup.py install && pelican content ```
-   
-    A ver si funciona!  
+    Intentamos replicar el entorno de desarrollo y correr    
+       
+    ``` python3 setup.py install && pelican content ```
+      
+   A ver si funciona..  
 
 1.  Referencias 
 
