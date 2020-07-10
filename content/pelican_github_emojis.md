@@ -32,10 +32,10 @@ Pero en este caso quiero los emojis de Github.
 <br/>
 
 #### Código  
-    
-1. Conseguimos los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.  Creamos nuestra clase. Python Markdown incluye varios handlers para generar tags HTML de patrones comunes, que podemos heredar y así no hacer el trabajo nosotros mismos. Usamos ``` ImageInlineProcessor ``` para crear tags ``` <img> ``` .  
-   
-   a. Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN def load_from_github():  
+
+1. Conseguimos los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.  Creamos nuestra clase. Python Markdown incluye varios handlers para generar tags HTML de patrones comunes, que podemos heredar y así no hacer el trabajo nosotros mismos. Usamos ``` ImageInlineProcessor ``` para crear tags ``` <img> ```
+
+     a. Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN def load_from_github():  
    
         def load_from_github():
            try:
@@ -46,7 +46,7 @@ Pero en este caso quiero los emojis de Github.
            except Exception as e:
              print(e)
 
-   Haremos un método para esto pero inicialmente, vamos a simplemente descargar y usar los enlaces desde Github.  
+     b. Haremos un método para esto pero inicialmente, vamos a simplemente descargar y usar los enlaces desde Github.  
    
 1. Escribimos el resto del plugin de Markdown.
 
@@ -78,8 +78,8 @@ Pero en este caso quiero los emojis de Github.
          def handleMatch(self, m):
            tag = m.group(3)
            url = self.emoji.get(tag, '')
-         
-   Markdown nos regala un objeto Match dónde el grupo 1 es reservado, el 2 es nuestro primer ``` : ``` y el tag el 3.    
+           
+     d. Markdown nos brinda un objeto Match dónde el grupo 1 es reservado, el 2 es nuestro primer ``` : ``` y el tag el 3.    
 
 1.  Ahora configuramos el setup.py
 
