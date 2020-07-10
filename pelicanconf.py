@@ -1,7 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from github_emojis import GheEmoji
 
+MARKDOWN = {
+    'extensions' : [GheEmoji.load_from_github()],
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.toc': {},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
 AUTHOR = 'Eric Arellano'
 SITENAME = 'Software Engineering Blog'
 SITEURL = 'www.ericarellano.tech'
@@ -23,7 +34,8 @@ AUTHOR_FEED_RSS = None
 # Links
 LINKS = (('Pagina Siete', 'http://www.paginasiete.bo'),
          ('Fundación Solón', 'https://www.fundacionsolon.org'),
-         ('Rimay Pampa', 'http://www.rimaypampa.com'))
+         ('Rimay Pampa', 'http://www.rimaypampa.com')
+         )
 
 # Social widget
 SOCIAL = [('Github', 'http://www.github.com/edam-software')]

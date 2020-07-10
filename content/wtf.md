@@ -1,5 +1,5 @@
 Title: WTF
-Category: MejorInternet
+Category: Tecnologia
 Tags: Startups, Nube, Tecnologia, Economia
 Date: January 1, 2020
 
@@ -19,6 +19,8 @@ Un libro importantísimo para entender los nuevos mapas digitales.
 1.  La innovación no tiene que ser algo nuevo, sino una forma mejor de hacer algo común (Uber, Airbnb, Tesla, Google Maps...)
 
 1. Compartir información, educación abierta y colaborativa. El proceso como un reflejo del producto (sostenibilidad ambiental, accessibilidad, efectos sociales inesperados)
+
+1. Ingreso universal básico (UBI) como una alternativa a la automatización y reemplazo de la fuerza laboral por máquina y AI.
 
 #### Enlace
 
