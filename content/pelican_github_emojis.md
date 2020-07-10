@@ -9,7 +9,7 @@ La versión 4.2.0 es muy robusta e incluye scripts para subir tu código a cualq
 
 Sólo que nos demoramos un poco, y ahora en lugar de Google AppEngine vamos a probar Netlify.
 
-Armamos el blog según [http://www.craigjperry.com/pelican-hosting-on-appengine.html](http://www.craigjperry.com/pelican-hosting-on-appengine.html) y luego lo dejamos cuajar un año.
+Armamos el blog según <http://www.craigjperry.com/pelican-hosting-on-appengine.html>
 <br/>
 
 #### Reto
@@ -37,7 +37,7 @@ Pero en este caso quiero los emojis de Github.
    
     :note: Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN.
    
-        @staticmethod
+        \@staticmethod
           def load_from_github():
             try:
               resp = requests.get(SOURCE)
@@ -90,17 +90,17 @@ Pero en este caso quiero los emojis de Github.
        
     E instalamos el módulo en un entorno virtual creado con pipenv ``` python3 setup.py develop ```
    
-1.  Listo! https://github.com/edam-software/pelican_github_emoji
+1.  Listo: [pelican_github_emoji](https://github.com/edam-software/pelican_github_emoji)
 
-1.  Bueno, ahora a desplegar el módulo en Netlify. 
+1.  Ahora a desplegar el módulo en Netlify. 
 
         # TODO
         
-        Crear un paquete para pip
+        Crear un paquete para pip en PyPi
 
     Netlify nos permite ejecutar cualquier comando Linux, que generalmente será alguna herramienta para builds y en este caso es ``` pelican content ```
    
-    Intentamos replicar el entorno de desarrollo y correr ``` python3 setup.py install && pelican content ```
+    Intentaremos replicar el entorno de desarrollo y correr ``` python3 setup.py install && pelican content ```
       
    A ver si funciona..  
 
