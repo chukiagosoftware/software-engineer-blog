@@ -33,19 +33,19 @@ Pero en este caso quiero los emojis de Github.
 
 #### Código  
     
-1. Conseguimos los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.  Creamos nuestra clase. Python Markdown incluye varios handlers para generar tags HTML de patrones comunes, que podemos heredar y así no hacer el trabajo nosotros mismos. Usamos ``` ImageInlineProcessor ``` para crear tags ``` <img> ``` .
+1. Conseguimos los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.  Creamos nuestra clase. Python Markdown incluye varios handlers para generar tags HTML de patrones comunes, que podemos heredar y así no hacer el trabajo nosotros mismos. Usamos ``` ImageInlineProcessor ``` para crear tags ``` <img> ``` .  
    
-    :note: Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN.
-          
-         def load_from_github():
+   a. Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN def load_from_github():  
+   
+        def load_from_github():
            try:
              resp = requests.get(SOURCE)
              payload = resp.content
              data = json.loads((payload.decode('utf-8')))
              return GheEmoji(emoji=data)
            except Exception as e:
-             print(e)  
-                             
+             print(e)
+
    Haremos un método para esto pero inicialmente, vamos a simplemente descargar y usar los enlaces desde Github.  
    
 1. Escribimos el resto del plugin de Markdown.
