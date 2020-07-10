@@ -9,8 +9,8 @@ La versión 4.2.0 es muy robusta e incluye scripts para subir tu código a cualq
 
 Sólo que nos demoramos un poco, y ahora en lugar de Google AppEngine vamos a probar Netlify.
 
-Armamos el blog según http://www.craigjperry.com/pelican-hosting-on-appengine.html y luego lo dejamos cuajar un año.  
-
+Armamos el blog según [http://www.craigjperry.com/pelican-hosting-on-appengine.html](http://www.craigjperry.com/pelican-hosting-on-appengine.html) y luego lo dejamos cuajar un año.
+<br/>
 
 #### Reto
 
@@ -29,7 +29,7 @@ Python también maneja Unicode directamente ¡¡lo cual es genial!!
     '😷'
 
 Pero en este caso quiero los emojis de Github.  
-
+<br/>
 
 #### Código  
     
@@ -38,8 +38,8 @@ Pero en este caso quiero los emojis de Github.
    :note: Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN.
    
    ```
-   @staticmethod
-    def load_from_github():
+     @staticmethod
+     def load_from_github():
             try:
                 resp = requests.get(SOURCE)
                 payload = resp.content
@@ -63,42 +63,37 @@ Pero en este caso quiero los emojis de Github.
        
      b. Markdown requiere una expresión regular **regex** para buscar nuestro tag de Emoticon ``` \:robot\: ``` => :robot:
    
-       # let there be :+1:
+         # let there be :+1:
          EMOJI_RE = r'(:)((?:[\+\-])?[0-9a-zA-Z]*?):'
          
      c. Creamos nuestras clases para extender Markdown y manejar los matches.        
        
-       class GheEmoji(Extension):
-         pattern = EmojiInlinePattern(EMOJI_RE, self.getConfig('emoji'))
-         md.inlinePatterns.add('emoji', pattern, '>not_strong')
+         class GheEmoji(Extension):
+           pattern = EmojiInlinePattern(EMOJI_RE, self.getConfig('emoji'))
+           md.inlinePatterns.add('emoji', pattern, '>not_strong')
        
-       class EmojiInlinePattern(Pattern):
-         def __init__(self, pattern, emoji):
-           super(EmojiInlinePattern, self).__init__(pattern)
-           
-           # acá está el json que sacamos de Github:
-           
-           self.emoji = emoji
+         class EmojiInlinePattern(Pattern):
+           def __init__(self, pattern, emoji):
+             super(EmojiInlinePattern, self).__init__(pattern)
+             self.emoji = emoji
 
-       def handleMatch(self, m):
-         tag = m.group(3)
-         url = self.emoji.get(tag, '')
+         def handleMatch(self, m):
+           tag = m.group(3)
+           url = self.emoji.get(tag, '')
          
    Markdown nos regala un objeto Match dónde el grupo 1 es reservado, el 2 es nuestro primer ``` : ``` y el tag el 3.    
 
-1. Ahora configuramos el setup.py
+1.  Ahora configuramos el setup.py
 
-       from setuptools import setup
+        from setuptools import setup
+        
+        ...
        
-       ...
-       
-   E instalamos el módulo en el entorno virtual (creado con pipenv):
-       
-    ``` python3 setup.py develop ```
+    E instalamos el módulo en un entorno virtual creado con pipenv ``` python3 setup.py develop ```
    
 1.  Listo! https://github.com/edam-software/pelican_github_emoji
 
-1.  Bueno, ahora a desplegar esto en Netlify. 
+1.  Bueno, ahora a desplegar el módulo en Netlify. 
 
         # TODO
         
@@ -106,15 +101,13 @@ Pero en este caso quiero los emojis de Github.
 
     Netlify nos permite ejecutar cualquier comando Linux, que generalmente será alguna herramienta para builds y en este caso es ``` pelican content ```
    
-    Intentamos replicar el entorno de desarrollo y correr    
-       
-    ``` python3 setup.py install && pelican content ```
+    Intentamos replicar el entorno de desarrollo y correr ``` python3 setup.py install && pelican content ```
       
    A ver si funciona..  
 
 1.  Referencias 
 
 
-https://github.com/Dellos7/github-emoji-list
+[github-emoji-list](https://github.com/Dellos7/github-emoji-list)
 
-https://github.com/Python-Markdown/markdown/wiki/Tutorial:-Writing-Extensions-for-Python-Markdown
+[Tutorial:-Writing-Extensions-for-Python-Markdown](https://github.com/Python-Markdown/markdown/wiki/Tutorial:-Writing-Extensions-for-Python-Markdown)
