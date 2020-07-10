@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from github_emoji import GheEmoji
+from ghe_emoji import GheEmoji
 
 MARKDOWN = {
     'extensions' : [GheEmoji.load_from_github()],
