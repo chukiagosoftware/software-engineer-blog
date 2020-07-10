@@ -29,7 +29,7 @@ El manejo estructurado y deliberado de la configuración de un sistema (GNU Linu
    
    El objetivo central es lograr la agilidad, escala y confiabilidad para desplegar apps o microservicios en la nube, altamente disponibles para un teórico público de millones.
    
-   Un breve ejemplo: este sitio web está creado con [Netlify](http://www.netlify) 
+   Un breve ejemplo: este sitio web está creado con [Netlify](http://www.netlify.com) 
 
 
 #### PaaS  

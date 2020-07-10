@@ -1,22 +1,54 @@
-Title: Añadir Emojis de Github al blog de Pelican
+Title: Añadir Emojis de Github al blog en Pelican
 Category: Emojis
 Tags: Python, Pelican, Markdown
+Date: July 10, 2020
 
-[Pelican](https://docs.getpelican.com/en/stable/) es un generador de microblog estático en Python que utiliza Markdown.
+[Pelican](https://docs.getpelican.com/en/stable/) es un generador de microblogs estáticos  en HTML/Python. Puedes utilizar Markdown, RTF, y algunos otros.
 
-Al parecer, no podemos utilizar emojis directamente en Pelican/Markdown, pero existen algunos plugins para lo mismo.
+La versión 4.2.0 es muy robusta e incluye scripts para subir tu código a cualquier proveedor de nube moderno.  
 
-Los emojis existen en unicode directamente, pero me gustan más los de Github.
+Sólo que nos demoramos un poco, y ahora en lugar de Google AppEngine vamos a probar Netlify.
 
-En proceso...
+    # Arma tu blog así, y luego no hagas nada 2 años
+    http://www.craigjperry.com/pelican-hosting-on-appengine.html  
+
+#### Reto
+
+No podemos utilizar emojis directamente en Pelican (es decir, con Python Markdown), pero existen algunos plugins para lo mismo, y varios repositorios de los códigos Unicode en la web.
+
+Python maneja Unicode directamente lo cuales genial!! 
+
+    >>> n = "\N{FIRE}"
+    >>> n
+    '🔥'
 
 
-Referencias: 
+Pero en este caso necesitamos algo que funcione en Markup/HTML
+    
+1. A conseguir los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.
+     
+       @staticmethod
+       def load_from_github():
+           try:
+               resp = requests.get(SOURCE)
+               payload = resp.content
+               data = json.loads((payload.decode('utf-8')))
+               return GheEmoji(emoji=data)
+           except Exception as e:
+               print(e)
+    
+    asd
+          
+1. para crear nuestro plugin de Markdown e integrarlo con Pelican.
+
+     # TODO
+     # Guardar los íconos en el plugin? opcional  
+
+1.  
+
+
+Más referencias: 
 
 https://github.com/Dellos7/github-emoji-list
-
-https://api.github.com/emojis
-
-https://bytefish.de/blog/markdown_emoji_extension
 
 https://github.com/Python-Markdown/markdown/wiki/Tutorial:-Writing-Extensions-for-Python-Markdown

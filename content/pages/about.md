@@ -18,7 +18,7 @@ Past projects:
 >
 > * PaaS/IaaS & IaC cloud platform operation/scaling
 >
-> * DevOps & CICD FOR Voice & video platforms 
+> * DevOps & CICD for multiple global media platforms
 >
 > * Cisco/SIP/Telco Contact Center speech recognition interface
 > 
