@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='ghe_emoji',
     version='0.5',
-    packages=[''],
+    packages=[],
     py_modules=['GheEmoji'],
     install_requires=['markdown>=3.0', 'requests'],
     python_requires='>3.8',
