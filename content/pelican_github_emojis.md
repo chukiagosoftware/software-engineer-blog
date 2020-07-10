@@ -35,7 +35,7 @@ Pero en este caso quiero los emojis de Github.
 
 1. Conseguimos los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.  Creamos nuestra clase. Python Markdown incluye varios handlers para generar tags HTML de patrones comunes, que podemos heredar y así no hacer el trabajo nosotros mismos. Usamos ``` ImageInlineProcessor ``` para crear tags ``` <img> ```
 
-     a. Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN def load_from_github():  
+     a. Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN  
         
         # markdown no le gusta empezar con def
         import re
