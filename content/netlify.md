@@ -3,7 +3,7 @@ Category: CICD
 Tags: PaaS, DevOps, Web, CICD, Pelican, Python
 Date: June 30, 2020
 
-    "The fastest way to build the fastest sites." 
+    The fastest way to build the fastest sites.
 
 Netlify es la plataforma SaaS utilizada para desplegar este sitio web. En resumen:
 
@@ -16,7 +16,8 @@ Para ejecutar un app en Python pueden existir diferencias. Pero para este blog e
 Seguimos el manual y simplemente ejecutamos
 
     pelican content
-     
+
+
 para generar HTML de nuestro Markdown, luego de descargar el repo de Github, claro.
 
     $ ls -al output/
