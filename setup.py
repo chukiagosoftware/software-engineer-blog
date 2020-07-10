@@ -1,4 +1,8 @@
-from setuptools import setup
+try:
+    from setuptools import setup, find_packages
+except ImportError:
+    from distutils.core import setup, find_packages
+
 
 setup(
     name='ghe_emoji',
@@ -6,7 +10,7 @@ setup(
     packages=[],
     py_modules=['GheEmoji'],
     install_requires=['markdown>=3.0', 'requests'],
-    python_requires='>3.8',
+    python_requires='>3.7',
     url='https://github.com/edam-software/github_emojis',
     license="OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     author='EDAM',
