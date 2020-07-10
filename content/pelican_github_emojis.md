@@ -16,38 +16,35 @@ Sólo que nos demoramos un poco, y ahora en lugar de Google AppEngine vamos a pr
 
 No podemos utilizar emojis directamente en Pelican (es decir, con Python Markdown), pero existen algunos plugins para lo mismo, y varios repositorios de los códigos Unicode en la web.
 
-Python maneja Unicode directamente lo cuales genial!! 
+Python maneja Unicode directamente ¡¡lo cual es genial!! 
 
     >>> n = "\N{FIRE}"
     >>> n
     '🔥'
 
 
-Pero en este caso necesitamos algo que funcione en Markup/HTML
+Pero en este caso necesitamos algo que funcione con Markup
     
-1. A conseguir los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.
-     
-       @staticmethod
-       def load_from_github():
-           try:
-               resp = requests.get(SOURCE)
-               payload = resp.content
-               data = json.loads((payload.decode('utf-8')))
-               return GheEmoji(emoji=data)
-           except Exception as e:
-               print(e)
+1. A conseguir los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.      
+       
+        @staticmethod
+        def load_from_github():
+            try:
+                resp = requests.get(SOURCE)
+                payload = resp.content
+                data = json.loads((payload.decode('utf-8')))
+                return GheEmoji(emoji=data)
+            except Exception as e:
+                print(e)
     
-    asd
           
-1. para crear nuestro plugin de Markdown e integrarlo con Pelican.
+1. Para crear nuestro plugin de Markdown e integrarlo con Pelican.
 
-     # TODO
-     # Guardar los íconos en el plugin? opcional  
+     *TODO*
+     
+     método para descargar emojis localmente  
 
-1.  
-
-
-Más referencias: 
+1.  Más referencias: 
 
 https://github.com/Dellos7/github-emoji-list
 
