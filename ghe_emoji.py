@@ -8,7 +8,7 @@ from markdown.inlinepatterns import Pattern, SimpleTagPattern
 SOURCE = "https://api.github.com/emojis"
 
 # let there be +1
-EMOJI_RE = r'(:)((?:[\+\-])?[0-9a-zA-Z]*?):'
+EMOJI_RE = r'(:)((?:[\+\-])?[_0-9a-zA-Z]*?):'
 
 
 class GheEmoji(Extension):
