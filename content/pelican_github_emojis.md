@@ -49,9 +49,7 @@ Pero en este caso quiero los emojis de Github.
           except Exception as e:
             print(e)
 
-     b. Añadimos un método ``` GheEmoji.download() ``` pero ya que son propiedad privada vamos a simplemente enlazar hacia Github.  
-        
-        Descargamos cada png usando requests en modo streaming, y los generadores/iterators en Python se encargan del resto. Ya que no lo usaremos, no tenemos error handling.
+     b. Añadimos un método ``` GheEmoji.download() ``` pero ya que son propiedad privada vamos a simplemente enlazar hacia Github.  Ya que no lo usaremos, no tenemos error handling.
      
         def download(self):
             for tag, url in self.getConfig('emoji').items():
@@ -135,3 +133,5 @@ Pero en este caso quiero los emojis de Github.
 [github-emoji-list](https://github.com/Dellos7/github-emoji-list)
 
 [Tutorial:-Writing-Extensions-for-Python-Markdown](https://github.com/Python-Markdown/markdown/wiki/Tutorial:-Writing-Extensions-for-Python-Markdown)
+
+[PathLib](https://docs.python.org/3/library/pathlib.html)
