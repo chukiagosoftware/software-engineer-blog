@@ -1,6 +1,6 @@
 Title: Emojis de Github en el microblog Pelican
 Category: Emojis
-Tags: Python, Pelican, Markdown, Emoji, pathlib, generators
+Tags: Python, Pelican, Markdown, Emoji, pathlib, generators, requests
 Date: July 10, 2020
 
 [Pelican](https://docs.getpelican.com/en/stable/) es un generador de microblogs estáticos  en HTML/Python. Puedes utilizar Markdown, RTF, y algunos otros.
@@ -38,7 +38,7 @@ Pero en este caso quiero los emojis de Github.
      a. Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN  
         
         # markdown no le gusta empezar con def
-        import re
+        import requests
        
         def load_from_github():
           try:
@@ -49,17 +49,29 @@ Pero en este caso quiero los emojis de Github.
           except Exception as e:
             print(e)
 
-     b. Añadimos un método ``` GheEmoji.download() ``` pero ya que son propiedad privada vamos a simplemente enlazar hacia Github.  Ya que no lo usaremos, no tenemos error handling.
+     b. Añadimos un método ``` GheEmoji.download() ``` pero ya que son propiedad privada vamos a simplemente enlazar hacia Github.
      
-        def download(self):
-            for tag, url in self.getConfig('emoji').items():
-                file = url.split('/')[-1]
-                with requests.get(url, stream=True) as r:
-                    r.raise_for_status()
-                    with open(Path(f"{SAVE_PATH}{file}.png"), 'xb') as f:
+        # iteramos los url y descargamos en batch
+        @staticmethod
+        def fetch_tag(tag, url):
+            file = url.split('/')[-1]
+            with requests.get(url, stream=True) as r:
+                r.raise_for_status()
+                try:
+                    with open(Path(f"{SAVE_PATH}{tag}.png"), 'xb') as f:
                         for chunk in r.iter_content(chunk_size=8192):
-                            f.write(chunk)  
-   
+                            # If you have chunk encoded response uncomment if
+                            # and set chunk_size parameter to None.
+                            # if chunk:
+                            f.write(chunk)
+                except FileExistsError as failed:
+                    print(failed)
+                    return
+        
+     c. Tenemos los 1800 iconos que son sólo 9.1M pero tomaron como 15 minutos en descargar :stopwatch:
+        
+      En el siguiente episodio usaremos [asyncio](https://docs.python.org/3/library/asyncio.html) para reducir esto.  
+                                                                                     
 1. Escribimos el resto del plugin de Markdown.
 
      a. Pelican se configura con un archivo Python sencillo que pasa las opciones deseadas  
