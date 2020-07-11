@@ -108,7 +108,7 @@ Pero en este caso quiero los emojis de Github.
 
    Luego de algunos problemillas (re) aprendiendo setup.py y vemos que finalmente el sitio se publicó 
 
-   ![Branch Deploy](./images/netlify_branch.png)
+   ![Branch Deploy]({attach}images/netlify_branch.png)
 
    Y... funciona!! :joy:  En [CICD con Netlify]({filename}netlify.md) hablaremos más sobre estrategias de despliegue.
 
