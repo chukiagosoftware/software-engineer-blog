@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from ghe_emoji import GheEmoji
 
 MARKDOWN = {
-    'extensions' : [GheEmoji.load_from_github()],
+    'extensions' : [GhepEmoji.load_from_github()],
     'extension_configs': {
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
         'markdown.extensions.toc': {},
