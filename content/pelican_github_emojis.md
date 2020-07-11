@@ -100,19 +100,25 @@ Pero en este caso quiero los emojis de Github.
         
         Crear un paquete para pip en PyPi
 
-    Netlify nos permite ejecutar cualquier comando Linux, que generalmente será alguna herramienta para builds y en este caso es ``` pelican content ```
+    Netlify nos permite ejecutar cualquier comando Linux, que generalmente será alguna herramienta para builds y en este caso es ``` pelican content ```.
    
-    Intentaremos replicar el entorno de desarrollo y correr ``` python3 setup.py install && pelican content ```
+    Intentaremos replicar el entorno de desarrollo y correr ``` python3 setup.py install && pelican content ```.
 
 1. Para desarrollar este "feature" y no romper el sitio en vivo, lo desarrollamos en un git branch, y configuramos Netlify para hacer un branch deploy.
 
-   Luego de algunos problemillas (re) aprendiendo setup.py y vemos que finalmente el sitio se publicó 
+   Luego de unos problemas re-aprendiendo setuptools finalmente el sitio se publicó. 
 
    ![Branch Deploy]({attach}images/netlify_branch.png)
 
-   Y... funciona!! :joy:  En [CICD con Netlify]({filename}netlify.md) hablaremos más sobre estrategias de despliegue.
-
+   Y... los emojis funcionan!! Un poco grandes, por ahora.
    
+   :sound:
+   
+   :snowman_with_snow:   
+   
+   :soon:
+   
+   En [CICD con Netlify]({filename}netlify.md) hablaremos más sobre estrategias de despliegue.
 
 1.  Referencias 
 
