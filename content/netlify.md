@@ -5,7 +5,7 @@ Date: June 30, 2020
 
     $ The fastest way to build the fastest sites.
 
-Netlify es la plataforma SaaS utilizada para desplegar este sitio web. En resumen:
+Netlify es la plataforma utilizada para desplegar este sitio web. En resumen:
 
 > 1. Connect your repository
 > 2. Add your build settings

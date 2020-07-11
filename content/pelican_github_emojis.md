@@ -1,6 +1,6 @@
-Title: Añadir Emojis de Github al blog en Pelican
+Title: Emojis de Github en el microblog Pelican
 Category: Emojis
-Tags: Python, Pelican, Markdown, Github, Emoji
+Tags: Python, Pelican, Markdown, Emoji, pathlib, generators
 Date: July 10, 2020
 
 [Pelican](https://docs.getpelican.com/en/stable/) es un generador de microblogs estáticos  en HTML/Python. Puedes utilizar Markdown, RTF, y algunos otros.
@@ -28,12 +28,12 @@ Python también maneja Unicode directamente ¡¡lo cual es genial!!
     >>> u
     '😷'
 
-Pero en este caso quiero los emojis de Github.  
+Pero en este caso quiero los emojis de Github.
 <br/>
 
 #### Código  
 
-1. Conseguimos los png de [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.  Creamos nuestra clase. Python Markdown incluye varios handlers para generar tags HTML de patrones comunes, que podemos heredar y así no hacer el trabajo nosotros mismos. Usamos ``` ImageInlineProcessor ``` para crear tags ``` <img> ```
+1. Conseguimos los png del API [GitHub](https://api.github.com/emojis) con **requests**, y copiaremos a [https://bytefish.de/blog/markdown_emoji_extension](https://bytefish.de/blog/markdown_emoji_extension) salvo que tenemos iconos más bonitos que Unicode estándar.  Creamos nuestra clase. Python Markdown incluye varios handlers para generar tags HTML de patrones comunes, que podemos heredar y así no hacer el trabajo nosotros mismos. Usamos ``` ImageInlineProcessor ``` para crear tags ``` <img> ```
 
      a. Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN  
         
@@ -49,7 +49,18 @@ Pero en este caso quiero los emojis de Github.
           except Exception as e:
             print(e)
 
-     b. Haremos un método para esto pero inicialmente, vamos a simplemente descargar y usar los enlaces desde Github.  
+     b. Añadimos un método ``` GheEmoji.download() ``` pero ya que son propiedad privada vamos a simplemente enlazar hacia Github.  
+        
+        Descargamos cada png usando requests en modo streaming, y los generadores/iterators en Python se encargan del resto. Ya que no lo usaremos, no tenemos error handling.
+     
+        def download(self):
+            for tag, url in self.getConfig('emoji').items():
+                file = url.split('/')[-1]
+                with requests.get(url, stream=True) as r:
+                    r.raise_for_status()
+                    with open(Path(f"{SAVE_PATH}{file}.png"), 'xb') as f:
+                        for chunk in r.iter_content(chunk_size=8192):
+                            f.write(chunk)  
    
 1. Escribimos el resto del plugin de Markdown.
 
@@ -63,9 +74,9 @@ Pero en este caso quiero los emojis de Github.
        
      b. Markdown requiere una expresión regular **regex** para buscar nuestro tag de Emoticon ``` \:robot\: ``` => :robot:
    
-        # let there be :+1:
+        # permitir +1 y tags con _
          
-        EMOJI_RE = r'(:)((?:[\+\-])?[0-9a-zA-Z]*?):'
+        EMOJI_RE = r'(:)((?:[\+\-])?[_0-9a-zA-Z]*?):'
          
      c. Creamos nuestras clases para extender Markdown y manejar los matches.        
        
