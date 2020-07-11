@@ -106,15 +106,13 @@ Pero en este caso quiero los emojis de Github.
 
 1. Para desarrollar este "feature" y no romper el sitio en vivo, lo desarrollamos en un git branch, y configuramos Netlify para hacer un branch deploy.
 
+   ![Branch Deploy]({attach}images/netlify_branch.png)
+   
    Luego de unos problemas re-aprendiendo setuptools finalmente el sitio se publicó. 
 
-   ![Branch Deploy]({attach}images/netlify_branch.png)
+   :bowing_man: 
 
    Y... los emojis funcionan!! Un poco grandes, por ahora.
-   
-   :sound:
-   
-   :snowman_with_snow:   
    
    :soon:
    
