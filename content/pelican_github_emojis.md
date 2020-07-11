@@ -51,8 +51,6 @@ Pero en este caso quiero los emojis de Github.
 
      b. Añadimos un método ``` GheEmoji.download() ``` pero ya que son propiedad privada vamos a simplemente enlazar hacia Github.
      
-        # iteramos los url y descargamos en batch
-        @staticmethod
         def fetch_tag(tag, url):
             file = url.split('/')[-1]
             with requests.get(url, stream=True) as r:
@@ -67,6 +65,14 @@ Pero en este caso quiero los emojis de Github.
                 except FileExistsError as failed:
                     print(failed)
                     return
+    
+        def download(self):
+            for tag, url in self.getConfig('emoji').items():
+                try:
+                    self.fetch_tag(tag, url)
+                except requests.exceptions.HTTPError as notfound:
+                    print(notfound)
+                    continue        
         
      c. Tenemos los 1800 iconos que son sólo 9.1M pero tomaron como 15 minutos en descargar :stopwatch:
         
