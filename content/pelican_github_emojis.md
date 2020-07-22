@@ -50,7 +50,7 @@ Pero en este caso quiero los emojis de Github.
 
      b. Añadimos un método ``` GheEmoji.download() ``` pero ya que son propiedad privada vamos a simplemente enlazar hacia Github.
      
-        # markdown no le gusta empezar con def/class
+        # markdown no le gusta empezar con def
         
         def fetch_tag(tag, url):
             file = url.split('/')[-1]
