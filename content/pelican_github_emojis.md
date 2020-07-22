@@ -37,7 +37,6 @@ Pero en este caso quiero los emojis de Github.
 
      a. Dado que este blog se despliega en Netlify, los assets gráficos estarían en CDN globales y puede ser buena idea tener los png "localmente" en el repo para aprovechar la latencia del CDN  
         
-        # markdown no le gusta empezar con def
         import requests
        
         def load_from_github():
@@ -51,6 +50,8 @@ Pero en este caso quiero los emojis de Github.
 
      b. Añadimos un método ``` GheEmoji.download() ``` pero ya que son propiedad privada vamos a simplemente enlazar hacia Github.
      
+        # markdown no le gusta empezar con def/class
+        
         def fetch_tag(tag, url):
             file = url.split('/')[-1]
             with requests.get(url, stream=True) as r:
@@ -96,6 +97,8 @@ Pero en este caso quiero los emojis de Github.
          
      c. Creamos nuestras clases para extender Markdown y manejar los matches.        
        
+         from markdown.extensions import Extension
+         
          class GheEmoji(Extension):
            pattern = EmojiInlinePattern(EMOJI_RE, self.getConfig('emoji'))
            md.inlinePatterns.add('emoji', pattern, '>not_strong')
