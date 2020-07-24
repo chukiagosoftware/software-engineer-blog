@@ -11,4 +11,4 @@ Category: MejorInternet
 
 [Wired - San Francisco Municipal Fiber](http://www.wired.com/story/san-francisco-municipal-fiber/)
 
-[CTC The Potential for Ubiquitous Fiber-To-The-Premises in San Francisco](sfbos.org/sites/default/files/CTC-Deliverable22-final-20171017.pdf)
+[CTC The Potential for Ubiquitous Fiber-To-The-Premises in San Francisco](http://sfbos.org/sites/default/files/CTC-Deliverable22-final-20171017.pdf)

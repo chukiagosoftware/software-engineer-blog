@@ -50,14 +50,14 @@ Pero en este caso quiero los emojis de Github.
 
      b. Añadimos un método ``` GheEmoji.download() ``` pero ya que son propiedad privada vamos a simplemente enlazar hacia Github.
      
-        # markdown no le gusta empezar con def
+        from pathlib import Path
         
         def fetch_tag(tag, url):
             file = url.split('/')[-1]
             with requests.get(url, stream=True) as r:
                 r.raise_for_status()
                 try:
-                    with open(Path(f"{SAVE_PATH}{tag}.png"), 'xb') as f:
+                    with Path(f"{SAVE_PATH}{tag}.png")).open('xb') as f:
                         for chunk in r.iter_content(chunk_size=8192):
                             # If you have chunk encoded response uncomment if
                             # and set chunk_size parameter to None.
