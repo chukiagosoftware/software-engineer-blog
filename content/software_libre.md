@@ -22,8 +22,10 @@ Agradeciendo y haciendo eco de las iniciativas de varias personas sobre Software
 
 Aprovecho de añadir mi granito de arena con otras perspectivas.
 
-
-.. youtube:: yqMoEMwtqpU
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/yqMoEMwtqpU?autoplay=1&origin=http://ericarellano.tech"
+  frameborder="0"></iframe>
+ 
 
 
 [Conversando con Eliana Quiroz - Soberanía Tecnológica y Software Libre](https://www.youtube.com/watch?v=yqMoEMwtqpU&feature=youtu.be&fbclid=IwAR174qwZxbIW5H_4OFbpVroCylYmRB9EaYW2_lL83BVAb6TLsQR46Srcq28)
