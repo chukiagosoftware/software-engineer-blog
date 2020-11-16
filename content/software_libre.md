@@ -3,7 +3,9 @@ Date: November 10, 2020
 Category: Tecnologia
 Tags: GNU/Linux, Nube, Economia
 
-# Software Libre en el Estado?
+
+
+# en el Estado?
 
 Primero, qué es software libre? Algunos diremos: el sistema operativo GNU/Linux. Ok, pero, y eso se come? 
 
@@ -15,7 +17,7 @@ Todo desde nuestro teléfono inteligente Android/iPhone, televisor inteligente, 
 
 Entonces, Software Libre no es sólo una buena idea. Es la realidad fundacional sobre la cual se construye el Internet moderno y las tecnologías como Aprendizaje de Máquina (ML) y Telecomunicaciones.
 
-
+<br/>
 
 ## Mitos del Software Libre
 
@@ -53,7 +55,7 @@ Entonces, Software Libre no es sólo una buena idea. Es la realidad fundacional 
 
 ## Entonces, ¿Linux dónde en el Estado?
 
-:nube:
+:cloud:
 
 
 Así es. En la nube!!
