@@ -30,7 +30,7 @@ Aprovecho de añadir mi granito de arena con otras perspectivas.
 
 [Conversando con Eliana Quiroz - Soberanía Tecnológica y Software Libre](https://www.youtube.com/watch?v=yqMoEMwtqpU&feature=youtu.be&fbclid=IwAR174qwZxbIW5H_4OFbpVroCylYmRB9EaYW2_lL83BVAb6TLsQR46Srcq28)
 
-[Conversando con Rordigo García](https://www.youtube.com/watch?v=KWogm4aqhHs)
+[Conversando con Rodrigo García](https://www.youtube.com/watch?v=KWogm4aqhHs)
 
 [CTIC Plan de Implementacion Software Libre (discusion)](https://www.ctic.gob.bo/foro/tema/plan-de-implementacion-de-software-libre-y-estandares-abiertos-pislea/)
 
