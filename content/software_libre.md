@@ -22,9 +22,7 @@ Agradeciendo y haciendo eco de las iniciativas de varias personas sobre Software
 
 Aprovecho de añadir mi granito de arena con otras perspectivas.
 
-<iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=yqMoEMwtqpU">
-</iframe>
+.. youtube:: yqMoEMwtqpU
 
 [Conversando con Eliana Quiroz - Soberanía Tecnológica y Software Libre](https://www.youtube.com/watch?v=yqMoEMwtqpU&feature=youtu.be&fbclid=IwAR174qwZxbIW5H_4OFbpVroCylYmRB9EaYW2_lL83BVAb6TLsQR46Srcq28)
 

@@ -51,3 +51,7 @@ GITHUB_URL='http://www.github.com/edam-software'
 DISPLAY_PAGES_ON_MENU = True
 
 USE_FOLDER_AS_CATEGORY = False
+
+PLUGINS = [
+    'pelican_youtube'
+]
