@@ -4,7 +4,19 @@ Category: Tecnologia
 Tags: GNU/Linux, Nube, Economia
 
 
-# en el Estado?
+Primero, qué es software libre? Algunos diremos: el sistema operativo GNU/Linux. Ok, pero, y eso se come? 
+
+![Faang]({attach}images/faang.png)
+
+Resulta que sí.  Detrás del éxito de las mega-empresas de tecnología que han revolucionado las comunicaciones, relaciones sociales y negocios Linux está presente casi exclusivamente.
+
+Todo desde nuestro teléfono inteligente Android/iPhone, televisor inteligente, sistema de mensajes instantáneos, servicio de correo digital, videoconferencia, streaming de películas, en el fondo tienen su base en cientos o miles de servidores Linux, corriendo también mucho software libre escrito en lenguajes abiertos: Java (*), Python, Ruby, Bash y con APIs también generalmente abiertos.
+
+Entonces, Software Libre no es sólo una buena idea. Es la realidad fundacional sobre la cual se construye el Internet moderno y las tecnologías como Aprendizaje de Máquina (ML) y Telecomunicaciones.
+
+<br/>
+
+# ecos
 
 Agradeciendo y haciendo eco de las iniciativas de varias personas sobre Software Libre y tecnología en Bolivia.
 
@@ -20,20 +32,6 @@ src="https://www.youtube.com/watch?v=yqMoEMwtqpU">
 
 [CTIC Plan de Implementacion Software Libre (discusion)](https://www.ctic.gob.bo/foro/tema/plan-de-implementacion-de-software-libre-y-estandares-abiertos-pislea/)
 
-
-## Definiciones
-
-Primero, qué es software libre? Algunos diremos: el sistema operativo GNU/Linux. Ok, pero, y eso se come? 
-
-![Faang]({attach}images/faang.png)
-
-Resulta que sí.  Detrás del éxito de las mega-empresas de tecnología que han revolucionado las comunicaciones, relaciones sociales y negocios Linux está presente casi exclusivamente.
-
-Todo desde nuestro teléfono inteligente Android/iPhone, televisor inteligente, sistema de mensajes instantáneos, servicio de correo digital, videoconferencia, streaming de películas, en el fondo tienen su base en cientos o miles de servidores Linux, corriendo también mucho software libre escrito en lenguajes abiertos: Java (*), Python, Ruby, Bash y con APIs también generalmente abiertos.
-
-Entonces, Software Libre no es sólo una buena idea. Es la realidad fundacional sobre la cual se construye el Internet moderno y las tecnologías como Aprendizaje de Máquina (ML) y Telecomunicaciones.
-
-<br/>
 
 ## Mitos del Software Libre
 
@@ -168,3 +166,6 @@ Tomando una conclusión general, si se quiere obvia, lo que realmente requiere e
     -> fáciles de utilizar, estables, robustos 
     -> control soberano por agencias del Estado
     -> independencia de consultores y empresas extranjeras
+
+
+
