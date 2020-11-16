@@ -129,5 +129,24 @@ Esto no necesariamente se debe mezclar con la implementación de una Nube Sobera
 
 ## Modelo de Datos para el Estado - Ciudadanos
 
+Podemos ver que la pregunta no es realmente si debemos utilizar Software Libre en el Estado. La clave está en dónde miramos, cómo se gestiona el software, y cuales son los objetivos concretos.
 
+Tomando una conclusión general, si se quiere obvia, lo que realmente requiere el Estado Boliviano es una Nube Soberana, Educación tecnológica de calidad, capacitación puntual y eficiente, y una estrategia exhaustiva de desarrollo tecnológico-educativo.
 
+1. Soberanía Tecnológica 
+    -> Transparencia
+    -> GNU/Linux
+    -> Nube Soberana
+    -> Instituciones independientes del poder político
+    -> Red fundamental de fibra óptica con PIT regionales de alta disponibilidad
+    
+2. Datos públicos del Estado 
+    -> transparentes, accesibles de forma automática
+    -> accesibles programáticamente mediante APIs, streams
+    -> pipelines de datos para uso público y estatal
+    
+3. Servicios del Estado
+    -> accesibles por Internet y la Red Soberana nacional
+    -> fáciles de utilizar, estables, robustos 
+    -> control soberano por agencias del Estado
+    -> independencia de consultores y empresas extranjeras
