@@ -1,4 +1,4 @@
-Title: Glosario DevOps
+Title: Software Libre Soberano?
 Date: November 10, 2020
 Category: Tecnologia
 Tags: GNU/Linux, Nube, Economia
