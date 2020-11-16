@@ -9,7 +9,7 @@ setup(
     version='0.5',
     packages=find_packages(),
     py_modules=['ghe_emoji'],
-    install_requires=['markdown>=3.0', 'requests'],
+    install_requires=['markdown>=3.0', 'requests', 'pelican-youtube'],
     python_requires='>3.7',
     url='https://github.com/edam-software/github_emojis',
     license="OSI Approved :: GNU General Public License v3 or later (GPLv3+)",

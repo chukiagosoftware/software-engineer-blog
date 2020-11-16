@@ -1,7 +1,7 @@
 Title: Software Libre Soberano?
 Date: November 10, 2020
 Category: Tecnologia
-Tags: GNU/Linux, Nube, Economia
+Tags: Linux, Nube, Economia
 
 
 Primero, qué es software libre? Algunos diremos: el sistema operativo GNU/Linux. Ok, pero, y eso se come? 
@@ -22,7 +22,9 @@ Agradeciendo y haciendo eco de las iniciativas de varias personas sobre Software
 
 Aprovecho de añadir mi granito de arena con otras perspectivas.
 
+
 .. youtube:: yqMoEMwtqpU
+
 
 [Conversando con Eliana Quiroz - Soberanía Tecnológica y Software Libre](https://www.youtube.com/watch?v=yqMoEMwtqpU&feature=youtu.be&fbclid=IwAR174qwZxbIW5H_4OFbpVroCylYmRB9EaYW2_lL83BVAb6TLsQR46Srcq28)
 
@@ -30,7 +32,7 @@ Aprovecho de añadir mi granito de arena con otras perspectivas.
 
 [CTIC Plan de Implementacion Software Libre (discusion)](https://www.ctic.gob.bo/foro/tema/plan-de-implementacion-de-software-libre-y-estandares-abiertos-pislea/)
 
-
+<br/>
 ## Mitos del Software Libre
 
 * Software libre es gratis (preguntemos a Amazon, Google, o Red Hat)
@@ -45,7 +47,7 @@ Aprovecho de añadir mi granito de arena con otras perspectivas.
  
 * Software libre solucionará los problemas estructurales del Estado
 
-
+<br/>
 ## Bondades del Software Libre (circa 2020)
 
 * Desarrollo ágil, colaborativo, abierto
@@ -64,7 +66,7 @@ Aprovecho de añadir mi granito de arena con otras perspectivas.
 
 * Menor costo de soporte, mantenimiento y operación
 
-
+<br/>
 ## Entonces, ¿Linux dónde en el Estado?
 
 :cloud:
@@ -82,7 +84,7 @@ Entre las otras grandes plataformas de video conferencias:  Cisco Webex, Jitsi /
 
 Y dependen de masivas nubes con infraestructura distribuida. 
 
-
+<br/>
 ## La Nube Soberana
 
 El Estado Boliviano debe brindar una "nube soberana" como servicio base y precondición para el mayor desarrollo de la infraestructura digital con el objetivo de:
@@ -95,7 +97,7 @@ El Estado Boliviano debe brindar una "nube soberana" como servicio base y precon
 
 Esto se debe construir sobre GNU/Linux, pero no como una decisión ideológica sino pragrmática en base al estado actual de la industria.
 
-
+<br/>
 ## Usos para la Nube Soberana construida sobre Software Libre
 
 
@@ -115,7 +117,7 @@ Con una nube soberana podemos construir plataformas en conjunto con Amazon (AWS)
 
 * Ofimática
 
-
+<br/>
 ## IoT, Smartphone 
 
 Linux también está presente en el mundo del Internet de las Cosas (IoT).  La mayoría de controladores, sensores y dispositivos que se puedan conectar a la red estatal utilizarían GNU/Linux.
@@ -124,13 +126,14 @@ Sin embargo, en este espacio existe ciertamente un fuerte componente privativo e
 
 Evaluar la seguridad digital y soberanía operativa de los sistemas utilizados o que sean adquiridos por el Estado es otra tarea importante que está relacionada al Software Libre pero tiene otros parámetros más allá del ideológico/político.
 
+<br/>
 ## Sistemas Grandes (Datos del Estado)
 
 Los grandes sistemas del Estado (impuestos, elecciones, presupuestos, registro civil, etc.) seguramente tienen décadas de funcionamiento y una mezcla de procesos manuales y documentos físicos como también digitalizados en sistemas privativos de diferentes tipos.
 
 Tiene sentido mover estos a GNU/Linux? Esto brinda soberanía? Un análisis aparte - pendiente.
 
-
+<br/>
 ## Usuarios
 
 Los funcionarios, consultores y administradores de la burocracia estatal deberían aprender a manejar GNU/Linux? Por supuesto, es una gran herramiente para el futuro.
@@ -139,8 +142,7 @@ Sin embargo, la migración de Ministerios y otras entidades públicas hacia GNU/
 
 Esto no necesariamente se debe mezclar con la implementación de una Nube Soberana, servicios públicos o sistemas Estatales en base a GNU/Linux
 
-
-
+<br/>
 ## Modelo de Datos para el Estado - Ciudadanos
 
 Podemos ver que la pregunta no es realmente si debemos utilizar Software Libre en el Estado. La clave está en dónde miramos, cómo se gestiona el software, y cuales son los objetivos concretos.
