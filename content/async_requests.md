@@ -11,6 +11,8 @@ Poco a poco vamos a mejorar algunas cosas, como el tamaño de los mismos con Ima
 
 Lo cuál me recuerda. Lo lindo de Python es que se puede hacer casi cualquier cosa, con un poco de estilo y sencillez. Nada de Java arcáico o Javascript surrealista, sólo código rico que funciona.
 
+Por ejemplo, podemos escribir ``` import antigravity ``` y eso está muy bien.
+
 Pero divagamos.  Para descargar los 1793 emojis de GitHub..
 
 :copyright:
