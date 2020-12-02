@@ -55,3 +55,8 @@ USE_FOLDER_AS_CATEGORY = False
 PLUGINS = [
     'pelican_youtube'
 ]
+
+# path-specific metadata
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'biohazard.ico'},
+    }
