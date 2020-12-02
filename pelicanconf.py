@@ -58,5 +58,5 @@ PLUGINS = [
 
 # path-specific metadata
 EXTRA_PATH_METADATA = {
-    'extra/biohazard.ico': {'path': 'biohazard.ico'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
     }
