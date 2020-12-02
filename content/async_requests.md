@@ -31,7 +31,7 @@ Como ojalá puede ver, es increíblemente fácil añadir un poco de concurrencia
 
  :godmode:
 
-Ahorramos valiosos segundos, que en una aplicación real con muchos usuarios y todo eso, llegan a ser muy importantes.
+Ahorramos valiosos minutos, que en una aplicación real pueden ser importantes.
 
 
 ![async_download]({attach}images/async_download.png)
