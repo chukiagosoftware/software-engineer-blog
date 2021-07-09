@@ -34,7 +34,7 @@ AUTHOR_FEED_RSS = None
 # Links
 LINKS = (('Pagina Siete', 'http://www.paginasiete.bo'),
          ('Fundación Solón', 'https://www.fundacionsolon.org'),
-         ('Rimay Pampa', 'http://www.rimaypampa.com')
+         ('Rimay Pampa', 'http://www.rimaypampa.org')
          )
 
 # Social widget
