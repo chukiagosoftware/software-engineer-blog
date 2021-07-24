@@ -1,31 +1,28 @@
-Title: About
+Title: What is This
 
-## About
+## About, or Aboot?
+The pelican blog, a one stop shop for emoji misuse :octopus:
 
-Soy un ingeniero de software con formación en electrónica y redes. Estas son mis notas.  
+###
+This is not really a :bowtie: event. Relax, walk around :bouvet_island:
+ 
+ :zany_face:
 
+wait, not that far. Uh oh :zombie: :zombie: :zombie: 
+#
 
-#### Interests
+Ok, that was close! Let's relax with a nice glass of
 
-Enjoy working with software, principally open source.
-
-
-Past projects: 
-
-> * Concurrent enterprise process & network device automation 
->
-> * Design and implementation of applications in AWS & GCP
->
-> * PaaS/IaaS & IaC cloud platform operation/scaling
->
-> * DevOps & CICD for multiple global media platforms
->
-> * Cisco/SIP/Telco Contact Center speech recognition interface
-> 
-> * Internet Rights, Municipal Internet Access
->
-> * SMS/Toll-Free social platform backend
->
-> * Wordpress/Drupal content management
->
-> * HTML5/CSS, Jquery, Flask, Ruby on Rails webs
+ :wine:
+ 
+ 
+ ##### For the wild, 
+ 
+ l'auteur
+ 
+ #
+  Malvinas son Argentinas 
+  
+  :falkland_islands:
+ #
+ 
