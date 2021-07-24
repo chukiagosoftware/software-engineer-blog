@@ -95,6 +95,7 @@ Learn them well. Don't trust some fool on the internet.
  * *sed* regular expression replace with the 's/old/new/gi' command and regex switches
  * Regex '[^0-9].*' match any line that starts with a non-digit and delete
  * Delete the first line, localhost 
+ * Delete empty lines with sed
  * The separator slash operator "/" can be anything, such as "#" if you need to match a "/" forward slash
      
          ip -4 addr | awk '{ print $2 }' | sed 's#/.*##' | sed "s#^[^0-9].*##" | sed '/^$/d' | sed 1d
