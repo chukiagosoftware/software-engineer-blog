@@ -13,16 +13,8 @@ wait, not that far. Uh oh :zombie: :zombie: :zombie:
 
 Ok, that was close! Let's relax with a nice glass of
 
- :wine:
+ :beer:
  
- 
- ##### For the wild, 
- 
- l'auteur
- 
- #
-  Malvinas son Argentinas 
-  
-  :falkland_islands:
- #
- 
+### Cloud stuff
+
+AWS, Digital Ocean, Netlify, Azure, and now Oracle Cloud. I use them. Maybe I'll write about that but no guarantes :beach_umbrella:
