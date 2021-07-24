@@ -8,6 +8,8 @@ This is not really a :bowtie: event. Relax, walk around, or even better ride!
  
  :bicyclist:
  
+ enjoy the varied scenery :tanabata_tree: or just take the :train: and go really, really far!
+ 
 
 wait, not that far. Uh oh :zombie: :zombie: :zombie: 
 #
@@ -22,4 +24,4 @@ Ok, that was close! Let's relax with a nice glass of
  
 ### Cloud stuff
 
-AWS, Digital Ocean, Netlify, Azure, and now Oracle Cloud. I use them. Maybe I'll write about that but no guarantes :beach_umbrella:
+AWS, Digital Ocean, Netlify, Azure, and now Oracle Cloud. I use them. Maybe I'll write about that but no guarantees :beach_umbrella:
