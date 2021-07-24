@@ -71,16 +71,27 @@ read captures in CLI
     
     tcpdump -r 
 
-# ssh and scp
+## 5. ssh and scp
 
     scp -o 'ProxyJump user@bastion' -i key user@host:/path/to/remote/file /local/path/file
 
-# Awk and sed and cut
+## 6. Awk and sed and cut
 
-Learn them. Please post your findings so I can copy paste.
+Learn them better. Don't trust some fool on the internet. 
 
-# While and For Loops
+Please post your findings so I can copy paste.
 
-These are also useful.  More coming soon!
+## 7.  While and For Loops
+
+These are also useful. No, really
+
+    for i in More content coming soon; do
+      if [ $RANDOM -le 10000 ] ; then
+        echo '$i groovy!'
+      else
+        echo "$i questionable"
+    done
+
+
 
 :pause_button:
