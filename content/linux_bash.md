@@ -1,4 +1,4 @@
-Title: SRE Devops Linux CLI Bash Best Prácticas
+Title: Random Linux cli / Bash 
 Category: SRE
 Tags: DevOps, Bash, Linux
 Date: July 24, 2021
@@ -77,20 +77,39 @@ read captures in CLI
 
 ## 6. Awk and sed and cut
 
-Learn them better. Don't trust some fool on the internet. 
+Learn them well. Don't trust some fool on the internet. 
 
-Please post your findings so I can copy paste.
 
+#### You can use *sed* to replace text with regex
+ 
+ Sed allows simple regular expression matching which is what you're going to have to do to fix your mistakes. All of them.
+  
+    sed -i "s/component_secret =.*/component_secret = \"$JICOFO_SECRET\"/" $PROSODY_HOST_CONF
+    
+ 
+     sed -i "s#some_text/next_one#next_one#g" $INPUT_FILE
+     
+ On Ubuntu Hirsute 21.04 get a list of only IPv4 addresses.  Can be done in better ways, probably.
+ 
+ * Awk is a full programming language, but we can use it to get text fields or csv columns from text.
+ * *sed* regular expression replace with the 's/old/new/gi' command and regex switches
+ * Regex '[^0-9].*' match any line that starts with a non-digit and delete
+ * Delete the first line, localhost 
+ * The separator slash operator "/" can be anything, such as "#" if you need to match a "/" forward slash
+     
+         ip -4 addr | awk '{ print $2 }' | sed 's#/.*##' | sed "s#^[^0-9].*##" | sed '/^$/d' | sed 1d
+    
 ## 7.  While and For Loops
 
-These are also useful. No, really
+These are also useful
 
-    for i in More content coming soon; do
-      if [ $RANDOM -le 10000 ] ; then
-        echo '$i groovy!'
-      else
-        echo "$i questionable"
-    done
+    for i in More content coming soon 
+        do 
+            if [ $RANDOM -le 7000 ]
+                then echo "$i groovy"
+            else echo "$i questionable" 
+            fi
+        done
 
 
 
