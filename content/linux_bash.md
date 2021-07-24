@@ -1,4 +1,4 @@
-Title: Random Linux cli / Bash 
+Title: Bad Emojis and Random Linux cli / Bash 
 Category: SRE
 Tags: DevOps, Bash, Linux
 Date: July 24, 2021
