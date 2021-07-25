@@ -1,27 +1,32 @@
 Title: What is This
 
 ## About, or Aboot?
-The pelican blog, a one stop shop for emoji misuse :octopus:
+
+:hiking_boot:
+
+The pelican blog, a one stop shop for emoji's misused. :octopus:
 
 ###
 This is not really a :bowtie: event. Relax, walk around, or even better ride!
  
  :bicyclist:
  
- enjoy the varied scenery :tanabata_tree: or just take the :train: and go really, really far!
+ Enjoy the varied scenery :tanabata_tree: or just take the :train:  
  
 
-wait, not that far. Uh oh :zombie: :zombie: :zombie: 
-#
-#
-:boom:
-#
+ While you're here, could you squash some bugs if you don't mind?
+ 
+ :bug: :bug: :bug: 
+ 
+ 
+:exploding_head:
+
 #
 
-Ok, that was close! Let's relax with a nice glass of
+Thanks! Now relax with a pint
 
  :beer:
  
 ### Cloud stuff
 
-AWS, Digital Ocean, Netlify, Azure, and now Oracle Cloud. I use them. Maybe I'll write about that but no guarantees :beach_umbrella:
+AWS, Digital Ocean, Netlify, Azure, and now Oracle Cloud. I used them and survived. Maybe I'll write about it, yea, that's what I'll do :beach_umbrella:
