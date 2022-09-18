@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.10
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 from python_markdown_gh_emoji import GheEmoji
