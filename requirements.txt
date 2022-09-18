@@ -1,4 +1,3 @@
-pelican
-markdown
-requests
+pelican[markdown]
+httpx
 pelican-youtube

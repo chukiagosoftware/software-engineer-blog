@@ -15,12 +15,12 @@ MARKDOWN = {
 }
 AUTHOR = 'Eric Arellano'
 SITENAME = 'Software Engineering Blog'
-SITEURL = 'www.ericarellano.tech'
+SITEURL = 'blog.ericarellano.tech'
 THEME = 'themes/pelican-blueidea'
 PATH = 'content'
 LOCALE = 'en_us'
 
-TIMEZONE = 'America/New_York'
+TIMEZONE = 'America/Los_Angeles'
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'en'
 
@@ -46,7 +46,7 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 # BlueIdea
-GITHUB_URL='http://www.github.com/edam-software'
+GITHUB_URL = 'http://www.github.com/edam-software'
 
 DISPLAY_PAGES_ON_MENU = True
 
