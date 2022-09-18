@@ -3,7 +3,7 @@
 	url = https://github.com/nasskach/pelican-blueidea.git
 [submodule "pelican-plugins/pelican-toc"]
 	path = pelican-plugins/pelican-toc
-	url = https://github.com/edamsoft/pelican-toc
+	url = https://github.com/edam-software/pelican-toc.git
 [submodule "themes/Papyrus"]
 	path = themes/Papyrus
 	url = https://github.com/edam-software/Papyrus
