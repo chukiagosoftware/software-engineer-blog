@@ -5,11 +5,11 @@ except ImportError:
 
 
 setup(
-    name='ghe_emoji',
-    version='0.5',
+    name='python_markdown_gh_emoji',
+    version='0.9',
     packages=find_packages(),
-    py_modules=['ghe_emoji'],
-    install_requires=['markdown>=3.0', 'requests', 'pelican-youtube'],
+    py_modules=['python_markdown_gh_emoji'],
+    install_requires=['markdown>=3.0', 'aiohttp'],
     python_requires='>3.7',
     url='https://github.com/edam-software/github_emojis',
     license="OSI Approved :: GNU General Public License v3 or later (GPLv3+)",

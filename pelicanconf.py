@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.10
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from ghe_emoji import GheEmoji
+from python_markdown_gh_emoji import GheEmoji
 
 MARKDOWN = {
     'extensions': [GheEmoji.load_from_github()],
@@ -13,16 +13,28 @@ MARKDOWN = {
     },
     'output_format': 'html5',
 }
-AUTHOR = 'Eric Arellano'
-SITENAME = 'Software Engineering Blog'
+AUTHOR = 'Edamsoft'
+SITENAME = 'Software engineering blog'
 SITEURL = 'blog.ericarellano.tech'
-THEME = 'themes/pelican-blueidea'
+THEME = 'themes/Papyrus'
+THEME_STATIC_PATHS = ['static']
+
 PATH = 'content'
 LOCALE = 'en_us'
 
 TIMEZONE = 'America/Los_Angeles'
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'en'
+SUBTITLE = 'Terraform, Python, Pelican, Cloud DevOps'
+COPYRIGHT = '©2022'
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = [
+    'pelican_youtube', 'readtime', 'search', 'neighbors', 'pelican-toc'
+]
+
+# Site search plugin
+SEARCH_MODE = "output"
+SEARCH_HTML_SELECTOR = "main"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -49,14 +61,33 @@ RELATIVE_URLS = True
 GITHUB_URL = 'http://www.github.com/edam-software'
 
 DISPLAY_PAGES_ON_MENU = True
+DIRECT_TEMPLATES = (('index', 'search', 'tags', 'categories', 'archives',))
+PAGINATED_TEMPLATES = {'index':None,'tag':None,'category':None,'author':None,'archives':24,}
 
 USE_FOLDER_AS_CATEGORY = False
-
-PLUGINS = [
-    'pelican_youtube'
-]
 
 # path-specific metadata
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
-    }
+}
+
+TOC = {
+    'TOC_HEADERS': '^h[1-4]',  # What headers should be included in
+    # the generated toc
+    # Expected format is a regular expression
+
+    'TOC_RUN': 'true',  # Default value for toc generation,
+    # if it does not evaluate
+    # to 'true' no toc will be generated
+
+    'TOC_INCLUDE_TITLE': 'true',  # If 'true' include title in toc
+}
+
+SHARE = (
+    ("twitter", "https://twitter.com/intent/tweet/?text=Features&amp;url="),
+    ("linkedin", "https://www.linkedin.com/sharing/share-offsite/?url="),
+    ("reddit", "https://reddit.com/submit?url="),
+    ("facebook", "https://facebook.com/sharer/sharer.php?u="),
+    ("whatsapp", "https://api.whatsapp.com/send?text=Features - "),
+    ("telegram", "https://telegram.me/share/url?text=Features&amp;url="),
+)
