@@ -180,7 +180,26 @@ Minikube, Docker Compose, etc. que permiten correr contenedores Docker en VM o l
 
 #### JSON
 
-Javascript Object Notation.  Así, feo como suena.
+Javascript Object Notation.  Así, feo como suena. Bueno, es cuestión de gustos, y sobre eso no vamos a escribir los 
+autores. Mentira, JSON es F.E.O. Evítalo. Evita Javascript. La vida es bella, usa Python.
+
+Si usted trabaja con Javascript y lo disfruta, mucho éxito. Tuve una época de JS y la recuerdo con cariño. Pero 
+simplemente era mucha inversión en un idioma que no es óptimo en mi humilde y desinformada opinión. Para desarrollo 
+Web, tenemos a Go, Rust, Python, Ruby on Rails, Hotwire, tanta cosa linda. En fin.
+
+#### jq
+
+Pero, si no te queda otra que manejar JSON, puedes utilizar *jq* para mayor suerte.  Jq es un analizador/formateador 
+léxico, si utilizo el termino correctamente, para JSON.
+
+Facilita leer diferentes datos de un JSON grande, como el retorno de la mayoría de comandos *aws_cli* o *gcloud*, o 
+*az*.  Siempre podemos solicitar un resultado en Tabla, YAML, o Texto, pero para automatizar JSON y *jq* es, 
+lamentablemente lo mejor que hay.
+
+Para aprender más, visita el [tutorial](https://stedolan.github.io/jq/tutorial/) pero no intentes memorizar, DevOps 
+no se trata de eso.
+
+![jq]({attach}images/jq.png)
 
 #### YAML     
 
@@ -218,3 +237,31 @@ de profundidad.
             todo
             la misma 
             linea?
+
+#### Cloud CLI, Command Line Interface
+
+Para trabjar con una Nube, generalmente podemos utilizar IaC (Terraform, Ansible) o podemos usar su API directamente 
+con nuestro lenguaje favorito. O podemos utilizar sus herramientas CLI, línea de comando, shell, etc.
+
+Con diferencias, todos te permitirán crear un nuevo recurso, visualizar los recursos existentes, su estado, y cosas 
+más lindas como acceder a las API de machine learning o de data science.
+
+Por ejemplo, imaginemos una nube genérica con un binario CLI llamada *cloud_cli*
+
+      KUBE_CREATION_RESULT=$(cloud_cli create kubernetes "Erics Test Cluster" --preemptible=True \ 
+       --private_subnet=True --aws_peering=$AWS_VPC_ID)
+      
+      cloud_cli show kubernetes --id=$(jq '[.[] | .cluster_id)
+
+###### aws2
+
+Para manejar Amazon Web Services es un requisito conocer y dominar a cierto punto *aws2* que es el CLI más nuevo 
+hace como 1 año cuando usé AWS por última vez (hasta próximo aviso).
+
+###### az
+
+El comando CLI para manejar Azure, contraparte del Azure Resource Manager visual y el Bicep en YAML, es *az*
+
+##### gcloud
+
+Asimismo, para manejar Google Cloud Platform, vamos a utilizar *gcloud*.
