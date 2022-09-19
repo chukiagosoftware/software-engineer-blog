@@ -1,15 +1,27 @@
 Title: What is This 
 
-## Hey! :sunrise: 
+## :sunrise:  
 
-This is my Python 3.10, Pelican 4.8.0, Python Markdown 3.4.1 powered blog, running on [Netlify](https://www.netlify.com)
-
-Possibly soon to be running on Render once I migrate my main site over there first.
-
-[Render](https://www.render.
-com)  Render is a Heroku/Netlify like platform for running your code through automated Git Flows.
+Welcome to my Python 3.10, Pelican 4.8.0, Python Markdown 3.4.1 powered blog, running on [Netlify](https://www.netlify.
+com) Possibly soon to be running on Render once I migrate my main site over there first, [Render](https://www.render.
+com) is a Heroku/Netlify like platform for running your code through automated Git Flows.
 
 ***
+
+### Infrastructure as Code :bridge_at_night:
+
+Look at that beautiful bridge! IaC is sort of like the bridge between an angry engineering team and a happy one. 
+Cross that bridge!
+
+More about Infra as Code in the [DevOps and SRE Glossary]({filename}../sre_devops_glossary.md) and below! 
+
+* [Terraform](#terraform)
+* [Ansible](#ansible) 
+* [Nomad](#nomad)
+* [Kubernetes](#kubernetes)
+* [Python](#python) 
+
+---
 
 ### Github Emojis
 :necktie: I like Github Emojis a lot. So I wrote a [Python Markdown extension](https://github.
@@ -37,19 +49,8 @@ If you realize these Github icons are kind of large by default, 64x64. To fix th
 
 ***
 
-### Infrastructure as Code :bridge_at_night:
-
-Look at that beautiful bridge! IaC is sort of like the bridge between an angry engineering team and a happy one. 
-Cross that bridge!
-
-* Terraform
-* Ansible 
-* Helm
-* Kubernetes
-
----
-
 ### Terraform
+<a name="terraform"></a>
 
 I've been working with Terraform, Ansible and other IaC stuff for a while now. Not 10 years silly, Hashicorp only 
 created Terraform about 7 years ago. I'm not such a guru or anything, but I've been around the block a few times. 
@@ -60,7 +61,8 @@ such.
 Working on custom Terraform pipelines with your own setup?  :rocket:
 
 ---
-###  Kubernetes  :steam_locomotive:     
+###  Kubernetes  :steam_locomotive:    
+<a name="kubernetes"></a>
 
 Alas, Kubernetes is here to stay, so I went ahead and learned it.  I took the excellent Udemy courses [Certified 
 Kubernetes Administrator](https://www.udemy.com/topic/certified-kubernetes-administrator-cka/) and [Developer](https://www.udemy.com/topic/certified-kubernetes-application-developer-ckad/), and then I spent a few years running 
@@ -75,6 +77,7 @@ who write awesome Helm Charts and make installing things like Datadog Agents, Da
 
 ---
 ### Nomad  :speedboat: 
+<a name="nomad"></a>
 
 Then, life threw me a curveball and I had to manage dozens of workloads (Java, Python, Go) running Nomad and Consul. 
 I have to admit, Nomad beats the socks   off of Kubernetes. It's just a small binary, and pretty much does 
@@ -86,6 +89,7 @@ want it to be, and it can generate service-check basic and complex alerts for yo
 
 ---
 ### Python :snake:
+<a name="python"></a>
 
 Python is THE snake. But it's also an amazing programming language which you've never heard of until this blog. I've 
 had some good fun with Python over the years, and hopefully I'll find time to write about it here.
@@ -107,6 +111,7 @@ even easier ways to automate all of that.
 ---
 
 #### Ansible :alien:
+<a name="ansible"></a>
 
 Ansible is a really cool tool for automating clouds. It's based on Python, so you can make your own modules or fix 
 existing ones if you want. But most things, from standard GNU/Linux system operations, to deploying cloud resources 
@@ -124,4 +129,6 @@ have a module already. The syntax is YAML, but somehow beautiful anyway
 * Oracle Cloud
 * Render
 
-I used them and survived. Maybe I'll write about it, yea, that's what I'll do :beach_umbrella:
+I used them and survived. Maybe I'll write about it some more here. Stay tuned!
+
+:beach_umbrella:
