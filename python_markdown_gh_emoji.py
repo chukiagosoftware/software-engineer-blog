@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.10
 
+import requests
 import json
 from markdown.inlinepatterns import InlineProcessor
 import xml.etree.ElementTree as etree
