@@ -60,13 +60,12 @@ such.
 Working on custom Terraform pipelines with your own setup?  :rocket:
 
 ---
-###  Kubernetes
+###  Kubernetes  :steam_locomotive:     
 
 Alas, Kubernetes is here to stay, so I went ahead and learned it.  I took the excellent Udemy courses [Certified 
-Kubernetes Administrator](https://www.udemy.com/topic/certified-kubernetes-administrator-cka/) and [Developer]
-(https://www.udemy.com/topic/certified-kubernetes-application-developer-ckad/), and then I spent a few years running 
+Kubernetes Administrator](https://www.udemy.com/topic/certified-kubernetes-administrator-cka/) and [Developer](https://www.udemy.com/topic/certified-kubernetes-application-developer-ckad/), and then I spent a few years running 
 production K8S clusters for medium, large and startup scale organizations. Always on a team, because you know, things 
-move faster with :steam_locomotive: steam work.
+move faster with   steam work.
 
 I would love to work on custom K8S stuff like running optimal bare-metal (or bare-VM) clusters, writing some 
 Controllers and refining my Go skills. Just saying.  
@@ -75,15 +74,15 @@ What about Helm? Helm is just a bunch of YAML. Sorry folks, nothing to see here,
 who write awesome Helm Charts and make installing things like Datadog Agents, Databases and Core services a snap.
 
 ---
-### Nomad
+### Nomad  :speedboat: 
 
 Then, life threw me a curveball and I had to manage dozens of workloads (Java, Python, Go) running Nomad and Consul. 
-I have to admit, Nomad beats the socks :speedboat: off of Kubernetes. It's just a small binary, and pretty much does 
+I have to admit, Nomad beats the socks   off of Kubernetes. It's just a small binary, and pretty much does 
 the same thing. You still get some crazy :ferris_wheel: YAML configs, Consul is a full-blown service mesh if you 
 want it to be, and it can generate service-check basic and complex alerts for you too. So, there's that.
 
-If you're new to them, learn more about these terms in our very own, admittedly random DevOps/SRE 
-[glossary]({filename}../sre_devops_glossary.md) :circus_tent:
+:circus_tent:  If you're new to them, learn more about these terms in our very own, admittedly random DevOps/SRE 
+[glossary]({filename}../sre_devops_glossary.md) 
 
 ---
 ### Python :snake:
@@ -112,6 +111,10 @@ even easier ways to automate all of that.
 Ansible is a really cool tool for automating clouds. It's based on Python, so you can make your own modules or fix 
 existing ones if you want. But most things, from standard GNU/Linux system operations, to deploying cloud resources 
 have a module already. The syntax is YAML, but somehow beautiful anyway 
+
+---
+
+#### Cloud
 
 * Amazon Web Services
 * Google Cloud Platform 

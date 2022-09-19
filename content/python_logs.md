@@ -4,18 +4,21 @@ Tags: , SRE, DevOps, Data Science
 Date: September 18, 2022
 Summary: Python logs with Regex and Pandas
 
-### The logfile, old frenemy! 
+### The logfile, old frenemy  :poop: 
 
-From time to time, shit happens :poop:  in this trying time, you will have no choice but to review some logs. Times 
+From time to time, shit happens. In this trying time, you will have no choice but to review some logs. Times 
 have changed and whereas our tools of choice used to be *Notepad++* or a good old *Nagios* handler.  Now most likely 
 you will be reading logs in a fancy colorful GUI running *Grafana*, *Kibana*, *Datadog* or whathaveyou replacement 
-tool your employer has had the brilliant idea to use instead of industry best practices.  :smile:
+tool your employer has had the brilliant idea to use instead of industry best practices  :smile:
 
 Take this Revolutionary moment in time:
 
-time="1968-05-02 00:08:49.150" level=MERDE msg="[ Paris is on Fire! :fire: ] \"DELETE https://capitalism from A.
+---
+time="1968-05-02 00:08:49.150" level=MERDE msg="[ Paris is on Fire! ] \"DELETE https://capitalism from A.
 Bunch.of.Situationists - 200 200B in 3100 µs"
+---
 
+:fire:
 How do we find out how many people revolted against capitalism in Paris, May of 1968? Well, we analyze the logs.
 
 ### Using Regex
@@ -102,15 +105,16 @@ Here, Pythons regex engine or built-in module *re* can shine.
     print(f"Info lines by regex: {ERROR_re}")
     print(f"We have {total_lines} total lines")
 
-### Using Pandas
+### Using Pandas  :panda_face:
 
-
-Yeah but, that's old school, right? Everyone wants to use :panda_face: nowadays, and we are onboard. Pandas is 
+Yeah but, that's old school, right? Everyone wants to use Pandas nowadays, and we are onboard. Pandas is 
 amazing, powerful and fast.  However it doesn't magically read all your data in the fields you want, still gotta do 
-the data preparation. At a large scale, we can call this "Extract, Transform and Load" and send it through some 
+the data preparation. 
+
+At a large scale, we can call this "Extract, Transform and Load" and send it through some 
 fancy "data pipelines", "Kafka stream", "Hadoops" :basketball: and thus we enter the realm of Data Engineering. 
 
-But on a small scale, it's just some Pyton file and string manipulation, wrangling with Dates, and figuring out 
+But on a small scale, it's just some Pyton file, buffer and string manipulation, wrangling with Dates, and figuring out 
 again which are our special regular expressions to be found and catalogued.
 
 #### The code:
