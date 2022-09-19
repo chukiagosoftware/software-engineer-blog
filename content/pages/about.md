@@ -2,7 +2,11 @@ Title: What is This
 
 ## Hey! :sunrise: 
 
-This is my Python 3.10, Pelican 4.8.0, Python Markdown 3.4.1 powered blog, running on [Render](https://www.render.
+This is my Python 3.10, Pelican 4.8.0, Python Markdown 3.4.1 powered blog, running on [Netlify](https://www.netlify.com)
+
+Possibly soon to be running on Render once I migrate my main site over there first.
+
+[Render](https://www.render.
 com)  Render is a Heroku/Netlify like platform for running your code through automated Git Flows.
 
 ***
@@ -16,8 +20,7 @@ those used on this [Pelican](https://docs.getpelican.com) blog! Go me!!  :rotati
 the ass, but adding extensions is relatively easy. I used the current 3.4.1 version with 
 **InlineProcessor** and then I had a :tropical_drink: or two. Just kidding, I probably went for a :bike: ride.
 
-If you realize these Github icons are kind of large by default, 64x64. To fix that, I used some magical CSS which 
-took a lot longer than expected and is why I am not a frontend dude.
+If you realize these Github icons are kind of large by default, 64x64. To fix that, I used some magical CSS:
 
      .ghe_emoji img{
         padding: 0;
@@ -30,7 +33,8 @@ took a lot longer than expected and is why I am not a frontend dude.
         font-weight: 400;
         display: inline-block;
         vertical-align:-0.075em;
-}
+      }
+
 ***
 
 ### Infrastructure as Code :bridge_at_night:
