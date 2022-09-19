@@ -1,7 +1,5 @@
 #!/usr/bin/env python3.10
 
-import httpx
-import requests
 import json
 from markdown.inlinepatterns import InlineProcessor
 import xml.etree.ElementTree as etree
@@ -60,10 +58,3 @@ class EmojiInlineProcessor(InlineProcessor):
 
 if __name__ == '__main__':
     print("This is an extension to Markdown please import it.")
-
-# # if get files
-#     for k, v in e.getConfig('emoji'):
-#         file = v.split('/')[-1]
-#         with open(Path(f".files/{file}"), 'w+') as f:
-#             requests.get binary
-#             f.write()

@@ -1,6 +1,5 @@
 markdown
 pelican[markdown]
-httpx
 pelican-youtube
 beautifulsoup4
 pelican-search
