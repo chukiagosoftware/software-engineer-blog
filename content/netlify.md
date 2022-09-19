@@ -1,29 +1,33 @@
-Title: Netlify en 10 Minutos
+Title: Pelican on Netlify in 10 minutes
 Category: CICD
-Tags: PaaS, DevOps, Web, CICD, Pelican, Python
+Tags: PaaS, DevOps, CICD, Pelican, Python, Pipeline
 Date: June 30, 2020
+Summary: Deploying Pelican on Netlify
+
+### Netlify
 
     $ The fastest way to build the fastest sites.
 
-Netlify es una plataforma PaaS/CICD/DNS con full integración Git utilizada para desplegar este sitio web. En resumen:
+Netlify es la plataforma PaaS/CICD/DNS con integración a Git(hub|lab) utilizada para desplegar este sitio web. En 
+resumen:
 
 > 1. Connect your repository
 > 2. Add your build settings
 > 3. Deploy your website
 
-Para ejecutar un app completo en Python pueden existir diferencias y puedes utilizar un número de librerías. Pero para este blog en Pelican, el comando por defecto de Netlify es perfecto.
+Para ejecutar un app completo en Python o un static site puedes utilizar un número de librerías. Incluso Pelican 
+tiene facilidades para usar *Invoke* o *Make* y gestionar diferentes contextos. Pero para este humilde blog en Pelican,
+el comando por defecto de Pelican y el build command sencillo de Netlify es perfecto.
 
-Seguimos el manual y simplemente enlazamos el repo y ejecutamos nuestro build command
+Seguí el manual y simplemente enlazo mi repo con el output en HTML de Pelican.
 
     $ pelican content
 
-para generar HTML de nuestro Markdown.
-
 ![buildcommand]({attach}images/build_command.png)
 
+---
 
-
-y zas, le decimos a Netlify que publique nuestro directorio donde Pelican ha generado HTML.
+Así, le dijimos a Netlify que publique el directorio donde Pelican ha generado HTML.
 
     $ ls -al output/
      -rw-r--r--   1     3523 Jun 30 00:28 anadir-emojis-de-github-al-blog-de-pelican.html
@@ -35,11 +39,44 @@ y zas, le decimos a Netlify que publique nuestro directorio donde Pelican ha gen
 
 ![publicado]({attach}images/netlify_published.png)
 
-#### 
+---
 
-En [otro articulo]({filename}pelican_github_emojis.md) configuramos los emojis de Github en este blog de Pelican. Para lograr ejecutar un deploy de prueba en Netlify, uno sin el modulo Emoji y otro con, controlamos esto de la siguiente forma en base al ``` setup.py```
+### 
 
+En [otro articulo]({filename}pelican_github_emojis.md) configuramos los emojis de Github.  Para lograr ejecutar un 
+deploy de prueba en Netlify, uno sin el modulo Emoji y otro con, controlo esto de la 
+siguiente forma en base al ``` setup.py```
 
      if [ -e setup.py ]; then python setup.py install && pelican content; else pelican content;fi
 
-... próximamente ...
+Una vez confirmado, ejecuto siempre el setup.py ya que quiero tener esos Emoji.
+
+---
+
+### Stork Search (Rust)
+
+Adicionalmente en la última encarnación, el Blog utiliz el tema Papyrus, que incluso pelican-search además de las 
+tablas de contenido.  El Pelican Search se basa en un módulo Rust que es [Stork Search](https://stork-search.net) y 
+realmente es muy rápido al indexar texto, digamos un ElasticSearch localizado o para el edge, buenazo.
+
+Añadir Stork Search es un poco complicado por ser otro lenguaje y plataforma consiguiente de desarrollo. Esto se 
+maneja añadiendo otro commando al build: *build_stork_search.sh* el cual simplemente instala el toolchain de Rust y 
+le comanda instalar Stork. 
+
+Primero intenté instalar Stork directamente lo cual funciona, pero luego Netlify no permite poner esto en el PATH de 
+ejecución y falla sin encontrarlo. Probablemente es una medida de seguridad importante no permitir la ejecución de 
+binarios arbitrarios :muscle: entonces no le busqué más pies al gato y asumo el costo de instalar todo Rust stable 
+en cada deploy por ahora.
+
+:hankey: Could not find Stork in $Path
+
+    wget https://files.stork-search.net/releases/v1.5.0/stork-ubuntu-20-04
+    chmod +x stork-ubuntu-20-04
+    
+
+:boom: Site has been deployed.
+
+    #!/usr/bin/env bash
+    rustup toolchain install stable
+    cargo install stork-search --locked
+
