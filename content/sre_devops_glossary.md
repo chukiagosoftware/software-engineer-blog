@@ -22,7 +22,7 @@ mediante algo como Ansible, Terraform y Git, Subversion. Es decir, la configurac
 dedicado a ese propósito y actualizado regularmente.
 
     
-#### CICD  
+#### CI/CD  
 
 Continuous Integration and Continuous Delivery, or Continous Deployment es la integración y distribución continua 
 de un paquete de software. Abarca desde el git push inicial en Dev, hasta que el usuario puede interactuar o ver los 
@@ -36,10 +36,12 @@ Un breve ejemplo: este sitio web está creado con [Netlify](http://www.netlify.c
 #### PaaS  
 
 La Plataforma como un Servicio es un concepto que entra en su segunda década renovado con IaC/CICD/SDN y hasta IoT. 
-En los remotos 2000, un PaaS significaba Debian, Ubuntu, CentOS o incluso Windows Server configurado en máquinas 
-virtuales, con imágenes preconfiguradas para cada tech stack, y un paquete de scripts.  Es decir tenías C++, Java, 
-Python, PHP, MySQL/Postgres, Javascript y alguna forma de crear/modificar un espacio de trabajo nuevo. Esto es un 
-servicio utilizado por desarrolladores, para implementar o probar idea y prototipos.
+En los remotos 2000, un PaaS significaba Debian, Ubuntu, CentOS o  Windows Server configurado en máquinas 
+virtuales, con imágenes preconfiguradas para cada tech stack, y un paquete de scripts.
+
+Es decir podías correr C++, Java, Python, PHP, MySQL/Postgres, o Javascript por ejemplo, con alguna forma de 
+crear/modificar un espacio de trabajo nuevo. Esto es un servicio utilizado por desarrolladores, para implementar o 
+probar idea y prototipos.
    
    
 #### IaaS
@@ -48,7 +50,17 @@ La infraestructura como servicio es el negocio de AWS, Goocle Cloud Platform, Az
 varios otros. Dejemos que ellos hagan lo suyo.
 
 En realidad, cualquier organización puede tener IaaS, generalmente es equivalente al ingeniero de sistemas que 
-configura todo.
+configura los sistemas, servidores, clusters, bases de datos, APIs externos e internos... pero de forma automática, 
+altamente disponible, on demand, mediante Internet.
+
+Por ejemplo crear una organización de Google Cloud Platform, luego creaar una red virtual VPC con varios subnets, 
+firewalls, reglas de access, VPN y Peering a MongoDB o Confluent Kafka o Redis, clusters de Kubernetes y VMs 
+mediante una solicitud como 
+
+     PUT https://cloud.new/gcp_org?Kafka=True&Kubernetes=True&Public=False&CPU=100
+
+Y tener la certeza de que la infra backend va a existir al completar la operación y recibir un HTTP 200, luego de un 
+tiempo de espera por supuesto.
 
 #### DevOps  :loop:
 
@@ -68,11 +80,18 @@ verificado a main y ponerlo en producción mediante Continous Deployment.
 
 ####  SDN   
 
-*Software Defined Networking* se refiera a eso, la definición de redes en software. 
+Software Defined Networking se refiera a la definición de redes, routers, switches y el plano de control de paquetes 
+y bytes en software. 
 
-A diferencia de IaC o la nube donde podemos definir, es cierto, recursos como un Firewall o un Router.
+A diferencia de IaC o la nube donde podemos definir, es cierto, recursos como un Firewall o un Router, en SDN, la 
+configuración de routers, switches, FW, balanceo de carga etc. se define en un código centralizado y manejado 
+ciertamente con Configuration Management.
 
-En SDN, la configuración de routers, switches, FW, balanceo de carga etc. se define en un código centralizado y manejado, ciertamente con Configuration Management.
+Cisco Nexus y otras plataformas similares brindan este servicio para empresas enormes, proveedores de internet 
+(carriers) y otros que antes tenían flotas de miles de routers y switches.  
+
+Se gestionan y optimizan los protocolos como BGP, OSPF, EIGRP, la transmisión mediante UDP, TCP, etc. y la Calidad de 
+Servicio QoS de forma centralizada
 
 #### Site Reliability Engineering (SRE)  
 
@@ -95,48 +114,60 @@ Por debajo, Terraform utiliza *providers* para cada nube, y está escrito en Go.
     
 #### [Ansible](https://www.ansible.com) :metal:
     
-    Ansible permite actualizar y configurar servidores, dispositivos de red y nubes completas mediante ssh con una configuración sencilla basado en YAML, Jinja y GNU/Linux. 
- 
-    Está escrito en Python y utiliza Requests.   
+Ansible es un sistema y lenguaje de configuración en YAML que permite actualizar y configurar servidores, 
+dispositivos de red y nubes completas mediante ssh con una configuración sencilla.
+
+Para mayor complejidad se maneja el sistmema de plantillas Jinja.
+
+Está escrito en Python y utiliza Requests.
 
 #### [Chef](https://www.chef.io) :+1:
 
-    Chef es un sistema de manejo de configuración en Ruby, basado en servidores que manejan un entorno (environment) y configuraciones, y agentes que los despliegan.
+Chef es un sistema de manejo de configuración en Ruby, basado en servidores que manejan un entorno (environment) y configuraciones, y agentes que los despliegan.
 
 #### [Packer](https://www.packer.io) :+1:
 
-    Packer de Hashicorp es una herramienta para crear imágenes AMI (AWS), OVF (VMware)...
-
-    Se puede partir de un sistema vivo o un .iso y ejecutar un provisioner de forma similar a Terraform, que puede ser Ansible por ejemplo.
+Packer de Hashicorp es una herramienta para crear imágenes AMI (AWS), OVF (VMware), GCP, Azure, con el software 
+requerido, o tomar una imágen automatizada de un sistema existente. Se puede partir de un sistema vivo o un .iso y 
+ejecutar un provisioner de forma similar a Terraform, que puede ser Ansible por ejemplo.
 
 #### [Fabric](http://www.fabfile.org) :metal:
  
-    Fabric es una librería completa en Python para configuración y automatización remota o local del sistema.  
+Fabric es una librería completa en Python para configuración y automatización remota o local del sistema en base a 
+SSH u otros transportes. Es un rival empedernido de Ansible y las demás cool kids on the block que tiene un lugar 
+importante en algunas empresas.
  
 #### Jenkins :point_up:
 
-    El estándar industrial para la automatización del desarrollo. Jenkins inició como un soporte para pipelines de integración contínua en Java. Ahora corre la mitad del Internet
-    
-    ...  
+El estándar industrial para la automatización del desarrollo. 
+
+Jenkins inició como un soporte para pipelines de integración contínua en Java, luego paso a continuous delivery. 
+
+Ahora corre la mitad del Internet
+ 
 
 #### [Travis CI](https://travis-ci.org/)
 
-    Integración continua, como un servicio. Quizás, la alternativa más conocida a Jenkins.  
+Integración continua, como un servicio. Quizás, la alternativa más conocida a Jenkins.  
+
 
 #### Kubernetes
 
-Kubernetes es un software poderoso para orquestar o gestionar varios hasta miles de workloads de software 
-simultáneamente, 
-compartiendo recursos como ser VM's en la nube, bases de datos, espacio de red lógica y separando datos y flujos 
-mediante namespaces. 
+Kubernetes es el software poderoso para orquestar o gestionar varios hasta miles de workloads de software 
+simultáneamente, compartiendo recursos como ser VM's en la nube, bases de datos, espacio de red lógica y separando 
+datos y flujos mediante namespaces. 
    
-Kubernetes permite desarrollar rápidamente en base a microservicios o monolitos con múltiples instancias, abstraer 
-la infrastructura de base como ser CPU, Memoria, IO y regular el uso de la misma en base a cuota y observación en 
-tiempo real. Muchos o la mayoría de grandes servicios en Internet hoy en día corren sobre Kubernetes.
+Kubernetes permite desarrollar rápidamente en base a microservicios o monolitos con múltiples instancias, 
+escaladas horizontalmente o verticalmente de forma automática y contínua.
+
+K8s nos permite abstraer la infrastructura de base como ser CPU, Memoria, IO y regular el uso de la misma en base a 
+cuota y observación en tiempo real. 
+
+Muchos o la mayoría de *grandes* servicios en Internet hoy en día corren sobre Kubernetes.
 
 #### Nomad
 
-Nomad es la antitesis de Kubernetes, es decir es un software para orquestrar microservicios y servicios a gran 
+Nomad es la antitesis de Kubernetes, es decir es un software para orquestrar microservicios y servicios a gran  
 escala en base a un binario de menos de 100MB, contrapuesto a Kubernetes que son como 10 componentes.
 
 Aún así, la idea básica es la misma, YAML para configuración, Consul o un service mesh para coordinar servicios y 
@@ -149,10 +180,19 @@ Minikube, Docker Compose, etc. que permiten correr contenedores Docker en VM o l
 
 #### JSON
 
-    Javascript Object Notation.  Así, feo como suena.
+Javascript Object Notation.  Así, feo como suena.
 
-#### YAML       
-       ---
+#### YAML     
+
+YAML es un markup language, es decir un texto de configuración con reglas claras y uso extendido en sistemas como 
+Ansible, Google Cloud, Amazon Web Services, Azure, y muchos otros.  En resumen, un documento YAML inicia con tres 
+guiones (---) o directamente con el código.
+
+En YAML se pueden definir variables sencillas, datatypes comunes como strings y integers y flotas, además de 
+estructuras de datos complejas como Diccionarios recursivos, Listas y combinaciones de ambos en niveles arbitrarios 
+de profundidad.
+       
+        ---
         xid: 0
           name: un archivo YAML contiene datos
           que_no_es: "Yaml Ain't a Markup Language"
