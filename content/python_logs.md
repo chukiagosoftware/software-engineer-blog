@@ -7,8 +7,9 @@ Summary: Python logs with Regex and Pandas
 ### The logfile, old frenemy  :poop: 
 
 From time to time, shit happens. In this trying time, you will have no choice but to review some logs. Times 
-have changed and whereas our tools of choice used to be *Notepad++* or a good old *Nagios* handler.  Now most likely 
-you will be reading logs in a fancy colorful GUI running *Grafana*, *Kibana*, *Datadog* or whathaveyou replacement 
+have changed and whereas our tools of choice used to be *egrep*, *Notepad++* or a good old *Nagios* handler.  Now most 
+likely you will be reading logs in a fancy colorful GUI running *Grafana*, *Kibana*, *Datadog* or whathaveyou 
+replacement 
 tool your employer has had the brilliant idea to use instead of industry best practices  :smile:
 
 Take this Revolutionary moment in time:
