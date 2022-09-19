@@ -53,9 +53,9 @@ Una vez confirmado, ejecuto siempre el setup.py ya que quiero tener esos Emoji.
 
 ---
 
-### Stork Search (Rust)
+### Stork Search (Rust)  :muscle:
 
-Adicionalmente en la última encarnación, el Blog utiliz el tema Papyrus, que incluso pelican-search además de las 
+Adicionalmente en la última encarnación, el Blog utiliza el tema Papyrus, que incluye pelican-search además de las 
 tablas de contenido.  El Pelican Search se basa en un módulo Rust que es [Stork Search](https://stork-search.net) y 
 realmente es muy rápido al indexar texto, digamos un ElasticSearch localizado o para el edge, buenazo.
 
@@ -65,7 +65,7 @@ le comanda instalar Stork.
 
 Primero intenté instalar Stork directamente lo cual funciona, pero luego Netlify no permite poner esto en el PATH de 
 ejecución y falla sin encontrarlo. Probablemente es una medida de seguridad importante no permitir la ejecución de 
-binarios arbitrarios :muscle: entonces no le busqué más pies al gato y asumo el costo de instalar todo Rust stable 
+binarios arbitrarios, entonces no le busqué más pies al gato y asumo el costo de instalar todo Rust stable 
 en cada deploy por ahora.
 
 :hankey: Could not find Stork in $Path
@@ -74,9 +74,8 @@ en cada deploy por ahora.
     chmod +x stork-ubuntu-20-04
     
 
-:boom: Site has been deployed.
+Site has been deployed. :boom: 
 
-    #!/usr/bin/env bash
-    rustup toolchain install stable
-    cargo install stork-search --locked
-
+     #!/usr/bin/env bash
+     rustup toolchain install stable
+     cargo install stork-search --locked

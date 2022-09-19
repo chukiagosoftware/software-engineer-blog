@@ -108,7 +108,7 @@ Here, Pythons regex engine or built-in module *re* can shine.
 ### Using Pandas  :panda_face:
 
 Yeah but, that's old school, right? Everyone wants to use Pandas nowadays, and we are onboard. Pandas is 
-amazing, powerful and fast.  However it doesn't magically read all your data in the fields you want, still gotta do 
+amazing, powerful and fast.  However, it doesn't magically read all your data in the fields you want, still gotta do 
 the data preparation. 
 
 At a large scale, we can call this "Extract, Transform and Load" and send it through some 
