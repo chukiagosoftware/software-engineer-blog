@@ -34,7 +34,8 @@ those used on this [Pelican](https://docs.getpelican.com) blog! Go me!!  :rotati
 the ass, but adding extensions is relatively easy. I used the current 3.4.1 version with InlineProcessor and then went for a  :bike:  ride. 
 
 If you realize these Github icons are kind of large by default, 64x64. To fix that, I used some magical CSS, see 
-below!  Full details are [right here]({filename}../pelican_github_emojis.md)
+below!  Full details are [right here]({filename}../pelican_github_emojis.md).  This still leaves the question of 
+handling spaces around emojis better, which we'll tackle at some point.
 
 
      .ghe_emoji img{
