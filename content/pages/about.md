@@ -28,11 +28,14 @@ More about Infra as Code in the [DevOps and SRE Glossary]({filename}../sre_devop
 com/edam-software/python_markdown_github_emoji_extension) to easily add them to .md files such as 
 those used on this [Pelican](https://docs.getpelican.com) blog! Go me!!  :rotating_light:
 
-[Python Markdown](https://python-markdown.github.io/extensions/api/#inlineprocessors) internals are a pain in 
-the ass, but adding extensions is relatively easy. I used the current 3.4.1 version with 
-**InlineProcessor** and then I had a :tropical_drink: or two. Just kidding, I probably went for a :bike: ride.
 
-If you realize these Github icons are kind of large by default, 64x64. To fix that, I used some magical CSS:
+
+[Python Markdown](https://python-markdown.github.io/extensions/api/#inlineprocessors) internals are a pain in 
+the ass, but adding extensions is relatively easy. I used the current 3.4.1 version with InlineProcessor and then went for a  :bike:  ride. 
+
+If you realize these Github icons are kind of large by default, 64x64. To fix that, I used some magical CSS, see 
+below!  Full details are [right here]({filename}../pelican_github_emojis.md)
+
 
      .ghe_emoji img{
         padding: 0;
