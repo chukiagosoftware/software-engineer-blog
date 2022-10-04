@@ -1,4 +1,4 @@
-Title: Emojis de Github en Python Markdown
+Title: Emojis de Github con Python Markdown
 Category: Emojis
 Tags: Python, Regex, Pelican, Markdown, Emoji
 Date: July 10, 2020
@@ -142,6 +142,28 @@ correspondiente que convierte a los emoji en inline_block del tamaño del texto.
 
 ---
 
+Test/usage
+
+        txt = """
+         line 1 :fight:
+         line 2 :smiley:
+         line 3 :metal:
+         """
+        
+        result = markdown.markdown(txt, extensions=[GheEmoji.load_from_github()])
+        assert result == """<p>line 1 
+         line 2 <img alt="smiley" src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png?v8" title="smiley" />
+         line 3 <img alt="metal" src="https://github.githubassets.com/images/icons/emoji/unicode/1f918.png?v8" title="metal" /></p>"""
+        
+        # plus_one = """
+        # :+1: the plus sign
+        # """
+        #
+        # thumbs_up = markdown.markdown(plus_one, extensions=[GheEmoji.load_from_github()])
+        # print(thumbs_up)
+
+___
+
 #### Desplegar el blog con módulo emoji en Netlify. 
 
 Netlify nos permite ejecutar cualquier comando Linux, que generalmente será alguna herramienta para builds y en este 
@@ -156,6 +178,8 @@ configuramos Netlify para hacer un branch deploy.
 Y zás, está este blog emojiado :bowing_man:
 
 ---
+
+
 
 En [CICD con Netlify]({filename}netlify.md) hablare más sobre estrategias de despliegue.
 
