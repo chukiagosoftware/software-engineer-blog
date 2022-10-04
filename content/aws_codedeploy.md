@@ -79,7 +79,7 @@ module.py:
 
 All set, we can now upload our Docker image to the Amazon Elastic Container Registry for use in a Lambda Function.
 
-![Create AWS Lambda Function from Docker Image]({attach}/images/aws_create_lambda.png)
+![Create AWS Lambda Function from Docker Image]({attach}images/aws_create_lambda.png)
 
 However, this docker image won't know what to do when Lambda sends it's *(event, context)* information, not yet.
 
@@ -119,7 +119,7 @@ A little known feature of AWS Lambda Functions is that they can have their own U
 Balancer or API Gateway to route requests into the function.  This is very useful for simple website apps such as a 
 FastAPI developer site, or any endpoint that doesn't require heavy lifting and processing of requests. 
 
-![lambda_function_link]({attach}/images/aws_lambda_url.png})
+![lambda_function_link]({attach}images/aws_lambda_url.png})
 
 The Lambda Function link can be protected by IAM, or open to the public.  This URL can then be used as the CNAM in 
 your preferred domain management console, to route actual human users in!
