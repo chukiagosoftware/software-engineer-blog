@@ -7,12 +7,26 @@ Summary: DevOps Days La Paz 2022. Complete Terraform Cloud Kubernetes, Cloud Dep
 # DevOps de Noche :sunrise_over_mountains:
 
 Today we will deploy Google Kubernetes Engine, Terraform Cloud worspaces and variable sets, Cloud Build triggers, Cloud 
-Deploy Delivery Pipeline and Continuous Delivery for Grafana and a sample (Google) microservices app via Skaffold.
+Deploy Delivery Pipeline providing Continuous Delivery for Grafana and the sample (Google) microservices app via 
+Skaffold.
 
-Includes examples of Google Cloud VPC and subnets automation with Terraform, Terraform Cloud TFE Provider, Skaffold
+Including the Terraform resources 
+
+* *google_compute_network*
+* *google_compute_subnetwork*
+* *tfe_workspace
+* *tfe_variable-set*
+* *cloud_build_trigger* 
+* *google_clouddeploy_delivery_pipeline*
+* *google_container_cluster*
+* *google_container_node_pool*
+
+* Private Google Kubernetes clusters with access control.
+* Private Google Cloud Build worker pool 
+
 
 ## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022  
-Presentación en Apple Keynote:  https://www.youtube.com/watch?v=LOgSO0KcyTY
+Keynote Video:  [https://www.youtube.com/watch?v=LOgSO0KcyTY](https://www.youtube.com/watch?v=LOgSO0KcyTY)
 
 ## Configuración completa de Google Cloud Platform y Google Kubernetes Engine :mountain_bicyclist:
 
