@@ -14,7 +14,7 @@ Including the Terraform resources
 
 * *google_compute_network*
 * *google_compute_subnetwork*
-* *tfe_workspace
+* *tfe_workspace*
 * *tfe_variable-set*
 * *cloud_build_trigger* 
 * *google_clouddeploy_delivery_pipeline*
@@ -23,6 +23,7 @@ Including the Terraform resources
 
 * Private Google Kubernetes clusters with access control.
 * Private Google Cloud Build worker pool 
+* Skaffold via Cloud Build and via Cloud Deploy
 
 
 ## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022  
