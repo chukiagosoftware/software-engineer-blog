@@ -10,7 +10,14 @@ Today we will deploy Google Kubernetes Engine, Terraform Cloud worspaces and var
 Deploy Delivery Pipeline providing Continuous Delivery for Grafana and the sample (Google) microservices app via 
 Skaffold.
 
+## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
+
 [https://github.com/edam-software/DevOpsDeNoche](github.com/edam-software/DevOpsDeNoche)
+
+## Keynote Video
+
+.. youtube:: LOgSO0KcyTY
+
 
 Including the Terraform resources 
 
@@ -27,10 +34,6 @@ Including the Terraform resources
 * Private Google Cloud Build worker pool 
 * Skaffold via Cloud Build and via Cloud Deploy
 
-
-## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
-
-Keynote Video  .. youtube:: LOgSO0KcyTY
 
 ## Configuración completa de Google Cloud Platform y Google Kubernetes Engine :mountain_bicyclist:
 
@@ -80,6 +83,7 @@ Con este Workspace inicial se definen otros cuatro Workspaces de Terraform Cloud
 de Hashicorp. De esta forma automatizamos la configuración de Terraform Cloud mismo.
 
 ### terraform-cloud - la configuración base que brinda los otros 4 Workspace, y variables compartidas definidas arriba
+
 
 * var.region
 * var.subnets
