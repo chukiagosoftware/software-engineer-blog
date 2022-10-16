@@ -10,6 +10,8 @@ Today we will deploy Google Kubernetes Engine, Terraform Cloud worspaces and var
 Deploy Delivery Pipeline providing Continuous Delivery for Grafana and the sample (Google) microservices app via 
 Skaffold.
 
+[https://github.com/edam-software/DevOpsDeNoche](github.com/edam-software/DevOpsDeNoche)
+
 Including the Terraform resources 
 
 * *google_compute_network*
@@ -26,8 +28,9 @@ Including the Terraform resources
 * Skaffold via Cloud Build and via Cloud Deploy
 
 
-## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022  
-Keynote Video:  [https://www.youtube.com/watch?v=LOgSO0KcyTY](https://www.youtube.com/watch?v=LOgSO0KcyTY)
+## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
+
+Keynote Video  .. youtube:: LOgSO0KcyTY
 
 ## Configuración completa de Google Cloud Platform y Google Kubernetes Engine :mountain_bicyclist:
 
@@ -76,10 +79,11 @@ Con este Workspace inicial se definen otros cuatro Workspaces de Terraform Cloud
 [proveedor TFE](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/workspace_variable_set)
 de Hashicorp. De esta forma automatizamos la configuración de Terraform Cloud mismo.
 
-* terraform-cloud - la configuración base que brinda los otros 4 Workspace, y variables compartidas definidas arriba
-  * var.region
-  * var.subnets
-  * var.entorno
+### terraform-cloud - la configuración base que brinda los otros 4 Workspace, y variables compartidas definidas arriba
+
+* var.region
+* var.subnets
+* var.entorno
 
 De esta forma no es necesario repetir las variables en cada Workspace y configuración.  Una vez creados los 
 Workspace de trabajo, se añade la llave JSON de Google Cloud omo variable de entorno *GOOGLE_CREDENTIALS*
@@ -87,68 +91,76 @@ Workspace de trabajo, se añade la llave JSON de Google Cloud omo variable de en
 ---
 # :eight_spoked_asterisk: Workspaces de Trabajo
 
-* devops-days-servicios-google
-  * Configuración de servicios API Google Cloud Platform
-  * Creación de usuario-gke, usuario-cloudbuild y usuario-grafana para correr estos servicios
-  * Configuración de Roles IAM para estas cuentas de servicios
+### devops-days-servicios-google
 
-* devops-days-red-vpc
-  * Configuración de una Red VPC (Google Compute Network), Subnetworks, Router y Cloud NAT 
+* configuración de servicios API Google Cloud Platform
+* creación de usuario-gke, usuario-cloudbuild y usuario-grafana para correr estos servicios
+* configuración de Roles IAM para estas cuentas de servicios
+
+### devops-days-red-vpc
+
+* Configuración de una Red VPC (Google Compute Network), Subnetworks, Router y Cloud NAT 
 
 ---
 # :eight_spoked_asterisk: Kubernetes
 
 Esto permite crear clusters Kubernetes / Private GKE con subnets ya definidas y con acceso a Internet.  
 
-* devops-days-kubernetes-us-central1-a
-  * Para mayor seguridad se configuran GKE Private con nodos privados (sin IP publica). Por conveniencia se mantiene 
-    el accesso a Kubernetes master con IP pública.
-  * Se puede controlar el acceso con las variables *var.acceso_publico* y *var.cidr_autorizadas*
+### devops-days-kubernetes-us-central1-a
 
-* devops-days-kubernetes-us-east1-a
-  * Se pueden añadir más clusters GKE Kubernetes añadiendo más Workspace, en la configuracion existen dos
-  * En Terraform Cloud se define la variable *var.zone* que define la Zona donde colocar el cluster
-  * La configuración está basada en una Region Google Cloud y puede tener hasta 4 clusters en cada zona.
+* Para mayor seguridad se configuran GKE Private con nodos privados (sin IP publica). Por conveniencia se mantiene 
+  el accesso a Kubernetes master con IP pública.
+* Se puede controlar el acceso con las variables *var.acceso_publico* y *var.cidr_autorizadas*
+
+### devops-days-kubernetes-us-east1-a
+
+* Se pueden añadir más clusters GKE Kubernetes añadiendo más Workspace, en la configuracion existen dos
+* En Terraform Cloud se define la variable *var.zone* que define la Zona donde colocar el cluster
+* La configuración está basada en una Region Google Cloud y puede tener hasta 4 clusters en cada zona.
 
 ---
 
 # :eight_spoked_asterisk: CICD
 
-* devops-days-cicd
-  * El último Workspace de Terraform Cloud está dedicado a los Pipelines de CICD
-  * Integración Continua con Google Cloud Build
-  * Despliegue Continuo con Google Cloud Deploy (un Pipeline gratis en Free Tier, adicionales $15-mes)
+### devops-days-cicd
+
+* El último Workspace de Terraform Cloud está dedicado a los Pipelines de CICD
+* Integración Continua con Google Cloud Build
+* Despliegue Continuo con Google Cloud Deploy (un Pipeline gratis en Free Tier, adicionales $15-mes)
 
 --- 
 
 # :space_invader:  Apps de Ejemplo
 
-* Grafana
+### Grafana
   * Se despliega Grafana de la siguiente forma:
+  
+    gcloud deploy releases create grafana --project=days-devops --delivery-pipeline=pipeline-demo --region=us-central1 --to-target=dev-central1-a-target
 
-* Google Microservices
-  * Una aplicación de tienda en linea ejemplo de Google Cloud Platform
-  * Se despliega de forma automatica a Kubernetes utilizando Cloud Build y Skaffold
-  * Se debe hacer Git Fork del repo https://github.com/edam-software/google-microservices-demo
+### Google Microservices
+
+* Una aplicación de tienda en linea ejemplo de Google Cloud Platform
+* Se despliega de forma automatica a Kubernetes utilizando Cloud Build y Skaffold
+* Se debe hacer Git Fork del repo https://github.com/edam-software/google-microservices-demo
 
 
 ---
 Tabla de Contenido del Repositorio
 
 # Capítulo Zero: Formato y pruebas de variables Terraform
-[1 Probando Variables](1probando_variables/readme.md)
+[1 Probando Variables](https://github.com/edam-software/DevOpsDeNoche/blob/main/1probando_variables/readme.md)
 
 # Capítulo Uno: Diseñando Organizacion Google en Terraform para Escalar a Trescientos Desarrolladores.
 
-[2 Arquitectura de la Organización DevOps](2_organizacion_acme.com.bo/readme.md)
+[2 Arquitectura de la Organización DevOps](https://github.com/edam-software/DevOpsDeNoche/blob/main/2_organizacion_acme.com.bo/readme.md)
 
 # Capítulo Dos: Definir la Organizacion, Roles y Permisos en Terraform
-[3 Terraform Cloud, GCP Network, Kubernetes, IAM](3_infraestructura_escalable/servicios-google/readme.md)
+[3 Terraform Cloud, GCP Network, Kubernetes, IAM](https://github.com/edam-software/DevOpsDeNoche/blob/main/3_infraestructura_escalable/servicios-google/readme.md)
 
 # Capítulo Tres: Kubernetes, Red VPC
 
-[3 Kubernetes](3_infraestructura_escalable/kubernetes/readme.md)
-[3 Red VPC](3_infraestructura_escalable/red)
+[3 Kubernetes](https://github.com/edam-software/DevOpsDeNoche/blob/main/3_infraestructura_escalable/kubernetes/readme.md)
+[3 Red VPC](https://github.com/edam-software/DevOpsDeNoche/blob/main/3_infraestructura_escalable/red)
 
 # Capítulo Cuatro: CI/CD y Pipelines para Desarrollo y Publicacion Agiles
-[3 Pipelines](3_infraestructura_escalable/pipelines)
+[3 Pipelines](https://github.com/edam-software/DevOpsDeNoche/blob/main/3_infraestructura_escalable/pipelines)
