@@ -28,9 +28,7 @@ DEFAULT_LANG = 'en'
 SUBTITLE = 'Terraform, Python, Pelican, Cloud DevOps'
 COPYRIGHT = '©2022'
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = [
-    'pelican_youtube', 'readtime', 'search', 'neighbors', 'pelican-toc'
-]
+PLUGINS = ['readtime', 'search', 'neighbors', 'pelican-toc']
 
 # Site search plugin
 SEARCH_MODE = "output"
@@ -62,7 +60,7 @@ GITHUB_URL = 'http://www.github.com/edam-software'
 
 DISPLAY_PAGES_ON_MENU = True
 DIRECT_TEMPLATES = (('index', 'search', 'tags', 'categories', 'archives',))
-PAGINATED_TEMPLATES = {'index':None,'tag':None,'category':None,'author':None,'archives':24,}
+PAGINATED_TEMPLATES = {'index': None, 'tag': None, 'category': None, 'author': None, 'archives': 24, }
 
 USE_FOLDER_AS_CATEGORY = False
 

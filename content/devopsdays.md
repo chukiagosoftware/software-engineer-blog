@@ -141,8 +141,11 @@ Esto permite crear clusters Kubernetes / Private GKE con subnets ya definidas y 
 
 ### Grafana
   * Se despliega Grafana de la siguiente forma:
-  
-    gcloud deploy releases create grafana --project=days-devops --delivery-pipeline=pipeline-demo --region=us-central1 --to-target=dev-central1-a-target
+
+
+    gcloud deploy releases create grafana --project=days-devops \
+          --delivery-pipeline=pipeline-demo \
+          --region=us-central1 --to-target=dev-central1-a-target
 
 ### Google Microservices
 

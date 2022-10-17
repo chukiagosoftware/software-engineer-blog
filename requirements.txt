@@ -1,6 +1,5 @@
 markdown
 pelican[markdown]
-pelican-youtube
 beautifulsoup4
 pelican-search
 pelican-neighbors
