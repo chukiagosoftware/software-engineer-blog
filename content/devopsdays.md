@@ -11,6 +11,8 @@ Today we will deploy Google Kubernetes Engine, Terraform Cloud worspaces and var
 Deploy Delivery Pipeline providing Continuous Delivery for Grafana and the sample (Google) microservices app via 
 Skaffold.
 
+![Keynote Presentation]({attach}images/devops_presentation.tiff)
+
 ## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
 
 [https://github.com/edam-software/DevOpsDeNoche](github.com/edam-software/DevOpsDeNoche)
