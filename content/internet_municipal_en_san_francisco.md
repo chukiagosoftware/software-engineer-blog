@@ -2,6 +2,8 @@ Title: Internet Municipal en San Francisco, USA
 Date:  December 2, 2017
 Category: MejorInternet
 Summary: Municipal internet in San Francisco, shared deployment
+Authors: Eric Arellano
+Tags: Technology
 
 "Igual que en el resto del país, los vecinos con menos recursos y menor acceso a la educación en lugar de conectarse banda ancha cableada usualmente dependen del plan de datos en su smartphone, ningún sustituto, dados los costos y limitaciones a las descargas, para lo que es posible con conexión cableada.
 

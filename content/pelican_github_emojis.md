@@ -2,7 +2,8 @@ Title: Emojis de Github con Python Markdown
 Category: Emojis
 Tags: Python, Regex, Pelican, Markdown, Emoji
 Date: July 10, 2020
-Summary: Python Markdown extension for Github Emojis used in this Pelican blog 
+Summary: Python Markdown extension for Github Emojis used in this Pelican blog
+Authors: Eric Arellano
 
 
 ### Pelican blog with Python Markdown

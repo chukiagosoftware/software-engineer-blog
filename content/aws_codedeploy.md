@@ -1,7 +1,8 @@
 Title: Deploying FastAPI Docker container to AWS Lambda
 Date:  October 1, 2022
 Category: CICD
-Tags: AWS, FastAPI, Lambda, Docker, Python 
+Tags: AWS, FastAPI, Lambda, Docker, Python
+Authors: Eric Arellano
 Summary: Deploy FastAPI (Python ASGI) to AWS Lambda with CodeDeploy
 
 # Part 1: Deploying FastAPI app to AWS Lambda with Docker image

@@ -1,8 +1,9 @@
 Title: Glosario DevOps
 Date: June 15, 2020
 Category: SRE
-Tags: DevOps, IaC, CICD, PaaS, SRE
+Tags: DevOps, IaC, CICD, PaaS, SRE, Terraform
 Summary: A Glossary of DevOps and SRE-related tools and terminology
+Authors: Eric Arellano
 
 ## Los Conceptos
 

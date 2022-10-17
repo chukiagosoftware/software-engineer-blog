@@ -2,6 +2,7 @@ Title: My DevOps Days La Paz presentation with Terraform Cloud, GKE, Skaffold
 Date:  October 15, 2022
 Category: Terraform
 Tags: Terraform, Skaffold, Kubernetes, GKE, CloudDeploy, Grafana
+Authors: Eric Arellano
 Summary: DevOps Days La Paz 2022. Complete Terraform Cloud Kubernetes, Cloud Deploy, Skaffold configuration
 
 # DevOps de Noche :sunrise_over_mountains:
@@ -16,10 +17,12 @@ Skaffold.
 
 ## Keynote Video
 
-.. youtube:: LOgSO0KcyTY
 
+<div class="youtube youtube-16x9">
+<iframe src="https://www.youtube.com/embed/LOgSO0KcyTY" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
 
-Including the Terraform resources 
+### How to use the Terraform resources 
 
 * *google_compute_network*
 * *google_compute_subnetwork*

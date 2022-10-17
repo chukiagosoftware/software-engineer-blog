@@ -2,6 +2,7 @@ Title: Software Libre Soberano?
 Date: November 10, 2020
 Category: Tecnologia
 Tags: Linux, Nube, Economia
+Authors: Eric Arellano
 
 
 Primero, qué es software libre? Algunos diremos: el sistema operativo GNU/Linux. Ok, pero, y eso se come? 
@@ -21,6 +22,7 @@ Entonces, Software Libre no es sólo una buena idea. Es la realidad fundacional 
 Agradeciendo y haciendo eco de las iniciativas de varias personas sobre Software Libre y tecnología en Bolivia.
 
 Aprovecho de añadir mi granito de arena con otras perspectivas.
+
 
 <iframe id="ytplayer" type="text/html" width="640" height="360"
   src="https://www.youtube.com/embed/yqMoEMwtqpU?autoplay=1&origin=http://ericarellano.tech"

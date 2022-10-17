@@ -2,6 +2,7 @@ Title: Descargas asíncronas con Asyncio, aiohttp
 Date:  December 1, 2020
 Category: Python
 Tags: Python, Asyncio, Emoji, requests, aiohttp
+Authors: Eric Arellano
 Summary: Switch from requests to aiohttp for emoji downloads, save time
 
 ### Download Github Emojis locally 

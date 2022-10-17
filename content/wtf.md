@@ -2,6 +2,8 @@ Title: WTF
 Category: Tecnologia
 Tags: Startups, Nube, Tecnologia, Economia
 Date: January 1, 2020
+Authors: Eric Arellano
+Summary: Tim O'Reilly WTF book, the map for next 10 years
 
 ### WTF
  

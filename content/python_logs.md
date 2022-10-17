@@ -3,6 +3,7 @@ Category: Python
 Tags: , SRE, DevOps, Data Science
 Date: September 18, 2022
 Summary: Python logs with Regex and Pandas
+Authors: Eric Arellano
 
 ### The logfile, old frenemy  :poop: 
 

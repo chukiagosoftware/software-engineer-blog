@@ -1,7 +1,8 @@
 Title: The Devops Rough cli / Bash Guide
 Category: SRE
-Tags: DevOps, Bash, Linux, BadEmojis
+Tags: DevOps, Bash, Linux, Emojis
 Date: July 24, 2021
+Authors: Eric Arellano
 Summary: Useful bash commands for DevOps
 
 ## Useful Bash commands for DevOps work    :toolbox:
