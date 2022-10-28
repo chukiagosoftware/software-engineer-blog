@@ -49,7 +49,9 @@ LINKS = (('Pagina Siete', 'http://www.paginasiete.bo'),
 
 # Social widget
 SOCIAL = [('github', 'http://www.github.com/edam-software'),
-          ('mastodon', 'https://hachyderm.io/@actuallybolivian')]
+          ('mastodon', 'https://hachyderm.io/@actuallybolivian'),
+          ('twitter', 'http://twitter.com/edamsoft'),
+          ('linkedin', 'https://www.linkedin.com/in/eric-arellano-martinez/')]
 
 DEFAULT_PAGINATION = 10
 
