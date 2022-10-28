@@ -48,7 +48,8 @@ LINKS = (('Pagina Siete', 'http://www.paginasiete.bo'),
          )
 
 # Social widget
-SOCIAL = [('Github', 'http://www.github.com/edam-software')]
+SOCIAL = [('github', 'http://www.github.com/edam-software'),
+          ('mastodon', 'https://hachyderm.io/@actuallybolivian')]
 
 DEFAULT_PAGINATION = 10
 
