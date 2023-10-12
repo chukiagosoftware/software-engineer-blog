@@ -1,6 +1,6 @@
 Title: The Stacks
 
-## :sunrise:  
+### Welcome :sunrise:  
 
 This is a software engineering microblog focusing on Infrastructure as Code with Terraform and Ansible, DevOps and 
 Cloud Infrastructure how-tos and how-nots, Python automation, async and MLOps.
@@ -13,6 +13,7 @@ And deployed using [Netlify](https://www.netlify.com) and all is well and good. 
 Other options considered for deployment were Google App Engine, due to the original blog inspiration for this 
 microblog or [Render](https://www.render.com) another Heroku-like platform. 
 
+
 ### Infrastructure as Code :bridge_at_night:
 
 IaC is sort of like the bridge between fear, uncertainty, doubt or paradise. It can be pretty fun to work on IaC. I 
@@ -20,39 +21,29 @@ believe it is a vital component of deploying successful highly performant data i
 
 I have worked on Infrastructure as Code and DevOps with the following Stacks:
 
-
-#### Software Stacks
-
-Stacks which have worked with:
+####  Stacks
 
 * Ruby on Rails
 * Jquery/JqueryUI
-* Linux Apache MySQL PHP or **LAMP**
-* Java Spark
+* Linux Apache MySQL PHP (**LAMP**)
 * Java Spring Boot
 * Java Tomcat
 * Python Flask
 * Python FastAPI
 * Debian/Ubuntu
 * Redhat/Fedora/CentOS
-* MacOS amd64/arm64
 * Docker/BuildKit
 * Confluent Kafka
 * ActiveMQ/RabbitMQ
-* Cassandra
-* Postgres
-* Microsoft SQL
+* Postgres, Microsoft SQL
 * Cisco Communications Manager
-* Cisco Unified Border Element
 * Cisco IP Contact Center
-* Cisco Unity Voicemail
 * Cisco Integrated Services Router
-* Cisco Intrusion Detection Sensor
-* OpenSIPS Session Border Controller
-* Freeswitch Voice Over IP
+* OpenSIPS, Freeswitch Voice Over IP
 
 
 ##### IaC Glossary
+
 
 If any of these are new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md)
 
@@ -65,19 +56,36 @@ If any of these are new, check out the [opinionated IaC Glossary]({filename}../s
 
 ---
 
-#### Github Emojis
+### Python Stuff :snake:
+<a name="python"a></a>
+
+
+##### Faster parallel downloads with aiohttp
+
+[aiohttp]({filename}../async_requests.md) 
+
+##### Python Markdown Github Emoji extension
+
+[pelican_github_emojis]({filename}../pelican_github_emojis.md)
+
+##### Github Emojis
 
 A simply [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) 
 to add Github Emojis [Pelican](https://docs.getpelican.com)! :necktie:
 
 
-#### Python HTTPX Async
+##### Twitter httpx AsyncIO
 
-[Simply **httpx** based Python AsyncIO](https://github.com/edamsoft-sre/twitter-async-python) library to download files from Wordpress Webdav very quickly and reliably.
+[twitter asyncIO](https://github.com/edamsoft-sre/twitter-async-python) httpx and 
+Pydantic based AsyncIO Twitter library for use with FastAPI
+
+##### Workdpress async files download with httpx
+
+[httx wordpress](https://gist.github.com/edamsoft-sre/ee55e865f5f4a0615149b93da994ba46)
 
 
 
-#### Terraform
+### Terraform
 <a name="terraform"></a>
 
 Designed and architected secure, scaleable cloud infrastructure on Google Cloud Platform, Amazon Web Services, 
@@ -91,7 +99,8 @@ Terraform Cloud and Terraform Enterprise automation, policy and audit validation
 :rocket:
 
 ---
-####  Kubernetes  :steam_locomotive:    
+
+###  Kubernetes  :steam_locomotive:    
 <a name="kubernetes"></a>
 
 Learning Kubernetes? Besides the excellent [K8S docs](https://kubernetes.io) I would recommend these Udemy courses:
@@ -120,39 +129,31 @@ Nomad. While the Nomad ecosystem is smaller, it is a readily viable option to sc
 and unecessary YAML / Helm bloat.
 
 ---
-### Python :snake:
-<a name="python"></a>
 
-Python is THE snake. But it's also an amazing programming language which you've never heard of until this blog. I've 
-had some good fun with Python over the years, and hopefully I'll find time to write about it here.
+### Cloud DevOps, CICD :umbrella:
 
-* Contact Center automation
-* Flask websites
-* FastAPI, Httpx, [Aiohttp]({filename}../async_requests.md) 
-* Pelican static site
-* [Python Markdown Github Emoji extension]({filename}../pelican_github_emojis.md)
+Everything today is "in the cloud"  :cloud:  Cloud are fun. Basically from a low level user perspective, a cloud is 
+just a CRUD REST API. You can GET, PUT (update), POST (create), and DELETE resources such as a 
+Google Kubernetes Engine cluster, a Confluent Kafka cluster, a bucket to store some data, or a Project to run 
+things in securely. 
 
- ---
-#### Cloud DevOps, CICD :umbrella:
-
-Everything today is "in the cloud"  :cloud:  Cloud are fun. Basically from a user perspective, a cloud is just a 
-REST API (or tons of them). You can GET, PUT (update), POST (create), and DELETE resources such as a Google 
-Kubernetes Engine cluster, or a Confluent Kafka cluster, a bucket to store some data, or a Project to run things in 
-securely. All of this hypothetically can be done using good old Python **requests**, or even **curl** but there are 
+All of this hypothetically can be done using good old Python **requests**, or even **curl** but there are 
 even easier ways to automate all of that.  
 ---
 
 #### Ansible :alien:
 <a name="ansible"></a>
 
-Ansible is a really good best in the world tool for automating servers and Cloud resources. It's based on Python, so 
-you can make your own modules or fix existing ones if you want very easily.
+Ansible is the best in the world tool for automating servers and cloud resources. It's based on Python, so 
+you can make your own modules or patch existing ones very easily.
 
 At the core, Ansible is running Python requests or a built-in version of it with paramiko-ssh client. And then it is 
-running Python scripts and commands on the remote hosts. That's it.
+running Python scripts and commands on the remote hosts.
 
 But most things, from standard GNU/Linux system operations, to deploying cloud resources 
-have a module already. The syntax is YAML, but somehow beautiful anyway.
+have an Ansible module already. The syntax is YAML, but somehow beautiful anyway.
+
+Ansible has an ecosystem of vendor products such as Ansible Tower, but you can also roll your own setup.
 
 ---
 
@@ -160,16 +161,12 @@ have a module already. The syntax is YAML, but somehow beautiful anyway.
 
 * Amazon Web Services
 * Google Cloud Platform 
-* Digital Ocean
-* Azure
+* Microsofit Azure
 * Netlify
-* Oracle Cloud
-* Render
-* Serverless Lambda, Cloud Functions
 * Agile, Jira, Confluence, Slack
 * Pagerduty, Opsgenie
-* Silicon Valley
 
-I used them and survived. Maybe I'll write about it some more here. Stay tuned! Peace
+
+Stay tuned! Peace
 
 :beach_umbrella:
