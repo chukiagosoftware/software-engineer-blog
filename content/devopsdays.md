@@ -15,7 +15,7 @@ Skaffold.
 
 ## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
 
-[https://github.com/edam-software/DevOpsDeNoche](github.com/edam-software/DevOpsDeNoche)
+[https://github.com/edamsoft-sre/DevOpsDeNoche](github.com/edam-software/DevOpsDeNoche)
 
 ## Keynote Video
 
@@ -62,7 +62,7 @@ Skaffold.
   * Service Usage Admin
 
 * Esta llave se coloca en Terraform Cloud como variable de entorno *GOOGLE_CREDENTIALS*
-* Hacer Git Fork del repositorio https://github.com/edam-software/DevOpsDeNoche
+* Hacer Git Fork del repositorio https://github.com/edamsoft-sre/DevOpsDeNoche
 * Actualizar *vcs_repo* en los recursos *tfe_workspace* con los datos del Fork en 
   
      3_infraestructura_escalable/terraform-cloud/workspaces.tf
@@ -153,26 +153,26 @@ Esto permite crear clusters Kubernetes / Private GKE con subnets ya definidas y 
 
 * Una aplicación de tienda en linea ejemplo de Google Cloud Platform
 * Se despliega de forma automatica a Kubernetes utilizando Cloud Build y Skaffold
-* Se debe hacer Git Fork del repo https://github.com/edam-software/google-microservices-demo
+* Se debe hacer Git Fork del repo https://github.com/edamsoft-sre/google-microservices-demo
 
 
 ---
 Tabla de Contenido del Repositorio
 
 # Capítulo Zero: Formato y pruebas de variables Terraform
-[1 Probando Variables](https://github.com/edam-software/DevOpsDeNoche/blob/main/1probando_variables/readme.md)
+[1 Probando Variables](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/1probando_variables/readme.md)
 
 # Capítulo Uno: Diseñando Organizacion Google en Terraform para Escalar a Trescientos Desarrolladores.
 
-[2 Arquitectura de la Organización DevOps](https://github.com/edam-software/DevOpsDeNoche/blob/main/2_organizacion_acme.com.bo/readme.md)
+[2 Arquitectura de la Organización DevOps](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/2_organizacion_acme.com.bo/readme.md)
 
 # Capítulo Dos: Definir la Organizacion, Roles y Permisos en Terraform
-[3 Terraform Cloud, GCP Network, Kubernetes, IAM](https://github.com/edam-software/DevOpsDeNoche/blob/main/3_infraestructura_escalable/servicios-google/readme.md)
+[3 Terraform Cloud, GCP Network, Kubernetes, IAM](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/3_infraestructura_escalable/servicios-google/readme.md)
 
 # Capítulo Tres: Kubernetes, Red VPC
 
-[3 Kubernetes](https://github.com/edam-software/DevOpsDeNoche/blob/main/3_infraestructura_escalable/kubernetes/readme.md)
-[3 Red VPC](https://github.com/edam-software/DevOpsDeNoche/blob/main/3_infraestructura_escalable/red)
+[3 Kubernetes](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/3_infraestructura_escalable/kubernetes/readme.md)
+[3 Red VPC](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/3_infraestructura_escalable/red)
 
 # Capítulo Cuatro: CI/CD y Pipelines para Desarrollo y Publicacion Agiles
-[3 Pipelines](https://github.com/edam-software/DevOpsDeNoche/blob/main/3_infraestructura_escalable/pipelines)
+[3 Pipelines](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/3_infraestructura_escalable/pipelines)

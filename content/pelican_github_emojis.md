@@ -128,7 +128,7 @@ correspondiente que convierte a los emoji en inline_block del tamaño del texto.
     py_modules=['python_markdown_gh_emoji'],
     install_requires=['markdown>=3.0'],
     python_requires='>3.7',
-    url='https://github.com/edam-software/github_emojis',
+    url='https://github.com/edamsoft-sre/github_emojis',
     license="OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     author='EDAM',
     author_email='eric.arellano@hey.com',
@@ -139,7 +139,7 @@ correspondiente que convierte a los emoji en inline_block del tamaño del texto.
         "Operating System :: OS Independent"]
     )
    
-[Código completo](https://github.com/edam-software/python_markdown_github_emoji_extension)
+[Código completo](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension)
 
 ---
 

@@ -11,7 +11,7 @@ setup(
     py_modules=['python_markdown_gh_emoji'],
     install_requires=['markdown>=3.0'],
     python_requires='>3.7',
-    url='https://github.com/edam-software/github_emojis',
+    url='https://github.com/edamsoft-sre/github_emojis',
     license="OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     author='EDAM',
     author_email='eric.arellano@hey.com',
