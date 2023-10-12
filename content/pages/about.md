@@ -1,28 +1,60 @@
-Title: The Stack
+Title: The Stacks
 
 ## :sunrise:  
 
 This is a software engineering microblog focusing on Infrastructure as Code with Terraform and Ansible, DevOps and 
 Cloud Infrastructure how-tos and how-nots, Python automation, async and MLOps.
 
-Brought to you by Python 3.10 running the amazing Pelican 4.8.0 microblogging framework and custom Python Markdown 3.
+Running on Python 3.10 running the amazing Pelican 4.8.0 microblogging framework and custom Python Markdown 3.
 4.1 with Github Emojis. Because, well why not.
 
-I have deployed this using [Netlify](https://www.netlify.com) and all is well and good. Highly recommended but 
-haven't tested out many of the web-app oriented features to be quite frank.
+And deployed using [Netlify](https://www.netlify.com) and all is well and good. Highly recommended.
 
-Other options considered for deployment were Google App Engine, the original inspiration for this microblog or Render
-[Render](https://www.render.com) another Heroku-like platform. 
+Other options considered for deployment were Google App Engine, due to the original blog inspiration for this 
+microblog or [Render](https://www.render.com) another Heroku-like platform. 
 
 ### Infrastructure as Code :bridge_at_night:
 
 IaC is sort of like the bridge between fear, uncertainty, doubt or paradise. It can be pretty fun to work on IaC. I 
-prefer the following tools, which isn't really a stack but hey.
+believe it is a vital component of deploying successful highly performant data intensive distributed applications.
+
+I have worked on Infrastructure as Code and DevOps with the following Stacks:
 
 
-##### Glossary
+#### Software Stacks
 
-If any of these are new, check out the [opinionated Glossary]({filename}../sre_devops_glossary.md)
+Stacks which have worked with:
+
+* Ruby on Rails
+* Jquery/JqueryUI
+* Linux Apache MySQL PHP or **LAMP**
+* Java Spark
+* Java Spring Boot
+* Java Tomcat
+* Python Flask
+* Python FastAPI
+* Debian/Ubuntu
+* Redhat/Fedora/CentOS
+* MacOS amd64/arm64
+* Docker/BuildKit
+* Confluent Kafka
+* ActiveMQ/RabbitMQ
+* Cassandra
+* Postgres
+* Microsoft SQL
+* Cisco Communications Manager
+* Cisco Unified Border Element
+* Cisco IP Contact Center
+* Cisco Unity Voicemail
+* Cisco Integrated Services Router
+* Cisco Intrusion Detection Sensor
+* OpenSIPS Session Border Controller
+* Freeswitch Voice Over IP
+
+
+##### IaC Glossary
+
+If any of these are new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md)
 
 
 * [Terraform](#terraform)
@@ -124,7 +156,7 @@ have a module already. The syntax is YAML, but somehow beautiful anyway.
 
 ---
 
-#### Cloud
+#### Clouds and Sasses
 
 * Amazon Web Services
 * Google Cloud Platform 
@@ -133,10 +165,11 @@ have a module already. The syntax is YAML, but somehow beautiful anyway.
 * Netlify
 * Oracle Cloud
 * Render
-* Serverless
-* Agile
+* Serverless Lambda, Cloud Functions
+* Agile, Jira, Confluence, Slack
+* Pagerduty, Opsgenie
 * Silicon Valley
 
-I used them and survived. Maybe I'll write about it some more here. Stay tuned!
+I used them and survived. Maybe I'll write about it some more here. Stay tuned! Peace
 
 :beach_umbrella:

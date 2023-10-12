@@ -13,8 +13,8 @@ MARKDOWN = {
     },
     'output_format': 'html5',
 }
-AUTHOR = 'Edamsoft'
-SITENAME = 'Software engineering blog'
+AUTHOR = 'Eric Arellano Martinez'
+SITENAME = 'Erics Software Blog'
 SITEURL = 'blog.ericarellano.tech'
 THEME = 'themes/Papyrus'
 THEME_STATIC_PATHS = ['static']
@@ -25,8 +25,8 @@ LOCALE = 'en_us'
 TIMEZONE = 'America/Los_Angeles'
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'en'
-SUBTITLE = 'Terraform, Python, Pelican, Cloud DevOps'
-COPYRIGHT = '©2022'
+SUBTITLE = 'Terraform, Python, MLOps , Infrastructure as Code'
+COPYRIGHT = '©2023'
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['readtime', 'search', 'neighbors', 'pelican-toc']
 
@@ -48,9 +48,9 @@ LINKS = (('Pagina Siete', 'http://www.paginasiete.bo'),
          )
 
 # Social widget
-SOCIAL = [('github', 'http://www.github.com/edam-software'),
+SOCIAL = [('github', 'http://www.github.com/edamsoft-sre'),
           ('mastodon', 'https://hachyderm.io/@actuallybolivian'),
-          ('twitter', 'http://twitter.com/edamsoft'),
+          ('twitter', 'http://twitter.com/x'),
           ('linkedin', 'https://www.linkedin.com/in/eric-arellano-martinez/')]
 
 DEFAULT_PAGINATION = 10
@@ -59,7 +59,7 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 # BlueIdea
-GITHUB_URL = 'http://www.github.com/edam-software'
+GITHUB_URL = 'http://www.github.com/edamsoft-sre'
 
 DISPLAY_PAGES_ON_MENU = True
 DIRECT_TEMPLATES = (('index', 'search', 'tags', 'categories', 'archives',))
