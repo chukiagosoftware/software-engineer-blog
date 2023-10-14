@@ -9,9 +9,11 @@ and Cloud Infrastructure how-tos and how-nots, Kubernetes wisdom, Python AsyncIO
 notes as I complete NLP and Generative AI LLM courses online.
 
 We are running Python 3.10 and the incredible Pelican 4.8.0 microblogging framework, along with our very own Python 
-Markdown 3.4.1 extension for Github Emojis. Because, well why not. :question:
+Markdown 3.4.1 extension for Github Emojis. 
 
-Try it yourself! Just add a semi-colon before and after what should be a Github Emoji, like  :software:
+Because, well why not :question:
+
+Try it yourself! Just add a semi-colon before and after what should be a Github Emoji, like  :cheese:
 
 This site is deployed using [Netlify](https://www.netlify.com) and all is well and good. Highly recommended. Other 
 options considered for deployment were Google App Engine, due to the original blog inspiration for this 
@@ -55,14 +57,15 @@ hire next.
 
 
 
+
 ##### IaC Glossary
 
 
-If any of those were completelya new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) 
-as long as you can read in Spanish it will be of some interest.
+If any of those were new to you, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) (español)
 
 
-##### Somewhat ordered list of IaC Tools you can hire me to kick some buttola with
+### Name your Poison
+ 
 
 * [Terraform](#terraform)
 * [Ansible](#ansible) 
@@ -72,7 +75,7 @@ as long as you can read in Spanish it will be of some interest.
 
 ---
 
-### Python Stuff :snake:
+#### Python Code Snippets :snake:
 <a name="python"a></a>
 
 
@@ -80,9 +83,10 @@ as long as you can read in Spanish it will be of some interest.
 
 [aiohttp]({filename}../async_requests.md) 
 
-##### Github emoji extension for Python Markdown
+##### Github emoji extension
 
-[pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
+The [pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension]
+(https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
 allows one to add Github Emojis and make things more formal [Pelican](https://docs.getpelican.com)! :necktie:
 
 
@@ -167,6 +171,8 @@ GNU/Linux. The syntax is YAML, but somehow beautiful anyway.
 ---
 
 #### Clouds and Sasses
+
+Here are some clouds and some things that we never talk about
 
 * Amazon Web Services
 * Google Cloud Platform 
