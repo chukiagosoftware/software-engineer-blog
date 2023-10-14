@@ -6,7 +6,7 @@ save_as: index.html
 
 :sunrise:  
 
-### Welcome :trollface: 
+## Welcome :trollface: 
 
 This is my software engineering microblog focusing on Infrastructure as Code, DevOps and Site Reliability 
 Engineering (SRE). I am a Computer and Electrical Engineer (B.Sc. University of Texas, 2005), Cisco Network and VoIP 
@@ -15,29 +15,29 @@ Expert, Staff System Reliability Engineer and DevOps / Kubernetes / Cloud practi
 Here you will find some neat how-tos and how-nots on Terraform, Kubernetes, Python, FastAPI, AsyncIO and 
 system automation.
 
-##### The Icons :shipit:
+### The Icons :shipit:
 
 We are running on Python 3.10 with the Pelican 4.8.0 microblogging framework, and our custom Python Markdown 3.4.1 
 extension for the Github Emojis. 
 
-While I've done a lot of HTML/Jquery/CSS work in the past, this is about the crux of my UI skills today. I do love[good theater](https://hamiltonmusical.com/) 
-but am not much of a frontend guru. My deal is the backend, lol.
+While I've done a lot of HTML/Jquery/CSS work in the past, this is about the crux of my UI skills today. I do love 
+[good theater](https://hamiltonmusical.com/) but am not much of a frontend guru. My deal is the backend, lol.
 
 
 
-##### The Platform :feelsgood:
+### The Platform :feelsgood:
 
 This site is deployed based on Git-ops. The Python code is pushed to a main branch integrated with [Netlify](https://www.netlify.com)
 I use Jetbrains Pycharm, so this is done either by typing *git push* or Cmd-K. I highly recommend it. 
 
-Other options considered for deployment were Google App Engine,[Render](https://www.render.com) and a VM on Digital 
-Ocean or a [free Oracle VM](https://docs.oracle.com/es-ww/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm) 
+Other options considered for deployment were Google App Engine, [Render](https://www.render.com) and a VM on Digital 
+Ocean or a [free Oracle VM](https://docs.oracle.com/es-ww/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm). 
 We settled on Netlify because it works very nicely, can scale to a full blown app with CDN and content managment and 
 more imporantly [Netlify had Python 3.10]({filename}../netlify.md)  compatible images at the time.
 
 
 
-### Infrastructure as Code :bridge_at_night:
+## Infrastructure as Code :bridge_at_night:
 
 IaC is a bridge between fear, uncertainty, doubt (FUD) and paradise. It can be pretty fun to work on 
 IaC and get away from all that FUD.
@@ -58,23 +58,26 @@ Firewalls.
 
 :cloud:
 
-And then, we beheld the Cloud
+### And then, we beheld the Cloud
 
 
 :umbrella: 
 
-The Cloud was good for a while, but then it became a bit much. 
+The Cloud was good for a while, but then it became a bit much. Multiple clouds. Unclear and changing APIs. Buzzwords 
+and weekly paradigm shifts. Cloud costs. Network costs. Latency. Startup runway. Customer Acquisition Cost.
 
 
 :chart_with_upwards_trend:
 
-Enter IaC. Also known as ca ching!! For me. 
+Enter IaC. Also known as ka ching!! For me. 
 
 :moneybag:
 
 Just to be clear, I mean money. Cash money. Moolah. The kwon.
 
 :money_with_wings:
+
+This is nothing without soul. But with soul, hoooya!!!
 
 
 ####  My FIFO Stack :tanabata_tree:
