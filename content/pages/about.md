@@ -2,25 +2,36 @@ Title: The Stacks
 URL:
 save_as: index.html
 
-### Welcome :sunrise:  
 
-To this software engineering microblog focusing on Infrastructure as Code, DevOps and Site Reliability Engineering 
-(SRE). Here you will find some neat how-tos and how-nots on Terraform, Kubernetes, Python FastAPI, AsyncIO and 
-system automation. 
 
-We are running on Python 3.10, Pelican 4.8.0 microblogging framework, and our custom Python Markdown 3.4.1 extension 
-for the Github Emojis. Like cheese.
+:sunrise:  
 
-like  :cheese:
+### Welcome :izakaya_lantern: 
+
+This is my software engineering microblog focusing on Infrastructure as Code, DevOps and Site Reliability 
+Engineering (SRE). I am a Computer and Electrical Engineer (B.Sc. University of Texas, 2005), Cisco Network and VoIP 
+Expert, Staff System Reliability Engineer and DevOps / Kubernetes / Cloud practitioner with 18 years of experience.
+
+Here you will find some neat how-tos and how-nots on Terraform, Kubernetes, Python, FastAPI, AsyncIO and 
+system automation.
+
+:cheese:
+
+We are running on Python 3.10 with the Pelican 4.8.0 microblogging framework, and our custom Python Markdown 3.4.1 
+extension for the Github Emojis. 
 
 While I've done some HTML/Jquery/CSS work in the past, this is about the crux of my UI skills. I do love [good 
-theater](https://hamiltonmusical.com/) but am not much of a UI or frontend engineer, huge surprise huh.
+theater](https://hamiltonmusical.com/) but am not much of a frontend guru. My deal is the backend, lol.
 
-This site is deployed based on Git pushed to main branch using [Netlify](https://www.netlify.com). Highly  
-recommended. Other options considered for deployment were Google App Engine, [Render](https://www.render.com) and 
-some server on GCP or Digital Ocean or my old shared-webhost from the 90's. We settled on Netlify because it works very 
-nicely out of the box, in theory we can run a full blown app with CDN and content managment and more imporantly 
-Netlify had Python 3.10 compatible images at the time of writing. More on Netlify if you click on Categories.
+This site is deployed based on Git-ops. The Python code is pushed to a main branch integrated with [Netlify]
+(https://www.netlify.com). I use Jetbrains Pycharm, so this is done either by typing *git push* or Cmd-K. I highly 
+recommend it. 
+
+Other options considered for deployment were Google App Engine, 
+[Render](https://www.render.com) and a VM on Digital Ocean or a [free Oracle VM](https://docs.oracle.com/es-ww/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm) 
+We settled on Netlify because it works very nicely, can scale to a full blown app with CDN and content managment and 
+more imporantly [Netlify had Python 3.10]({filename}../netlify.md)  compatible images at the time.
+
 
 
 ### Infrastructure as Code :bridge_at_night:
@@ -35,27 +46,35 @@ timelines and the highest standards of quality and also to have a whopping good 
 I have worked on the following Stacks, and I use the term loosely in this sentence, because it was a somewhat random 
 though in retrospect very rewarding software path. 
 
-In the beginning was the Internet.  We had Cisco routers and switches and Server racks connected with FastEthernet, 
-then GigabitEthernet. Servers had power supplies and NICs and HPE ILO. Then VMware ESXi and vSphere, Load 
-Balancers, App Firewalls were the rage. And then, The Cloud
+In the beginning was the Internet.  We had Cisco routers and switches and Apache2 server racks connected with 
+FastEthernet, then GigabitEthernet. Servers had power supplies and NICs and HPE ILO. And manual internet routes.
+
+Then we learned to abstract and deployed OVMs on VMware ESXi and vSphere integrated with Network Load Balancers and App 
+Firewalls. 
+
 
 :cloud:
 
-The Cloud was good for a while, but then it became a huge stinking mess :umbrella: 
+And then, we beheld the Cloud
 
-Enter IaC :chart_with_upwards_trend:
 
-####  Eric's Stacks :tanabata_tree:
+:umbrella: 
+
+The Cloud was good for a while, but then it became a bit much 
+
+
+:chart_with_upwards_trend:
+
+Enter IaC 
+
+####  My FIFO Stack :tanabata_tree:
 
 * Linux Apache MySQL PHP (**LAMP**)
 * Ruby on Rails
-* Python Flask
-* Cisco Integrated Services Router
-* Cisco Communications Manager
-* Cisco IP Contact Center
+* Cisco Router, Communications Manager, Unified Contact Center
+* OpenSIPS, Freeswitch (Voice Over IP)
 * Jquery/JqueryUI
-* Java Tomcat
-* Java Spring Boot
+* Java Tomcat, Spring Boot
 * Python FastAPI
 * Debian/Ubuntu
 * Redhat/Fedora/CentOS
@@ -64,7 +83,6 @@ Enter IaC :chart_with_upwards_trend:
 * ActiveMQ/RabbitMQ
 * Postgres, Microsoft SQL
 * Ansible, Jenkins, Python, Kubernetes
-* OpenSIPS, Freeswitch (Voice Over IP)
 * AWS, GCP, Azure
 * Terraform Cloud
 
@@ -74,7 +92,8 @@ Enter IaC :chart_with_upwards_trend:
 ##### IaC Glossary
 
 
-If any of those were new to you, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) (español)
+If any of those sound new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) 
+(en español)
 
 
 ### SRE Toolkit
@@ -89,6 +108,15 @@ If any of those were new to you, check out the [opinionated IaC Glossary]({filen
 
 #### Python Code Snippets :snake:
 <a name="python"a></a>
+
+Python is really versatile and has our back even when we don't know it such as with Ansible, and most cloud tools 
+including **gcloud** and **az** CLI. Lately Python has become hot and apps that a few years ago would have been 
+built in Java and then Go are now using AsyncIO and ASGI based libraries like FastAPI and Uvicorn to rival execution 
+times and provide a smoother bridge to the Data Science Python ecosystem.
+
+I've recently designed, written and helped to scale and monitor FastAPI and AioHTTP based Python microservices 
+including linting, package management, build, deploy and observability with industry standard Telemetry, Tracing, 
+APM with both open source and proprietary systems. 
 
 
 ##### Faster downloads with aiohttp

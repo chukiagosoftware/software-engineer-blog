@@ -91,5 +91,6 @@ SHARE = (
     ("whatsapp", "https://api.whatsapp.com/send?text=Features - "),
     ("telegram", "https://telegram.me/share/url?text=Features&amp;url="),
 )
+
 INDEX_SAVE_AS='blog/index.html'
-LINKS = [('Articles', 'blog/')]
+LINKS = [('Articles', 'http://www.ericarellano.tech/blog/')]
