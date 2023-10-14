@@ -42,7 +42,7 @@ more imporantly [Netlify had Python 3.10]({filename}../netlify.md)  compatible i
 IaC is a bridge between fear, uncertainty, doubt (FUD) and paradise. It can be pretty fun to work on 
 IaC and get away from all that FUD.
 
-Plus, Infrastructure as Code (whatever that means) is a vital component of deploying successful highly performant  
+Plus, Infrastructure as Code (whatever that means) is a vital component of deploying successful highly performant 
 data intensive distributed applications. To be serious for half a moment, we can use IaC to meet stringent 
 timelines and the highest standards of quality and also to have a whopping good time.
 
@@ -63,21 +63,21 @@ Firewalls.
 
 :umbrella: 
 
-The Cloud was good for a while, but then it became a bit much. Multiple clouds. Unclear and changing APIs. Buzzwords 
-and weekly paradigm shifts. Cloud costs. Network costs. Latency. Startup runway. Customer Acquisition Cost.
+The Cloud was good for a while, but then it became too much. 
+
+* Multiple clouds. 
+* Unclear and changing APIs
+* Climbing cloud costs. 
+* Outages
+* Growing Customer Acquisition Cost.
+* Team multiplication - DevOps, delivery, qa, sre, infrastructure, platform, support...
 
 
 :chart_with_upwards_trend:
 
-Enter IaC. Also known as ka ching!! For me. 
+Enter IaC.
 
-:moneybag:
-
-Just to be clear, I mean money. Cash money. Moolah. The kwon.
-
-:money_with_wings:
-
-This is nothing without soul. But with soul, hoooya!!!
+:moneybag: :money_with_wings: :dollar:
 
 
 ####  My FIFO Stack :tanabata_tree:
@@ -129,30 +129,32 @@ times and provide a smoother bridge to the Data Science Python ecosystem.
 
 I've recently designed, written and helped to scale and monitor FastAPI and AioHTTP based Python microservices 
 including linting, package management, build, deploy and observability with industry standard Telemetry, Tracing, 
-APM with both open source and proprietary systems. 
+APM with both open source and proprietary systems. In addition, I help to build backend automation and CLI tooliong 
+for Ops and Support teams as well as build platforms and sandboxes for Engineering teams.
 
 
-##### Faster downloads with aiohttp
+#### Faster small file downloads with aiohttp :potable_water:
 
 [aiohttp]({filename}../async_requests.md) 
 
-##### Github emoji extension
+#### Github emoji extension :necktie:
 
-The [pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
-allows one to add Github Emojis and make things more formal [Pelican](https://docs.getpelican.com)! :necktie:
+This [pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension]
+(https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
+allows one to add Github Emojis and make things more formal [Pelican](https://docs.getpelican.com)! 
 
 
-##### Twitter AsyncIO Library
+#### Twitter AsyncIO Library :signal_strength:
 
-[twitter](https://github.com/edamsoft-sre/twitter-async-python) httpx and [Pydantic](http://www.google.com?q=pydantic) 
+[A twitter](https://github.com/edamsoft-sre/twitter-async-python) httpx and [Pydantic](http://www.google.com?q=pydantic) 
 library for use with FastAPI. Provides GetMutualFollowers, GetTweets, GetLists.
 
-##### AsyncClient httpx workers with download queue
+#### httpx.AsyncClient workers with download AsyncIO Queue :children_crossing:
 
 [httx wordpress](https://gist.github.com/edamsoft-sre/ee55e865f5f4a0615149b93da994ba46)
 
 
-### Terraform
+### Terraform :rocket:
 <a name="terraform"></a>
 
 I have designed and architected secure, scaleable cloud infrastructure on Google Cloud Platform, Amazon Web Services, 
@@ -163,13 +165,11 @@ Prometheus, Grafana, ElasticSearch, Logstash, Kibana, Splunk
 
 Don't forget Terraform Cloud and Terraform Enterprise automation, policy and audit validation and cost management
 
-:rocket:
-
 Terraform grows on you, I promise
 
 ---
 
-###  Kubernetes  :steam_locomotive:    
+###  Kubernetes :ship:    
 <a name="kubernetes"></a>
 
 Learning Kubernetes? Besides the excellent [K8S docs](https://kubernetes.io) I would recommend these Udemy courses:
@@ -197,7 +197,7 @@ YAML / Helm bloat.
 
 ---
 
-### DevOps :construction:
+### DevOps :factory:
 
 Generally while working in the cloud we will want to implement Agile strategies and the DevOps philosophy of treating 
 Operations as software development. This does mean using a stack such as Git, ArgoCD, Observability tools, Docker and 
@@ -211,7 +211,7 @@ As such, there is much more we could write about DevOps.
 
 ---
 
-#### Ansible :alien:
+#### Ansible :airplane:
 <a name="ansible"></a>
 
 Ansible is the best tool for automating servers and cloud resources. It's based on Python, so 
@@ -227,7 +227,7 @@ steps  from standard GNU/Linux. The syntax is YAML, but somehow beautiful anyway
 
 ---
 
-#### Clouds and Sasses
+#### SaaS :roller_coaster:
 
 Here are some clouds and some things that we never talk about
 
@@ -239,6 +239,10 @@ Here are some clouds and some things that we never talk about
 * Pagerduty, Opsgenie
 
 
-Stay tuned! Peace
+Stay tuned! 
 
 :beach_umbrella:
+
+Peace
+
+
