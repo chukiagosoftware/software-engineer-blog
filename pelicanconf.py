@@ -14,7 +14,7 @@ MARKDOWN = {
     'output_format': 'html5',
 }
 AUTHOR = 'Eric Arellano Martinez'
-SITENAME = 'Erics Software Blog'
+SITENAME = "Eric's Software Blog"
 SITEURL = 'blog.ericarellano.tech'
 THEME = 'themes/Papyrus'
 THEME_STATIC_PATHS = ['static']
