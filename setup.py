@@ -13,9 +13,9 @@ setup(
     python_requires='>3.7',
     url='https://github.com/edamsoft-sre/github_emojis',
     license="OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
-    author='EDAM',
-    author_email='eric.arellano@hey.com',
-    description='Markdown extension to provide Github emoji (in Pelican)',
+    author='Eric Arellano',
+    author_email='eric.arellano@email.com',
+    description='Markdown extension Github emoji',
     classifiers=[
         "Programming Language :: Python :: 3.8",
         "License :: GNU General Public License v3 or later (GPLv3+)",

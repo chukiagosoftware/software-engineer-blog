@@ -25,7 +25,7 @@ LOCALE = 'en_us'
 TIMEZONE = 'America/Los_Angeles'
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'en'
-SUBTITLE = 'Terraform, Python, MLOps , Infrastructure as Code'
+SUBTITLE = 'Terraform, Python, MLOps, Infrastructure as Code'
 COPYRIGHT = '©2023'
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['readtime', 'search', 'neighbors', 'pelican-toc']
@@ -49,7 +49,6 @@ LINKS = (('Pagina Siete', 'http://www.paginasiete.bo'),
 
 # Social widget
 SOCIAL = [('github', 'http://www.github.com/edamsoft-sre'),
-          ('mastodon', 'https://hachyderm.io/@actuallybolivian'),
           ('twitter', 'http://twitter.com/x'),
           ('linkedin', 'https://www.linkedin.com/in/eric-arellano-martinez/')]
 
@@ -92,3 +91,4 @@ SHARE = (
     ("whatsapp", "https://api.whatsapp.com/send?text=Features - "),
     ("telegram", "https://telegram.me/share/url?text=Features&amp;url="),
 )
+INDEX_SAVE_AS='blog/index.html'
