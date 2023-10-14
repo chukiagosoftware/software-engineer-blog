@@ -4,45 +4,58 @@ save_as: index.html
 
 ### Welcome :sunrise:  
 
-This is a software engineering microblog focusing on Infrastructure as Code with Terraform, ArgoCD and Ansible, DevOps 
-and Cloud Infrastructure how-tos and how-nots, Kubernetes wisdom, Python AsyncIO snippets for Ops automation and MLOps 
-notes as I complete NLP and Generative AI LLM courses online.
+To this software engineering microblog focusing on Infrastructure as Code, DevOps and Site Reliability Engineering 
+(SRE). Here you will find some neat how-tos and how-nots on Terraform, Kubernetes, Python FastAPI, AsyncIO and 
+system automation. 
 
-We are running Python 3.10 and the incredible Pelican 4.8.0 microblogging framework, along with our very own Python 
-Markdown 3.4.1 extension for Github Emojis. 
+We are running on Python 3.10, Pelican 4.8.0 microblogging framework, and our custom Python Markdown 3.4.1 extension 
+for the Github Emojis. Like cheese.
 
-Because, well why not :question:
+like  :cheese:
 
-Try it yourself! Just add a semi-colon before and after what should be a Github Emoji, like  :cheese:
+While I've done some HTML/Jquery/CSS work in the past, this is about the crux of my UI skills. I do love [good 
+theater](https://hamiltonmusical.com/) but am not much of a UI or frontend engineer, huge surprise huh.
 
-This site is deployed using [Netlify](https://www.netlify.com) and all is well and good. Highly recommended. Other 
-options considered for deployment were Google App Engine, due to the original blog inspiration for this 
-microblog or [Render](https://www.render.com) another Heroku-like platform. We could also toss this HTML pretty much 
-anywhere. Hmm, over-engineering, hmmmm.
+This site is deployed based on Git pushed to main branch using [Netlify](https://www.netlify.com). Highly  
+recommended. Other options considered for deployment were Google App Engine, [Render](https://www.render.com) and 
+some server on GCP or Digital Ocean or my old shared-webhost from the 90's. We settled on Netlify because it works very 
+nicely out of the box, in theory we can run a full blown app with CDN and content managment and more imporantly 
+Netlify had Python 3.10 compatible images at the time of writing. More on Netlify if you click on Categories.
 
 
 ### Infrastructure as Code :bridge_at_night:
 
-IaC is sort of like the bridge between fear, uncertainty, doubt (FUD) and paradise. It can be pretty fun to work on 
+IaC is a bridge between fear, uncertainty, doubt (FUD) and paradise. It can be pretty fun to work on 
 IaC and get away from all that FUD.
 
-Plus, Infrastructure as Code (whatever that means) is a vital component of deploying successful highly  performant 
-data intensive distributed applications. Ok to be serious for half a moment, we use IaC to meet some stringent 
-regulations and the highest standards of quality and also to have a whopping good time.
+Plus, Infrastructure as Code (whatever that means) is a vital component of deploying successful highly performant  
+data intensive distributed applications. To be serious for half a moment, we can use IaC to meet stringent 
+timelines and the highest standards of quality and also to have a whopping good time.
 
-I have worked on Infrastructure as Code and DevOps with the following Stacks, and I use these terms loosely in 
-this sentence, because this 
-is clearly a very subjective and unlikely combination of things. Anyway, this is how I became the person you should 
-hire next.
+I have worked on the following Stacks, and I use the term loosely in this sentence, because it was a somewhat random 
+though in retrospect very rewarding software path. 
 
-####  Stacks
+In the beginning was the Internet.  We had Cisco routers and switches and Server racks connected with FastEthernet, 
+then GigabitEthernet. Servers had power supplies and NICs and HPE ILO. Then VMware ESXi and vSphere, Load 
+Balancers, App Firewalls were the rage. And then, The Cloud
 
-* Ruby on Rails
-* Jquery/JqueryUI
+:cloud:
+
+The Cloud was good for a while, but then it became a huge stinking mess :umbrella: 
+
+Enter IaC :chart_with_upwards_trend:
+
+####  Eric's Stacks :tanabata_tree:
+
 * Linux Apache MySQL PHP (**LAMP**)
-* Java Spring Boot
-* Java Tomcat
+* Ruby on Rails
 * Python Flask
+* Cisco Integrated Services Router
+* Cisco Communications Manager
+* Cisco IP Contact Center
+* Jquery/JqueryUI
+* Java Tomcat
+* Java Spring Boot
 * Python FastAPI
 * Debian/Ubuntu
 * Redhat/Fedora/CentOS
@@ -50,10 +63,10 @@ hire next.
 * Confluent Kafka
 * ActiveMQ/RabbitMQ
 * Postgres, Microsoft SQL
-* Cisco Communications Manager
-* Cisco IP Contact Center
-* Cisco Integrated Services Router
+* Ansible, Jenkins, Python, Kubernetes
 * OpenSIPS, Freeswitch (Voice Over IP)
+* AWS, GCP, Azure
+* Terraform Cloud
 
 
 
@@ -64,9 +77,7 @@ hire next.
 If any of those were new to you, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) (español)
 
 
-### Name your Poison
-
- 
+### SRE Toolkit
 
 * [Terraform](#terraform)
 * [Ansible](#ansible) 
@@ -86,8 +97,7 @@ If any of those were new to you, check out the [opinionated IaC Glossary]({filen
 
 ##### Github emoji extension
 
-The [pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension]
-(https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
+The [pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
 allows one to add Github Emojis and make things more formal [Pelican](https://docs.getpelican.com)! :necktie:
 
 
