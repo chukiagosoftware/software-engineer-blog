@@ -4,24 +4,34 @@ save_as: index.html
 
 ### Welcome :sunrise:  
 
-This is a software engineering microblog focusing on Infrastructure as Code with Terraform and Ansible, DevOps and 
-Cloud Infrastructure how-tos and how-nots, Python automation, async and MLOps.
+This is a software engineering microblog focusing on Infrastructure as Code with Terraform, ArgoCD and Ansible, DevOps 
+and Cloud Infrastructure how-tos and how-nots, Kubernetes wisdom, Python AsyncIO snippets for Ops automation and MLOps 
+notes as I complete NLP and Generative AI LLM courses online.
 
-Running on Python 3.10 running the amazing Pelican 4.8.0 microblogging framework and custom Python Markdown 3.
-4.1 with Github Emojis. Because, well why not.
+We are running Python 3.10 and the incredible Pelican 4.8.0 microblogging framework, along with our very own Python 
+Markdown 3.4.1 extension for Github Emojis. Because, well why not. :question:
 
-And deployed using [Netlify](https://www.netlify.com) and all is well and good. Highly recommended.
+Try it yourself! Just add a semi-colon before and after what should be a Github Emoji, like  :software:
 
-Other options considered for deployment were Google App Engine, due to the original blog inspiration for this 
-microblog or [Render](https://www.render.com) another Heroku-like platform. 
+This site is deployed using [Netlify](https://www.netlify.com) and all is well and good. Highly recommended. Other 
+options considered for deployment were Google App Engine, due to the original blog inspiration for this 
+microblog or [Render](https://www.render.com) another Heroku-like platform. We could also toss this HTML pretty much 
+anywhere. Hmm, over-engineering, hmmmm.
 
 
 ### Infrastructure as Code :bridge_at_night:
 
-IaC is sort of like the bridge between fear, uncertainty, doubt or paradise. It can be pretty fun to work on IaC. I 
-believe it is a vital component of deploying successful highly performant data intensive distributed applications.
+IaC is sort of like the bridge between fear, uncertainty, doubt (FUD) and paradise. It can be pretty fun to work on 
+IaC and get away from all that FUD.
 
-I have worked on Infrastructure as Code and DevOps with the following Stacks:
+Plus, Infrastructure as Code (whatever that means) is a vital component of deploying successful highly  performant 
+data intensive distributed applications. Ok to be serious for half a moment, we use IaC to meet some stringent 
+regulations and the highest standards of quality and also to have a whopping good time.
+
+I have worked on Infrastructure as Code and DevOps with the following Stacks, and I use these terms loosely in 
+this sentence, because this 
+is clearly a very subjective and unlikely combination of things. Anyway, this is how I became the person you should 
+hire next.
 
 ####  Stacks
 
@@ -41,14 +51,18 @@ I have worked on Infrastructure as Code and DevOps with the following Stacks:
 * Cisco Communications Manager
 * Cisco IP Contact Center
 * Cisco Integrated Services Router
-* OpenSIPS, Freeswitch Voice Over IP
+* OpenSIPS, Freeswitch (Voice Over IP)
+
 
 
 ##### IaC Glossary
 
 
-If any of these are new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md)
+If any of those were completelya new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) 
+as long as you can read in Spanish it will be of some interest.
 
+
+##### Somewhat ordered list of IaC Tools you can hire me to kick some buttola with
 
 * [Terraform](#terraform)
 * [Ansible](#ansible) 
@@ -62,29 +76,24 @@ If any of these are new, check out the [opinionated IaC Glossary]({filename}../s
 <a name="python"a></a>
 
 
-##### Faster parallel downloads with aiohttp
+##### Faster downloads with aiohttp
 
 [aiohttp]({filename}../async_requests.md) 
 
-##### Python Markdown Github Emoji extension
+##### Github emoji extension for Python Markdown
 
-[pelican_github_emojis]({filename}../pelican_github_emojis.md)
-
-##### Github Emojis
-
-A simply [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) 
-to add Github Emojis [Pelican](https://docs.getpelican.com)! :necktie:
+[pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
+allows one to add Github Emojis and make things more formal [Pelican](https://docs.getpelican.com)! :necktie:
 
 
-##### Twitter httpx AsyncIO
+##### Twitter AsyncIO Library
 
-[twitter asyncIO](https://github.com/edamsoft-sre/twitter-async-python) httpx and 
-Pydantic based AsyncIO Twitter library for use with FastAPI
+[twitter](https://github.com/edamsoft-sre/twitter-async-python) httpx and [Pydantic](http://www.google.com?
+q=pydantic) library for use with FastAPI. Provides GetMutualFollowers, GetTweets, GetLists.
 
-##### Workdpress async files download with httpx
+##### AsyncClient httpx workers with download queue
 
 [httx wordpress](https://gist.github.com/edamsoft-sre/ee55e865f5f4a0615149b93da994ba46)
-
 
 
 ### Terraform
@@ -110,52 +119,50 @@ Learning Kubernetes? Besides the excellent [K8S docs](https://kubernetes.io) I w
 * [Certified Kubernetes Administrator](https://www.udemy.com/topic/certified-kubernetes-administrator-cka/)
 * [Developer](https://www.udemy.com/topic/certified-kubernetes-application-developer-ckad/) 
 
-and then deploying an Elastic Kubernetes, Azure Kubernetes Service or Google Kubernetes Engine cluster with Terraform.
+The best way to learn Kubernetes is by deploying a cluster. If you will be using GCP, you can use Terraform:
 
-If you need real optimization, go with bare metal and run your own Kubernetes but this is not a typical use case.
-
-For infrastructure or cluster-wide services, use Terraform **helm** or **kubernetes** providers.  For applications 
-and middleware it is best to use a separate method such as ArgoCD, CloudDeploy, Github Actions or Jenkins.
-
+[https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/kubernetes](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/kubernetes)
 
 ---
 ### Nomad  :speedboat: 
 <a name="nomad"></a>
 
-Hashicorp Nomad is a really cool alternative to Kubernetes. It is also based on YAML manifests but is a single binary 
-which 
-runs on any Linux system almost and schedules workloads directly onto Nomad worker nodes with nearly the same 
-orchestration 
-abilities. Hashicorp Consul provides service mesh and high availability features and tightly integrates well with 
-Nomad. While the Nomad ecosystem is smaller, it is a readily viable option to scale down compute and memory costs 
-and unecessary YAML / Helm bloat.
+Hashicorp Nomad is a great alternative to Kubernetes for self-contained projects. It is also based on YAML manifests 
+but is implemented as a single binary which runs on almost any GNU/Linux system and schedules workloads directly onto 
+Nomad worker nodes with nearly the same orchestration abilities. 
+
+Hashicorp Consul provides service mesh and high availability features and tightly integrates well with Nomad. While 
+the Nomad ecosystem is smaller, it is a readily viable option to scale down compute and memory costs and unecessary 
+YAML / Helm bloat.
 
 ---
 
-### Cloud DevOps, CICD :umbrella:
+### DevOps :construction:
 
-Everything today is "in the cloud"  :cloud:  Cloud are fun. Basically from a low level user perspective, a cloud is 
-just a CRUD REST API. You can GET, PUT (update), POST (create), and DELETE resources such as a 
-Google Kubernetes Engine cluster, a Confluent Kafka cluster, a bucket to store some data, or a Project to run 
-things in securely. 
+Generally while working in the cloud we will want to implement Agile strategies and the DevOps philosophy of treating 
+Operations as software development. This does mean using a stack such as Git, ArgoCD, Observability tools, Docker and 
+Kubernetes but it's much more tha this. 
 
-All of this hypothetically can be done using good old Python **requests**, or even **curl** but there are 
-even easier ways to automate all of that.  
+DevOps means truly operating, developing and scaling applications using a software engineering first approach while 
+integrating with teams such as SRE, QA, Platform, Product, Sales, Customer Support and Stakeholders at all levels.
+
+As such, there is much more we could write about DevOps.
+
+
 ---
 
 #### Ansible :alien:
 <a name="ansible"></a>
 
-Ansible is the best in the world tool for automating servers and cloud resources. It's based on Python, so 
+Ansible is the best tool for automating servers and cloud resources. It's based on Python, so 
 you can make your own modules or patch existing ones very easily.
 
-At the core, Ansible is running Python requests or a built-in version of it with paramiko-ssh client. And then it is 
-running Python scripts and commands on the remote hosts.
+In traditional client mode, Ansible is running Python requests or a built-in version of the paramiko-ssh client. And 
+then it is running Python modules and actions on the remote hosts.
 
-But most things, from standard GNU/Linux system operations, to deploying cloud resources 
-have an Ansible module already. The syntax is YAML, but somehow beautiful anyway.
+Ansible provides a one-to-one mapping for 90% of typical operational commands and remediation steps from standard 
+GNU/Linux. The syntax is YAML, but somehow beautiful anyway.
 
-Ansible has an ecosystem of vendor products such as Ansible Tower, but you can also roll your own setup.
 
 ---
 
