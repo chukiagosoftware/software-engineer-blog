@@ -157,15 +157,10 @@ library for use with FastAPI. Provides GetMutualFollowers, GetTweets, GetLists.
 ### Terraform :rocket:
 <a name="terraform"></a>
 
-I have designed and architected secure, scaleable cloud infrastructure on Google Cloud Platform, Amazon Web Services, 
-Microsoft Azure and Oracle Cloud using Terraform. The TFE provider even allows meta-Terraform Cloud setup.
+Architected secure, scalable cloud infrastructure on [Google Cloud Platform](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/),
+Amazon Web Services, Microsoft Azure and Oracle Cloud using Terraform.
 
-Terraform can also be used in addition to Infra for monitoring, alerting and application performance with Datadog, 
-Prometheus, Grafana, ElasticSearch, Logstash, Kibana, Splunk
-
-Don't forget Terraform Cloud and Terraform Enterprise automation, policy and audit validation and cost management
-
-Terraform grows on you, I promise
+Terraform grows on you, I promise. 
 
 ---
 
@@ -181,7 +176,7 @@ But the best way to learn Kubernetes is by deploying a cluster. If you will be u
 Terraform modules to deploy a fully secure Private GKE cluster. This is important for SOC2 and other security 
 audits that are industry-standards for most global apps.
 
-[https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/kubernetes](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/kubernetes)
+[DevOpsDeNoche](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/kubernetes)
 
 ---
 ### Nomad  :speedboat: 
