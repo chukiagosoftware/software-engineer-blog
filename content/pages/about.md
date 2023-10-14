@@ -139,8 +139,7 @@ for Ops and Support teams as well as build platforms and sandboxes for Engineeri
 
 #### Github emoji extension :necktie:
 
-This [pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension]
-(https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
+This [pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
 allows one to add Github Emojis and make things more formal [Pelican](https://docs.getpelican.com)! 
 
 
