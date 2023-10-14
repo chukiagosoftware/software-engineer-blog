@@ -65,6 +65,7 @@ If any of those were new to you, check out the [opinionated IaC Glossary]({filen
 
 
 ### Name your Poison
+
  
 
 * [Terraform](#terraform)
@@ -103,15 +104,17 @@ q=pydantic) library for use with FastAPI. Provides GetMutualFollowers, GetTweets
 ### Terraform
 <a name="terraform"></a>
 
-Designed and architected secure, scaleable cloud infrastructure on Google Cloud Platform, Amazon Web Services, 
-Microsoft Azure and Oracle Cloud.
+I have designed and architected secure, scaleable cloud infrastructure on Google Cloud Platform, Amazon Web Services, 
+Microsoft Azure and Oracle Cloud using Terraform. The TFE provider even allows meta-Terraform Cloud setup.
 
-Monitoring, alerting and application performance with Datadog, Prometheus, Grafana, ElasticSearch, Logstach, Kibana, 
-Splunk
+Terraform can also be used in addition to Infra for monitoring, alerting and application performance with Datadog, 
+Prometheus, Grafana, ElasticSearch, Logstash, Kibana, Splunk
 
-Terraform Cloud and Terraform Enterprise automation, policy and audit validation, cost management, CI/CD integration
+Don't forget Terraform Cloud and Terraform Enterprise automation, policy and audit validation and cost management
 
 :rocket:
+
+Terraform grows on you, I promise
 
 ---
 
@@ -123,7 +126,9 @@ Learning Kubernetes? Besides the excellent [K8S docs](https://kubernetes.io) I w
 * [Certified Kubernetes Administrator](https://www.udemy.com/topic/certified-kubernetes-administrator-cka/)
 * [Developer](https://www.udemy.com/topic/certified-kubernetes-application-developer-ckad/) 
 
-The best way to learn Kubernetes is by deploying a cluster. If you will be using GCP, you can use Terraform:
+But the best way to learn Kubernetes is by deploying a cluster. If you will be using GCP, you can use my GKE 
+Terraform modules to deploy a fully secure Private GKE cluster. This is important for SOC2 and other security 
+audits that are industry-standards for most global apps.
 
 [https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/kubernetes](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/kubernetes)
 
@@ -145,7 +150,7 @@ YAML / Helm bloat.
 
 Generally while working in the cloud we will want to implement Agile strategies and the DevOps philosophy of treating 
 Operations as software development. This does mean using a stack such as Git, ArgoCD, Observability tools, Docker and 
-Kubernetes but it's much more tha this. 
+Kubernetes but it's much more than this. 
 
 DevOps means truly operating, developing and scaling applications using a software engineering first approach while 
 integrating with teams such as SRE, QA, Platform, Product, Sales, Customer Support and Stakeholders at all levels.
@@ -162,10 +167,13 @@ Ansible is the best tool for automating servers and cloud resources. It's based 
 you can make your own modules or patch existing ones very easily.
 
 In traditional client mode, Ansible is running Python requests or a built-in version of the paramiko-ssh client. And 
-then it is running Python modules and actions on the remote hosts.
+then it is running Python modules and actions on the remote hosts. There are also Ansible collections for common 
+Clouds, Kubernetes and others. If you ask me, Ansible lost to Terraform on hype and UX which is important, but 
+technically it's the superior tool and far simpler. Ah well, alas we may yet try [OpenTofu](https://opentofu.org) 
+and be swayed. 
 
-Ansible provides a one-to-one mapping for 90% of typical operational commands and remediation steps from standard 
-GNU/Linux. The syntax is YAML, but somehow beautiful anyway.
+Ansible standard collection provides a one-to-one mapping for 90% of typical operational commands and remediation steps 
+from standard GNU/Linux. The syntax is YAML, but somehow beautiful anyway. 
 
 
 ---
