@@ -92,4 +92,4 @@ SHARE = (
     ("telegram", "https://telegram.me/share/url?text=Features&amp;url="),
 )
 INDEX_SAVE_AS='blog/index.html'
-MENUITEMS = (('Articles', 'blog/'))
+LINKS = [('Articles', 'blog/')]
