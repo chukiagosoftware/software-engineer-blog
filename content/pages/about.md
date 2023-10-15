@@ -81,7 +81,7 @@ The Cloud was good for a while, but then it became a bit much.
 * Outages :shit:
 * Growing Customer Acquisition Cost :moneybag:
 * Team multiplication :family:
-* Dependency chain vulnerabilityes :danger:
+* Dependency chain vulnerabilites :fire:
 
 
 :chart_with_downwards_trend:
