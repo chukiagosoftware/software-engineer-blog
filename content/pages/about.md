@@ -23,6 +23,12 @@ extension for the Github Emojis.
 While I've done a lot of HTML/Jquery/CSS work in the past (pre-2010) this is about the crux of my UI skills today. I do 
 love [good theater](https://hamiltonmusical.com/) but am not much of a frontend guru. My home is the backend, lol.
 
+I wrote and collaborated on a number or Ruby on Rails back-office apps in the early 2010's. From 2015 on I picked 
+up Python and have not looked back. 
+
+Although I am currently learning [Intermediate Go at Platzi](https://platzi.com/cursos/golang-intermedio/) 
+and may be writing more about that soon.
+
 
 
 ### The Platform :feelsgood:
