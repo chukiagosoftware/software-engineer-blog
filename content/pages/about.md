@@ -78,51 +78,27 @@ The Cloud was good for a while, but then it became too much.
 * Unclear and changing APIs :trollface: 
 * Climbing cloud costs :money_with_wings:
 * Outages :shit:
-* Growing Customer Acquisition Cost :money_bag:
+* Growing Customer Acquisition Cost :moneybag:
 * Team multiplication :family:
 
 
 :chart_with_downwards_trend:
 
----
-
-
-Enter IaC :muscle:
-
-
-:chart_with_downwards_trend: 
-
----
-
-####  My FIFO Stack :tanabata_tree:
-
-* Linux Apache MySQL PHP (**LAMP**)
-* Ruby on Rails
-* Cisco Router, Communications Manager, Unified Contact Center
-* OpenSIPS, Freeswitch (Voice Over IP)
-* Jquery/JqueryUI
-* Java Tomcat, Spring Boot
-* Python FastAPI
-* Debian/Ubuntu
-* Redhat/Fedora/CentOS
-* Docker/BuildKit
-* Confluent Kafka
-* ActiveMQ/RabbitMQ
-* Postgres, Microsoft SQL
-* Ansible, Jenkins, Python, Kubernetes
-* AWS, GCP, Azure
-* Terraform Cloud
 
 
 ---
-##### IaC Glossary :fu:
+##### :muscle: Enter IaC :chart_with_upwards_trend:
 
 
-If any of those sound new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) 
-(si lees español, si no, jódete)
+IaC Glossary :books:
+
+
+If any of those sound new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) (si lees español/ in Spanish)
 ---
 
 ### SRE Toolkit
+
+IaC, automation and observability are some of the things that SRE generally oversee and drive on Agile teams
 
 * [Terraform](#terraform)
 * [Ansible](#ansible) 
