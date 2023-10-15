@@ -173,9 +173,11 @@ and [Pydantic](http://www.google.com?q=pydantic). Provides GetMutualFollowers, G
 ### Terraform :rocket:
 
 Architected secure, scalable cloud infrastructure on [Google Cloud Platform](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/),
-Amazon Web Services, Microsoft Azure and Oracle Cloud using Terraform.
+Amazon Web Services, [Microsoft Azure](https://github.com/edamsoft-sre/jitsi-azure-terraform) and Oracle Cloud using Terraform.
 
-Terraform grows on you, I promise. 
+Terraform grows on you, I promise. As your attorney, I would strongly advise you to use Terraform Cloud, Terragrunt, 
+or one of the lesser known SaaS as this will allow you to focus on policy enforcement, scalability and observability 
+feedback loops (tbd) 
 
 ---
 <a name="kubernetes"></a>
