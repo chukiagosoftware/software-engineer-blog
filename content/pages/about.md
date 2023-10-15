@@ -97,12 +97,12 @@ operational frameworks.
 
 :books:
 
->    If any of these sound new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) (si 
->    lees español/ in Spanish)
+>    If any of these sound new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) si 
+>    lees español (in Spanish)
 
 
 
-### SRE Toolkit
+## SRE Toolkit
 
 IaC, automation and observability are some of the things that SRE generally oversee and drive on Agile teams
 
@@ -116,7 +116,7 @@ IaC, automation and observability are some of the things that SRE generally over
 ---
 
 <a name="lmao"></a>
-##### LMAO :telescope:
+### LMAO :telescope:
 
 I've recently worked with FastAPI and AioHTTP based Python microservices from package management and image builds 
 through deployment and instrumentation for LMAO (Logging, Metrics, Alerting, Observability) with Splunk, Datadog, 
@@ -139,7 +139,7 @@ Monoliths, Hybrid service oriented and Containerized Microservice application sy
 Confluent Kafka, UI/UX monitoring and Real Time multimedia/contact center analytics.
 
 
-#### Python Code Snippets :snake:
+### Python Code Snippets :snake:
 <a name="python"></a>
 
 Python is really versatile and in SRE type projects you will find it under the hood in  Ansible, **gcloud** and 
@@ -148,26 +148,38 @@ Python is really versatile and in SRE type projects you will find it under the h
 While it has been around since 1992, lately Python has become very popular thanks to AsyncIO and ASGI based libraries 
 like FastAPI, AioHTTP, Gunicorn/Uvicorn which can rival compiled/JVM execution times and provide a smoother bridge 
 to the Data Science Python ecosystem and ML engineers using Google Vertex and Conda.
+---
 
 
-#### Faster small file downloads with aiohttp :potable_water:
+### Faster small file downloads with aiohttp :potable_water:
 
 [aiohttp]({filename}../async_requests.md) 
-
-#### Github emoji extension :necktie:
-
-This [pelican_github_emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) which 
-allows one to add Github Emojis and make things more formal [Pelican](https://docs.getpelican.com)! 
+---
 
 
-#### Twitter AsyncIO Library :signal_strength:
+### Github emoji extension :necktie:
+
+[Pelican github emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) 
+which allows one to add Github Emojis to [Pelican](https://docs.getpelican.com) microblogs and make things more formal! 
+---
+
+
+### Twitter AsyncIO Library :signal_strength:
 
 [A twitter](https://github.com/edamsoft-sre/twitter-async-python) httpx and [Pydantic](http://www.google.com?q=pydantic) 
 library for use with FastAPI. Provides GetMutualFollowers, GetTweets, GetLists.
+---
 
-#### httpx.AsyncClient workers with download AsyncIO Queue :children_crossing:
+
+### httpx AsyncClient 
+
+Using AsyncIO workers with an AsyncIO Queue for downloading many small files quickly
+
+:children_crossing:
 
 [httx wordpress](https://gist.github.com/edamsoft-sre/ee55e865f5f4a0615149b93da994ba46)
+---
+
 
 <a name="terraform"></a>
 ### Terraform :rocket:
@@ -221,7 +233,7 @@ As such, there is much more we could write about DevOps.
 
 ---
 
-#### Ansible :airplane:
+### Ansible :airplane:
 <a name="ansible"></a>
 
 Ansible is the best tool for automating servers and cloud resources. It's based on Python, so 
@@ -237,7 +249,7 @@ steps  from standard GNU/Linux. The syntax is YAML, but somehow beautiful anyway
 
 ---
 
-#### SaaS :roller_coaster:
+## SaaS :roller_coaster:
 
 Here are some clouds and some things that we never talk about
 
