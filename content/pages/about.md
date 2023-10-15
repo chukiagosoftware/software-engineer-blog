@@ -23,8 +23,8 @@ extension for the Github Emojis.
 While I've done a lot of HTML/Jquery/CSS work in the past (pre-2010) this is about the crux of my UI skills today. I do 
 love [good theater](https://hamiltonmusical.com/) but am not much of a frontend guru. My home is the backend, lol.
 
-I wrote and collaborated on a number or Ruby on Rails back-office apps in the early 2010's. From 2015 on I picked 
-up Python and have not looked back. 
+I wrote and collaborated on a number of LAMP and Ruby on Rails back-office apps in the early 2010's. From 2015 on I 
+picked up Python and have not looked back. 
 
 Although I am currently learning [Intermediate Go at Platzi](https://platzi.com/cursos/golang-intermedio/) 
 and may be writing more about that soon.
@@ -62,9 +62,10 @@ connected with FastEthernet, then GigabitEthernet. Servers had power supplies an
 :crystal_ball:
 
 
-Then we learned to abstract and deployed OVMs on VMware ESXi and vSphere integrated with Network Load Balancers and App 
-Firewalls. 
-
+Then we learned to abstract most of this into a Hypervisor and Virtual Machine images. So we deployed OVMs on VMware 
+ESXi and vSphere integrated with Network Load Balancers and App Firewalls. And to manage all this madness, we needed 
+Configuration Management. This was the era of Ansible, Puppet, Chef. Kubernetes was kinda there, but only Google was 
+using it. 
 
 
 And then, we beheld the Cloud
@@ -72,7 +73,7 @@ And then, we beheld the Cloud
 :cloud:
 
 
-The Cloud was good for a while, but then it became too much. 
+The Cloud was good for a while, but then it became a bit much. 
 
 * Multiple clouds. :circus_tent:
 * Unclear and changing APIs :trollface: 
@@ -80,6 +81,7 @@ The Cloud was good for a while, but then it became too much.
 * Outages :shit:
 * Growing Customer Acquisition Cost :moneybag:
 * Team multiplication :family:
+* Dependency chain vulnerabilityes :danger:
 
 
 :chart_with_downwards_trend:
@@ -87,14 +89,18 @@ The Cloud was good for a while, but then it became too much.
 
 
 ---
-##### :muscle: Enter IaC :chart_with_upwards_trend:
+### :muscle: Enter IaC :chart_with_upwards_trend:
+
+Infra as code, as noted already, is the solution to these cloud management, scale, cost and visibility problems. 
+This is part and parcel of SRE, although SRE also involves software architecture, requirements and capacity and 
+operational frameworks.
+
+:books:
+
+>    If any of these sound new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) (si 
+>    lees español/ in Spanish)
 
 
-IaC Glossary :books:
-
-
-If any of those sound new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) (si lees español/ in Spanish)
----
 
 ### SRE Toolkit
 
@@ -108,7 +114,8 @@ IaC, automation and observability are some of the things that SRE generally over
 * [LMAO](#lmao)
 
 ---
-<a name="lmao">/a>
+
+<a name="lmao"></a>
 ##### LMAO :telescope:
 
 I've recently worked with FastAPI and AioHTTP based Python microservices from package management and image builds 
