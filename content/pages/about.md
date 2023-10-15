@@ -6,7 +6,7 @@ save_as: index.html
 
 :sunrise:  
 
-## Welcome :trollface: 
+## Welcome :tiger2:
 
 This is my software engineering microblog focusing on Infrastructure as Code, DevOps and Site Reliability 
 Engineering (SRE). I am a Computer and Electrical Engineer (B.Sc. University of Texas, 2005), Cisco Network and VoIP 
@@ -52,43 +52,47 @@ breeze.
 IaC is a bridge between fear, uncertainty, doubt (FUD) and paradise. It can be pretty fun to work on 
 IaC and get away from all that FUD.
 
-Plus, Infrastructure as Code (whatever that means) is a vital component of deploying successful highly performant 
-data intensive distributed applications. To be serious for half a moment, we can use IaC to meet stringent 
-timelines and the highest standards of quality and also to have a whopping good time.
+Infrastructure as Code is a vital component of deploying successful highly performant data intensive distributed 
+applications. To be serious for half a moment, we can use IaC to meet stringent timelines and the highest standards 
+of quality and also to have a whopping good time.
 
-I have worked on the following Stacks, and I use the term loosely in this sentence, because it was a somewhat random 
-though in retrospect very rewarding software path. 
+In the beginning there was the Internet. In the server room we had Cisco routers and switches and Apache2 racks 
+connected with FastEthernet, then GigabitEthernet. Servers had power supplies and NICs and HPE ILO.
 
-In the beginning was the Internet.  We had Cisco routers and switches and Apache2 server racks connected with 
-FastEthernet, then GigabitEthernet. Servers had power supplies and NICs and HPE ILO. And manual internet routes.
+:crystal_ball:
+
 
 Then we learned to abstract and deployed OVMs on VMware ESXi and vSphere integrated with Network Load Balancers and App 
 Firewalls. 
 
 
+
+And then, we beheld the Cloud
+
 :cloud:
 
-### And then, we beheld the Cloud
-
-
-:umbrella: 
 
 The Cloud was good for a while, but then it became too much. 
 
-* Multiple clouds. 
-* Unclear and changing APIs
-* Climbing cloud costs. 
-* Outages
-* Growing Customer Acquisition Cost.
-* Team multiplication - DevOps, delivery, qa, sre, infrastructure, platform, support...
+* Multiple clouds. :circus_tent:
+* Unclear and changing APIs :trollface: 
+* Climbing cloud costs :money_with_wings:
+* Outages :shit:
+* Growing Customer Acquisition Cost :money_bag:
+* Team multiplication :family:
 
 
-:chart_with_upwards_trend:
+:chart_with_downwards_trend:
 
-Enter IaC.
+---
 
-:moneybag: :money_with_wings: :dollar:
 
+Enter IaC :muscle:
+
+
+:chart_with_downwards_trend: 
+
+---
 
 ####  My FIFO Stack :tanabata_tree:
 
@@ -110,14 +114,13 @@ Enter IaC.
 * Terraform Cloud
 
 
-
-
+---
 ##### IaC Glossary :fu:
 
 
 If any of those sound new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) 
 (si lees español, si no, jódete)
-
+---
 
 ### SRE Toolkit
 
