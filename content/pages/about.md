@@ -241,14 +241,18 @@ steps  from standard GNU/Linux. The syntax is YAML, but somehow beautiful anyway
 
 ## SaaS :roller_coaster:
 
-Here are some clouds and some things that we never talk about
+Your SaaS is like a rollercoaster baby! I wanna ride
 
-* Amazon Web Services
-* Google Cloud Platform 
-* Microsoft Azure
-* Netlify
-* Agile, Jira, Confluence, Slack
-* Pagerduty, Opsgenie
+This is the avoid at all costs section. What? Huh?
+
+* Agile
+* Jira
+* Confluence
+* Slack
+* Pagerduty
+* Opsgenie
+* Blameless 
+* (just kidding)
 
 
 Stay tuned! 
