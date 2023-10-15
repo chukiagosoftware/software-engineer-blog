@@ -1,4 +1,4 @@
-Title: The Stacks
+Title: SRE
 URL:
 save_as: index.html
 
@@ -6,14 +6,18 @@ save_as: index.html
 
 :sunrise:  
 
-## Welcome :tiger2:
+## Site Reliability Engineering :tiger2:
 
 This is my software engineering microblog focusing on Infrastructure as Code, DevOps and Site Reliability 
 Engineering (SRE). I am a Computer and Electrical Engineer (B.Sc. University of Texas, 2005), Cisco Network and VoIP 
-veteran, Staff System Reliability Engineer, DevOps, Kubernetes, Cloud practitioner with 18 years of experience overall.
+veteran, current Staff System Reliability Engineer, DevOps, Kubernetes, Cloud practitioner with 18 years of experience 
+overall. Back in the day I worked on C and Freescale/Motorola 6800 MCU assembly language, and have been an avid 
+GNU/Linux enthusiast since [Slackware](https://www.slackware.org/) so I have a strongly systemic and computing-based 
+approach to SRE.
 
 Here you will find some neat how-tos and how-nots on Terraform, Kubernetes, Python, FastAPI, AsyncIO and 
-system automation. This is more of a notes for me to come back to type thing, so without further ado.
+system automation. 
+
 
 ### The Icons :shipit:
 
