@@ -116,21 +116,42 @@ If any of those sound new, check out the [opinionated IaC Glossary]({filename}..
 * [Nomad](#nomad)
 * [Kubernetes](#kubernetes)
 * [Python](#python) 
+* [LMAO](#lmao)
 
 ---
+<a name="lmao">/a>
+##### LMAO :telescope:
+
+I've recently worked with FastAPI and AioHTTP based Python microservices from package management and image builds 
+through deployment and instrumentation for LMAO (Logging, Metrics, Alerting, Observability) with Splunk, Datadog, 
+Prometheus, Grafana, Google Stackdriver and Cloudwatch.
+
+In the past I have worked on IPsoft's Amelia ML-based enterprise IT automation, observation, service and PaaS 
+software with integrated alert handling automata or AI-powered remediation workflows scripted with Python and 
+Javascript. These were able to respond to application metrics, logs and service indicators for any resources managed 
+through Amelia.
+
+As well as driving optimized On Call rotations, Incident Response planning, High Availability / Disaster Recovery 
+planning and SOC2 compliance preparation, audit and stage 2 approval for multiple organizations with a focus on 
+Observability.
+
+I have been in the monitoring space before the cloud as well, since Nagios and Icinga through to the current SaaS 
+offerings of Datadog, NewRelic, Splunk, AppDynamics and others. 
+
+In the last few years I have successfully deployed global distributed monitoring for Java Spring Boot, Go, and Python 
+Monoliths, Hybrid service oriented and Containerized Microservice application systems as well as SQL/NoSQL Databases,
+Confluent Kafka, UI/UX monitoring and Real Time multimedia/contact center analytics.
+
 
 #### Python Code Snippets :snake:
-<a name="python"a></a>
+<a name="python"></a>
 
-Python is really versatile and has our back even when we don't know it such as with Ansible, and most cloud tools 
-including **gcloud** and **az** CLI. Lately Python has become hot and apps that a few years ago would have been 
-built in Java and then Go are now using AsyncIO and ASGI based libraries like FastAPI and Uvicorn to rival execution 
-times and provide a smoother bridge to the Data Science Python ecosystem.
+Python is really versatile and in SRE type projects you will find it under the hood in  Ansible, **gcloud** and 
+**az** cli as well as in automation tools like [Stackstorm](http://www.stackstorm.com) or [Fabric](https://www.fabfile.org).
 
-I've recently designed, written and helped to scale and monitor FastAPI and AioHTTP based Python microservices 
-including linting, package management, build, deploy and observability with industry standard Telemetry, Tracing, 
-APM with both open source and proprietary systems. In addition, I help to build backend automation and CLI tooliong 
-for Ops and Support teams as well as build platforms and sandboxes for Engineering teams.
+While it has been around since 1992, lately Python has become very popular thanks to AsyncIO and ASGI based libraries 
+like FastAPI, AioHTTP, Gunicorn/Uvicorn which can rival compiled/JVM execution times and provide a smoother bridge 
+to the Data Science Python ecosystem and ML engineers using Google Vertex and Conda.
 
 
 #### Faster small file downloads with aiohttp :potable_water:
@@ -152,9 +173,8 @@ library for use with FastAPI. Provides GetMutualFollowers, GetTweets, GetLists.
 
 [httx wordpress](https://gist.github.com/edamsoft-sre/ee55e865f5f4a0615149b93da994ba46)
 
-
-### Terraform :rocket:
 <a name="terraform"></a>
+### Terraform :rocket:
 
 Architected secure, scalable cloud infrastructure on [Google Cloud Platform](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/),
 Amazon Web Services, Microsoft Azure and Oracle Cloud using Terraform.
@@ -162,9 +182,9 @@ Amazon Web Services, Microsoft Azure and Oracle Cloud using Terraform.
 Terraform grows on you, I promise. 
 
 ---
-
-###  Kubernetes :ship:    
 <a name="kubernetes"></a>
+###  Kubernetes :ship:    
+
 
 Learning Kubernetes? Besides the excellent [K8S docs](https://kubernetes.io) I would recommend these Udemy courses:
 
