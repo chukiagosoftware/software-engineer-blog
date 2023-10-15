@@ -10,18 +10,18 @@ save_as: index.html
 
 This is my software engineering microblog focusing on Infrastructure as Code, DevOps and Site Reliability 
 Engineering (SRE). I am a Computer and Electrical Engineer (B.Sc. University of Texas, 2005), Cisco Network and VoIP 
-Expert, Staff System Reliability Engineer and DevOps / Kubernetes / Cloud practitioner with 18 years of experience.
+veteran, Staff System Reliability Engineer, DevOps, Kubernetes, Cloud practitioner with 18 years of experience overall.
 
 Here you will find some neat how-tos and how-nots on Terraform, Kubernetes, Python, FastAPI, AsyncIO and 
-system automation.
+system automation. This is more of a notes for me to come back to type thing, so without further ado.
 
 ### The Icons :shipit:
 
 We are running on Python 3.10 with the Pelican 4.8.0 microblogging framework, and our custom Python Markdown 3.4.1 
 extension for the Github Emojis. 
 
-While I've done a lot of HTML/Jquery/CSS work in the past, this is about the crux of my UI skills today. I do love 
-[good theater](https://hamiltonmusical.com/) but am not much of a frontend guru. My deal is the backend, lol.
+While I've done a lot of HTML/Jquery/CSS work in the past (pre-2010) this is about the crux of my UI skills today. I do 
+love [good theater](https://hamiltonmusical.com/) but am not much of a frontend guru. My home is the backend, lol.
 
 
 
@@ -35,6 +35,10 @@ Ocean or a [free Oracle VM](https://docs.oracle.com/es-ww/iaas/Content/FreeTier/
 We settled on Netlify because it works very nicely, can scale to a full blown app with CDN and content managment and 
 more imporantly [Netlify had Python 3.10]({filename}../netlify.md)  compatible images at the time.
 
+This is a static HTML site with some Javascript and a Pelican template. So, there is only one contributor, no 
+merging issues nor PRs and many other differences with a production distributed microservice or hybrid service 
+oriented application. Nonetheless the core principle is the same and using Git actually makes publishing this blog a 
+breeze.
 
 
 ## Infrastructure as Code :bridge_at_night:
