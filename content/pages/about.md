@@ -137,47 +137,31 @@ offerings of Datadog, NewRelic, Splunk, AppDynamics and others.
 In the last few years I have successfully deployed global distributed monitoring for Java Spring Boot, Go, and Python 
 Monoliths, Hybrid service oriented and Containerized Microservice application systems as well as SQL/NoSQL Databases,
 Confluent Kafka, UI/UX monitoring and Real Time multimedia/contact center analytics.
+---
 
 
-### Python Code Snippets :snake:
+### Python :snake:
 <a name="python"></a>
 
 Python is really versatile and in SRE type projects you will find it under the hood in  Ansible, **gcloud** and 
-**az** cli as well as in automation tools like [Stackstorm](http://www.stackstorm.com) or [Fabric](https://www.fabfile.org).
+**az** cli as well as in automation tools like [Stackstorm](http://www.stackstorm.com) or [Fabric](https://www.fabfile.org) 
+and directly in scripts and microservices.
 
 While it has been around since 1992, lately Python has become very popular thanks to AsyncIO and ASGI based libraries 
-like FastAPI, AioHTTP, Gunicorn/Uvicorn which can rival compiled/JVM execution times and provide a smoother bridge 
-to the Data Science Python ecosystem and ML engineers using Google Vertex and Conda.
----
+like FastAPI, AioHTTP, Gunicorn/Uvicorn which can rival (or approach) compiled Go/JVM execution times and provide a 
+smoother bridge to the Data Science Python ecosystem and ML engineers using Google Vertex, Jupyter Notebooks and Conda.
+
+Again with LLMs and Python Langchain and Replit we see the same benefits from using Python for microservice 
+prototyping and development.
 
 
-### Faster small file downloads with aiohttp :potable_water:
+* Read about fast downloads with [aiohttp]({filename}../async_requests.md) :potable_water:
+* [Read about github_emoji]({filename}../pelican_github_emojis.md), a simple [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) 
+which allows one to add Github Emojis to [Pelican](https://docs.getpelican.com) microblogs :necktie:
+* Twitter AsyncIO Library :signal_strength: [AsyncIO Twitter client](https://github.com/edamsoft-sre/twitter-async-python) with [httpx](https://www.python-httpx.org/)
+and [Pydantic](http://www.google.com?q=pydantic). Provides GetMutualFollowers, GetTweets, GetLists methods. :x:
+* httpx AsyncClient with configurable workers and AsyncIO Queue [httx wordpress](https://gist.github.com/edamsoft-sre/ee55e865f5f4a0615149b93da994ba46) :honeybee:
 
-[aiohttp]({filename}../async_requests.md) 
----
-
-
-### Github emoji extension :necktie:
-
-[Pelican github emojis]({filename}../pelican_github_emojis.md) is a simple [Python Markdown extension](https://github.com/edamsoft-sre/python_markdown_github_emoji_extension) 
-which allows one to add Github Emojis to [Pelican](https://docs.getpelican.com) microblogs and make things more formal! 
----
-
-
-### Twitter AsyncIO Library :signal_strength:
-
-[A twitter](https://github.com/edamsoft-sre/twitter-async-python) httpx and [Pydantic](http://www.google.com?q=pydantic) 
-library for use with FastAPI. Provides GetMutualFollowers, GetTweets, GetLists.
----
-
-
-### httpx AsyncClient 
-
-Using AsyncIO workers with an AsyncIO Queue for downloading many small files quickly
-
-:children_crossing:
-
-[httx wordpress](https://gist.github.com/edamsoft-sre/ee55e865f5f4a0615149b93da994ba46)
 ---
 
 
