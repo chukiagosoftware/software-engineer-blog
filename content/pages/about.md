@@ -1,5 +1,5 @@
 Title: About
-URL: 
+URL: about.html
 
 
 
@@ -188,7 +188,7 @@ Hashicorp Consul provides service mesh and high availability features and tightl
 the Nomad ecosystem is smaller, it is a readily viable option to scale down compute and memory costs and unecessary 
 YAML / Helm bloat.
 
----
+
 
 ### DevOps :factory:
 
