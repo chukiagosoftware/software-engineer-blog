@@ -51,7 +51,7 @@ of quality and also to have a whopping good time.
 
 In the beginning there was the Internet. In the server room we had Cisco routers and switches and Apache2 racks 
 connected with FastEthernet, then GigabitEthernet. Servers had stuff like power supplies and NICs and HPE ILO. So 
-basically everyone had their own cloud in some basement with a few gentlement tending to their boxes 
+basically everyone had their own cloud in some basement with a few engineers tending the machines. 
 
 
 :neckbeard:

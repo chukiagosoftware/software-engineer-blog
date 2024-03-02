@@ -14,7 +14,7 @@ For example, if you are writing a quick and dirty Terraform configuration, you c
 HCL interpolation and well placed Bash commands:  
 
 [Terraform Bash template for Jitsi installation](https://github.
-com/edam-software/jitsi-azure-terraform/blob/trunk/environments/prod/templates
+com/edamsoft-sre/jitsi-azure-terraform/blob/trunk/environments/prod/templates
 /setup.tpl)
 
 

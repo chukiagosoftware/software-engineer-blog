@@ -15,7 +15,7 @@ Skaffold.
 
 ## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
 
-[https://github.com/edamsoft-sre/DevOpsDeNoche](github.com/edam-software/DevOpsDeNoche)
+[https://github.com/edamsoft-sre/DevOpsDeNoche](github.com/edamsoft-sre/DevOpsDeNoche)
 
 ## Keynote Video
 
