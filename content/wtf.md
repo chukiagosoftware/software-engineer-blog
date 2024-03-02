@@ -3,14 +3,11 @@ Category: Tecnologia
 Tags: Startups, Nube, Tecnologia, Economia
 Date: January 1, 2020
 Authors: Eric Arellano
-Summary: Tim O'Reilly WTF book, the map for next 10 years
 
-### WTF
- 
-What's the Future and Why It's Up to Us por Tim O'Reilly  
+### Tim O'Reilly's WTF: the map for next 10 years
 
-Un libro importantísimo para entender los nuevos mapas digitales.
 
+##### What's the Future and Why It's Up to Us
 ![Book]({attach}images/wtf.jpeg)
 
 
@@ -28,4 +25,4 @@ Un libro importantísimo para entender los nuevos mapas digitales.
 
 #### Enlace
 
-<a href="https://www.oreilly.com/tim/wtf-book.html">www.oreilly.com/tim/wtf-book.html
+<a href="www.oreilly.com/tim/wtf-book.html">www.oreilly.com/tim/wtf-book.html</a>
