@@ -1,78 +1,69 @@
-Title: SRE
-URL:
-save_as: index.html
+Title: About
+URL: 
 
 
 
 :sunrise:  
 
-## Site Reliability Engineering :tiger2:
 
-This is my software engineering microblog focusing on Infrastructure as Code, DevOps and Site Reliability 
-Engineering (SRE). I am a Computer and Electrical Engineer (B.Sc. University of Texas, 2005), Cisco Network and VoIP 
-veteran, current Staff System Reliability Engineer, DevOps, Kubernetes, Cloud practitioner with 18 years of experience 
-overall. Back in the day I worked on C and Freescale/Motorola 6800 MCU assembly language, and have been an avid 
-GNU/Linux enthusiast since [Slackware](https://www.slackware.org/) so I have a strongly systemic and computing-based 
-approach to SRE.
 
-Here you will find some neat how-tos and how-nots on Terraform, Kubernetes, Python, FastAPI, AsyncIO and 
-system automation. 
+## Site Reliability Engineering :mage_man:
+
 
 
 ### The Icons :shipit:
 
-We are running on Python 3.10 with the Pelican 4.8.0 microblogging framework, and our custom Python Markdown 3.4.1 
-extension for the Github Emojis. 
-
-While I've done a lot of HTML/Jquery/CSS work in the past (pre-2010) this is about the crux of my UI skills today. I do 
-love [good theater](https://hamiltonmusical.com/) but am not much of a frontend guru. My home is the backend, lol.
-
-I wrote and collaborated on a number of LAMP and Ruby on Rails back-office apps in the early 2010's. From 2015 on I 
-picked up Python and have not looked back. 
-
-Although I am currently learning [Intermediate Go at Platzi](https://platzi.com/cursos/golang-intermedio/) 
-and may be writing more about that soon.
+The site runs Python 3.10, the Pelican 4.8.0 microblog software and my custom Python Markdown 3.4.1 extension for 
+the Github Emojis. These are just the publicly available emojis which you can see around the pages. I find that 
+there are some really, really cool ones and thus without further ado.
 
 
+### The Platform :godmode:
 
-### The Platform :feelsgood:
+The code is deployed based on Git ops. In other words the Python code which generates html, is pushed to a main branch 
+integrated with Ci/Cd service [Netlify](https://www.netlify.com)
 
-This site is deployed based on Git-ops. The Python code is pushed to a main branch integrated with [Netlify](https://www.netlify.com)
-I use Jetbrains Pycharm, so this is done either by typing *git push* or Cmd-K. I highly recommend it. 
+I use Jetbrains Pycharm, so this is done either by typing *git push* in the Terminal or Cmd-K in the IDE window. I 
+highly recommend it. 
 
 Other options considered for deployment were Google App Engine, [Render](https://www.render.com) and a VM on Digital 
 Ocean or a [free Oracle VM](https://docs.oracle.com/es-ww/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm). 
-We settled on Netlify because it works very nicely, can scale to a full blown app with CDN and content managment and 
+We settled on Netlify because it works very nicely, can scale to a fullblown app with CDN and content managment and 
 more imporantly [Netlify had Python 3.10]({filename}../netlify.md)  compatible images at the time.
 
-This is a static HTML site with some Javascript and a Pelican template. So, there is only one contributor, no 
-merging issues nor PRs and many other differences with a production distributed microservice or hybrid service 
-oriented application. Nonetheless the core principle is the same and using Git actually makes publishing this blog a 
+This is a static HTML with some Javascript and a Pelican template. So, there is only one contributor, no 
+merging, PRs and other differences with a production distributed microservice or hybrid service 
+oriented application. Nonetheless, the core principle is the same and using Git actually makes publishing this blog a 
 breeze.
 
 
-## Infrastructure as Code :bridge_at_night:
+## Infrastructure as Code :suspect:
 
-IaC is a bridge between fear, uncertainty, doubt (FUD) and paradise. It can be pretty fun to work on 
+I would describe IaC as a bridge between fear, uncertainty, doubt (FUD) and paradise. It can be pretty fun to work on 
 IaC and get away from all that FUD.
 
 Infrastructure as Code is a vital component of deploying successful highly performant data intensive distributed 
 applications. To be serious for half a moment, we can use IaC to meet stringent timelines and the highest standards 
 of quality and also to have a whopping good time.
 
+
+:classical_building:
+
 In the beginning there was the Internet. In the server room we had Cisco routers and switches and Apache2 racks 
-connected with FastEthernet, then GigabitEthernet. Servers had power supplies and NICs and HPE ILO.
-
-:crystal_ball:
-
-
-Then we learned to abstract most of this into a Hypervisor and Virtual Machine images. So we deployed OVMs on VMware 
-ESXi and vSphere integrated with Network Load Balancers and App Firewalls. And to manage all this madness, we needed 
-Configuration Management. This was the era of Ansible, Puppet, Chef. Kubernetes was kinda there, but only Google was 
-using it. 
+connected with FastEthernet, then GigabitEthernet. Servers had stuff like power supplies and NICs and HPE ILO. So 
+basically everyone had their own cloud in some basement with a few gentlement tending to their boxes 
 
 
-And then, we beheld the Cloud
+:neckbeard:
+
+
+
+Then we began to use Virtual Machine images,  deploying OVMs on VMware ESXi and vSphere integrated with Network Load 
+Balancers and App Firewalls. And to manage all this madness, we needed Configuration Management. This was the era of 
+Ansible, Puppet, Chef. Until.. Kubernetes.
+
+
+And thus, we beheld the Cloud
 
 :cloud:
 
@@ -80,7 +71,7 @@ And then, we beheld the Cloud
 The Cloud was good for a while, but then it became a bit much. 
 
 * Multiple clouds. :circus_tent:
-* Unclear and changing APIs :trollface: 
+* Unclear and changing APIs :man_firefighter: 
 * Climbing cloud costs :money_with_wings:
 * Outages :shit:
 * Growing Customer Acquisition Cost :moneybag:
@@ -88,18 +79,15 @@ The Cloud was good for a while, but then it became a bit much.
 * Dependency chain vulnerabilites :fire:
 
 
-:chart_with_downwards_trend:
-
-
 
 ---
-### :muscle: Enter IaC :chart_with_upwards_trend:
+###  Enter IaC :chart_with_upwards_trend:
 
 Infra as code, as noted already, is the solution to these cloud management, scale, cost and visibility problems. 
 This is part and parcel of SRE, although SRE also involves software architecture, requirements and capacity and 
 operational frameworks.
 
-:books:
+:mechanical_arm:
 
 >    If any of these sound new, check out the [opinionated IaC Glossary]({filename}../sre_devops_glossary.md) si 
 >    lees español (in Spanish)
@@ -122,25 +110,18 @@ IaC, automation and observability are some of the things that SRE generally over
 <a name="lmao"></a>
 ### LMAO :telescope:
 
-I've recently worked with FastAPI and AioHTTP based Python microservices from package management and image builds 
-through deployment and instrumentation for LMAO (Logging, Metrics, Alerting, Observability) with Splunk, Datadog, 
-Prometheus, Grafana, Google Stackdriver and Cloudwatch.
+I've helped operate, scale and deploy apps based on Java, Go, Ruby and recently Python FastAPI/AioHTTP microservices.
+This involves coordinating builds, scaling infra, connecting data and ML pipelines and setting up observability via 
+LMAO services - Logging, Metrics, Alerting and Observability with Splunk, Datadog, Newrelic, Prometheus, Grafana, 
+Cloudwatch, etc.
 
-In the past I have worked on IPsoft's Amelia ML-based enterprise IT automation, observation, service and PaaS 
-software with integrated alert handling automata or AI-powered remediation workflows scripted with Python and 
-Javascript. These were able to respond to application metrics, logs and service indicators for any resources managed 
-through Amelia.
 
-As well as driving optimized On Call rotations, Incident Response planning, High Availability / Disaster Recovery 
-planning and SOC2 compliance preparation, audit and stage 2 approval for multiple organizations with a focus on 
-Observability.
+In the past I helped operate IPsoft's Amelia Machine Learning system for enterprise IT automation, observation and 
+remediation.
 
-I have been in the monitoring space before the cloud as well, since Nagios and Icinga through to the current SaaS 
-offerings of Datadog, NewRelic, Splunk, AppDynamics and others. 
+In the distance past, I used to write Perl and Ruby scripts for Nagios Alert Handlers in a global telecom service 
+provider serving millions of users.
 
-In the last few years I have successfully deployed global distributed monitoring for Java Spring Boot, Go, and Python 
-Monoliths, Hybrid service oriented and Containerized Microservice application systems as well as SQL/NoSQL Databases,
-Confluent Kafka, UI/UX monitoring and Real Time multimedia/contact center analytics.
 ---
 
 
@@ -239,26 +220,11 @@ steps  from standard GNU/Linux. The syntax is YAML, but somehow beautiful anyway
 
 ---
 
-## SaaS :roller_coaster:
+## MLOps :llama:
 
-Your SaaS is like a rollercoaster baby! I wanna ride
-
-This is the avoid at all costs section. What? Huh?
-
-* Agile
-* Jira
-* Confluence
-* Slack
-* Pagerduty
-* Opsgenie
-* Blameless 
-* (just kidding)
+MLops using Amazon, Google to enable and streamline training, labelling, deployment, data integrity and low-latency 
+inference for mission-critical ML flows.
 
 
-Stay tuned! 
-
-:beach_umbrella:
-
-Peace
 
 

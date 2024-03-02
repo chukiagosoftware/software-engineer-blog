@@ -13,8 +13,8 @@ MARKDOWN = {
     },
     'output_format': 'html5',
 }
-AUTHOR = 'Eric Arellano Martinez'
-SITENAME = "Eric's Software Blog"
+AUTHOR = 'Eric Arellano'
+SITENAME = "Site Reliability and Machine Learning Operations"
 SITEURL = 'blog.ericarellano.tech'
 THEME = 'themes/Papyrus'
 THEME_STATIC_PATHS = ['static']
@@ -25,8 +25,8 @@ LOCALE = 'en_us'
 TIMEZONE = 'America/Los_Angeles'
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'en'
-SUBTITLE = 'Terraform, Python, MLOps, Infrastructure as Code'
-COPYRIGHT = '©2023'
+SUBTITLE = 'AWS, GCP, Azure, Devops, SRE, Sagemaker, Jupyter, Terraform, Python, IaC, CICD'
+COPYRIGHT = '©2024'
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['readtime', 'search', 'neighbors', 'pelican-toc']
 
@@ -92,5 +92,5 @@ SHARE = (
     ("telegram", "https://telegram.me/share/url?text=Features&amp;url="),
 )
 
-INDEX_SAVE_AS='blog/index.html'
+#INDEX_SAVE_AS='blog/index.html'
 LINKS = [('Articles', 'http://www.ericarellano.tech/blog/')]

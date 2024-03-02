@@ -10,7 +10,8 @@ Summary: Switch from requests to aiohttp for emoji downloads, save time
 En [Emojis de Github para Pelican con Markdown]({filename}pelican_github_emojis.md) armamos los hermosos íconos que 
 se pueden ver por este blog. Bueno, en realidad bajamos el archivo json de Github con el diccionarios 
 
-    { _short_name_ : _http_url } 
+    #!python
+    { _short_name_ : _http_url }
 
 y utilizamos los enlaces para armar tags *img*. Poco a poco hemos mejorado algunas cosas, como regualr el tamaño de 
 los íconos 64x64 con CSS.
