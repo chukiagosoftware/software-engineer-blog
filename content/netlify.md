@@ -1,8 +1,8 @@
-Title: Pelican on Netlify in 10 minutes
+Title: Deploy Pelican on Netlify
 Category: CICD
 Tags: PaaS, DevOps, CICD, Pelican, Python, Pipeline
 Date: June 30, 2020
-Summary: Deploying Pelican on Netlify
+
 Authors: Eric Arellano
 
 ### Netlify

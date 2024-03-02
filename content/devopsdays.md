@@ -3,7 +3,6 @@ Date:  October 15, 2022
 Category: Terraform
 Tags: Terraform, Skaffold, Kubernetes, GKE, CloudDeploy, Grafana
 Authors: Eric Arellano
-Summary: DevOps Days La Paz 2022. Terraform Cloud, Google Kubernetes, Cloud Deploy, Skaffold and Grafana!
 
 # DevOps de Noche :sunrise_over_mountains:
 
