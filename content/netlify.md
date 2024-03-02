@@ -9,6 +9,8 @@ Authors: Eric Arellano
 
     $ The fastest way to build the fastest sites.
 
+![buildcommand]({attach}images/build_command.png)
+
 Netlify es la plataforma PaaS/CICD/DNS con integración a Git(hub|lab) utilizada para desplegar este sitio web. En 
 resumen:
 
@@ -24,7 +26,6 @@ Seguí el manual y simplemente enlazo mi repo con el output en HTML de Pelican.
 
     $ pelican content
 
-![buildcommand]({attach}images/build_command.png)
 
 ---
 

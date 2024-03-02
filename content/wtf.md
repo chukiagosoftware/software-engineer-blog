@@ -11,6 +11,8 @@ What's the Future and Why It's Up to Us por Tim O'Reilly
 
 Un libro importantísimo para entender los nuevos mapas digitales.
 
+![Book]({attach}images/wtf.jpeg)
+
 
 #### Ideas fuerza
 
@@ -26,4 +28,4 @@ Un libro importantísimo para entender los nuevos mapas digitales.
 
 #### Enlace
 
-<https://www.oreilly.com/tim/wtf-book.html>
+<a href="https://www.oreilly.com/tim/wtf-book.html">www.oreilly.com/tim/wtf-book.html

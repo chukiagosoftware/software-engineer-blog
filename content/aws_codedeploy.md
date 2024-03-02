@@ -7,6 +7,8 @@ Summary: Deploy FastAPI (Python ASGI) to AWS Lambda with CodeDeploy
 
 # Part 1: Deploying FastAPI app to AWS Lambda with Docker image
 
+![Create AWS Lambda Function from Docker Image]({attach}images/aws_create_lambda.png)
+
 This will show how to build a Docker container that can be run by AWS Lambda from the Elastic Container Registry.  
 The steps to follow on AWS are currently manual - via the AWS Console and the ECR provided Docker commands to upload 
 images.

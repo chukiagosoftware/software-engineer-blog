@@ -7,6 +7,8 @@ Summary: Switch from requests to aiohttp for emoji downloads, save time
 
 ### Download Github Emojis locally 
 
+![diff]({attach}images/diff.png)
+
 En [Emojis de Github para Pelican con Markdown]({filename}pelican_github_emojis.md) armamos los hermosos íconos que 
 se pueden ver por este blog. Bueno, en realidad bajamos el archivo json de Github con el diccionarios 
 
@@ -28,8 +30,6 @@ aplicación perfecta para IO mediante Async.
 Podríamos utilizar *threading.Thread* pero la idea es mirar hacia adelante con optimismo y darle con Async.
 
 A veces, un diff vale mil palabras y esperemos que esta es una de esas veces.
-
-![diff]({attach}images/diff.png)
 
 Como se puede ver, es fácil añadir un poco de concurrencia async a un sencillo código en Python con 
 Async y aiohttp.  :godmode:  Ahorramos valiosos minutos, que en una aplicación compleja pueden ser importantes.
