@@ -1,5 +1,5 @@
 Title: About
-URL: /pages/about.html
+URL: pages/about.html
 
 
 
