@@ -7,14 +7,16 @@ URL: pages/about.html
 
 
 
-## Site Reliability Engineering :mage_man:
+## A microblog for SRE, DevOps, MLOps :mage_man:
 
-
+I am a Computer and Electrical Engineer by training that has worked as a Network and Security engineer in the 2000's, 
+Web, DevOps and SRE in the 2010s and 2020s. Currently I am a Site Reliability Engineering Technical Lead for AWS 
+infra and Generative AI-based distributed applications.
 
 ### The Icons :shipit:
 
-The site runs Python 3.10, the Pelican 4.8.0 microblog software and my custom Python Markdown 3.4.1 extension for 
-the Github Emojis. These are just the publicly available emojis which you can see around the pages. I find that 
+The site runs on Python 3.10 with the Pelican 4.8.0 microblog software and my custom Python Markdown 3.4.1 extension 
+for the Github Emojis. These are just the publicly available emojis which you can see around the pages. I find that 
 there are some really, really cool ones and thus without further ado.
 
 
@@ -94,9 +96,12 @@ operational frameworks.
 
 
 
-## SRE Toolkit
+## Infrastructure Engineering
 
-IaC, automation and observability are some of the things that SRE generally oversee and drive on Agile teams
+Infrastructure as code (IaC), automation and observability are some of the things that SRE generally oversee and 
+drive on Agile teams, working together with Data Engineers, ML engineers, Architects, Security, Customer Engagement and 
+other 
+stakeholders.
 
 * [Terraform](#terraform)
 * [Ansible](#ansible) 
@@ -110,17 +115,17 @@ IaC, automation and observability are some of the things that SRE generally over
 <a name="lmao"></a>
 ### LMAO :telescope:
 
-I've helped operate, scale and deploy apps based on Java, Go, Ruby and recently Python FastAPI/AioHTTP microservices.
-This involves coordinating builds, scaling infra, connecting data and ML pipelines and setting up observability via 
+I've helped design, operate, deploy and scale apps based on Java, Go, Ruby and Python including microservices, 
+telecommunications, internal and customer facing SaaS platforms.
+
+SRE work usually involves coordinating builds, scaling infra, connecting data and ML pipelines and setting up 
+observability via 
 LMAO services - Logging, Metrics, Alerting and Observability with Splunk, Datadog, Newrelic, Prometheus, Grafana, 
 Cloudwatch, etc.
 
+In the past I helped design and operate IPsoft's Amelia Machine Learning system for enterprise IT automation, 
+observation and remediation.
 
-In the past I helped operate IPsoft's Amelia Machine Learning system for enterprise IT automation, observation and 
-remediation.
-
-In the distance past, I used to write Perl and Ruby scripts for Nagios Alert Handlers in a global telecom service 
-provider serving millions of users.
 
 ---
 
@@ -171,8 +176,8 @@ Learning Kubernetes? Besides the excellent [K8S docs](https://kubernetes.io) I w
 * [Developer](https://www.udemy.com/topic/certified-kubernetes-application-developer-ckad/) 
 
 But the best way to learn Kubernetes is by deploying a cluster. If you will be using GCP, you can use my GKE 
-Terraform modules to deploy a fully secure Private GKE cluster. This is important for SOC2 and other security 
-audits that are industry-standards for most global apps.
+Terraform modules to deploy a fully secure Private GKE cluster and demo microservices app. This is important for SOC2 
+and other security standards or policies such as GDPR.
 
 [DevOpsDeNoche](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/kubernetes)
 
@@ -222,9 +227,11 @@ steps  from standard GNU/Linux. The syntax is YAML, but somehow beautiful anyway
 
 ## MLOps :llama:
 
-MLops using Amazon, Google to enable and streamline training, labelling, deployment, data integrity and low-latency 
-inference for mission-critical ML flows.
-
-
-
+MLops involves setting up repeatable and reliable pipelines for scalable data management, production deployment and 
+observability. Generally this involves using tools such as Amazon Sagemaker, Google Vertex or OpenAI and defining 
+workflows 
+to  streamline training, labelling, deployment, data integrity and low-latency 
+inference. Machine learning models require to be monitored for performance, reliability and stability and introduce 
+a whole new set of production, development and infrastructure related requirements which can be handled using and 
+expanding the SRE toolset.
 
