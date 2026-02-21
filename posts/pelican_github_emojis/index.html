@@ -24,8 +24,7 @@ clase GheEmoji que permite bajar los datos de Github: <code>{ shortname: image_u
     MARKDOWN = { 
      'extensions' : [GheEmoji.load_from_github()], # ...
   }
-</code></pre><hr><p>Markdown requiere una expresión regular o <strong>regex</strong> para encontrar cada shortname por ejemplo</p><p><code>\:robot\:</code> =>
-<img src=https://github.githubassets.com/images/icons/emoji/unicode/1f916.png?v8 alt=:robot: class=emoji style=height:1em;vertical-align:text-bottom></p><p>Permitiremos +1 y tags con _</p><pre><code>  EMOJI_RE = r'(:)((?:[\+\-])?[_0-9a-zA-Z]*?):'
+</code></pre><hr><p>Markdown requiere una expresión regular o <strong>regex</strong> para encontrar cada shortname por ejemplo</p><p><code>\:robot\:</code> => <img src=https://github.githubassets.com/images/icons/emoji/unicode/1f916.png?v8 alt=:robot: class=emoji style=display:inline-block;height:1em;width:1em;vertical-align:middle></p><p>Permitiremos +1 y tags con _</p><pre><code>  EMOJI_RE = r'(:)((?:[\+\-])?[_0-9a-zA-Z]*?):'
 </code></pre><h4 id=inline-processor>Inline Processor<a hidden class=anchor aria-hidden=true href=#inline-processor>#</a></h4><p>Siguiendo el manual de Markdown, creamos una clase para extender Markdown.Extension. Inicialmente, usamos
 <em>ImageInlinePattern</em> para crear nuestro HTML tag <em>img</em> a partir del shortname del emoji Github. Posteriormente con
 la versión 3.4.1 actual, se recomienda utilizar <em>InlineProcessor</em></p><h4 id=previous-extension-with-inlinepattern>Previous extension with InlinePattern<a hidden class=anchor aria-hidden=true href=#previous-extension-with-inlinepattern>#</a></h4><pre><code>     from markdown.extensions import Extension
@@ -82,18 +81,9 @@ classifiers=[
     &quot;Operating System :: OS Independent&quot;]
 )
 </code></pre><p><a href=https://github.com/edamsoft-sre/python_markdown_github_emoji_extension>Código completo</a></p><hr><p>Test/usage</p><pre><code>    txt = &quot;&quot;&quot;
-     line 1 
-
-:fight:
-
-     line 2 
-
-<img src=https://github.githubassets.com/images/icons/emoji/unicode/1f603.png?v8 alt=:smiley: class=emoji style=height:1em;vertical-align:text-bottom>
-
-     line 3 
-
-<img src=https://github.githubassets.com/images/icons/emoji/unicode/1f918.png?v8 alt=:metal: class=emoji style=height:1em;vertical-align:text-bottom>
-
+     line 1 :fight:
+     line 2 <img src=https://github.githubassets.com/images/icons/emoji/unicode/1f603.png?v8 alt=:smiley: class=emoji style=display:inline-block;height:1em;width:1em;vertical-align:middle>
+     line 3 <img src=https://github.githubassets.com/images/icons/emoji/unicode/1f918.png?v8 alt=:metal: class=emoji style=display:inline-block;height:1em;width:1em;vertical-align:middle>
      &quot;&quot;&quot;
     
     result = markdown.markdown(txt, extensions=[GheEmoji.load_from_github()])
@@ -109,9 +99,7 @@ classifiers=[
     # print(thumbs_up)
 </code></pre><hr><h4 id=desplegar-el-blog-con-módulo-emoji-en-netlify>Desplegar el blog con módulo emoji en Netlify.<a hidden class=anchor aria-hidden=true href=#desplegar-el-blog-con-módulo-emoji-en-netlify>#</a></h4><p>Netlify nos permite ejecutar cualquier comando Linux, que generalmente será alguna herramienta para builds y en este
 caso es <code>pelican content</code>. La idea es replicar el entorno de desarrollo y correr <code>python3 setup.py install && pelican content</code>.</p><p>Para desarrollar este &ldquo;feature&rdquo; y no romper el sitio en vivo, creo un despliego mediante git branch, es decir
-configuramos Netlify para hacer un branch deploy.</p><p><img alt="Branch Deploy" loading=lazy src=/images/netlify_branch.png></p><p>Y zás, está este blog emojiado
-<img src=https://github.githubassets.com/images/icons/emoji/unicode/1f647-2642.png?v8 alt=:bowing_man: class=emoji style=height:1em;vertical-align:text-bottom></p><hr><p>En <a href=https://blog.ericarellano.tech/posts/netlify/>CICD con Netlify</a> hablare más sobre estrategias de despliegue.</p><h4 id=referencias-hahahugoshortcode16s6hbhb>Referencias
-<img src=https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png?v8 alt=:book: class=emoji style=height:1em;vertical-align:text-bottom></h4><p><a href=https://github.com/Dellos7/github-emoji-list>github-emoji-list</a></p><p><a href=https://github.com/Python-Markdown/markdown/wiki/Tutorial:-Writing-Extensions-for-Python-Markdown>Tutorial:-Writing-Extensions-for-Python-Markdown</a></p><p><a href=https://docs.python.org/3/library/pathlib.html>PathLib</a></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.ericarellano.tech/tags/python/>Python</a></li><li><a href=https://blog.ericarellano.tech/tags/regex/>Regex</a></li><li><a href=https://blog.ericarellano.tech/tags/pelican/>Pelican</a></li><li><a href=https://blog.ericarellano.tech/tags/markdown/>Markdown</a></li><li><a href=https://blog.ericarellano.tech/tags/emoji/>Emoji</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2026 <a href=https://blog.ericarellano.tech/>Another Software Engineering Blog</a></span> ·
+configuramos Netlify para hacer un branch deploy.</p><p><img alt="Branch Deploy" loading=lazy src=/images/netlify_branch.png></p><p>Y zás, está este blog emojiado <img src=https://github.githubassets.com/images/icons/emoji/unicode/1f647-2642.png?v8 alt=:bowing_man: class=emoji style=display:inline-block;height:1em;width:1em;vertical-align:middle></p><hr><p>En <a href=https://blog.ericarellano.tech/posts/netlify/>CICD con Netlify</a> hablare más sobre estrategias de despliegue.</p><h4 id=referencias-hahahugoshortcode16s6hbhb>Referencias <img src=https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png?v8 alt=:book: class=emoji style=display:inline-block;height:1em;width:1em;vertical-align:middle><a hidden class=anchor aria-hidden=true href=#referencias-hahahugoshortcode16s6hbhb>#</a></h4><p><a href=https://github.com/Dellos7/github-emoji-list>github-emoji-list</a></p><p><a href=https://github.com/Python-Markdown/markdown/wiki/Tutorial:-Writing-Extensions-for-Python-Markdown>Tutorial:-Writing-Extensions-for-Python-Markdown</a></p><p><a href=https://docs.python.org/3/library/pathlib.html>PathLib</a></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.ericarellano.tech/tags/python/>Python</a></li><li><a href=https://blog.ericarellano.tech/tags/regex/>Regex</a></li><li><a href=https://blog.ericarellano.tech/tags/pelican/>Pelican</a></li><li><a href=https://blog.ericarellano.tech/tags/markdown/>Markdown</a></li><li><a href=https://blog.ericarellano.tech/tags/emoji/>Emoji</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2026 <a href=https://blog.ericarellano.tech/>Another Software Engineering Blog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
