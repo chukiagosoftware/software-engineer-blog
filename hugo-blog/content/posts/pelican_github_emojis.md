@@ -1,6 +1,6 @@
 ---
 title: "Emojis de Github con Python Markdown"
-date: July 10, 2020
+date: 2020-07-10
 categories: ["Emojis"]
 tags: ['Python', 'Regex', 'Pelican', 'Markdown', 'Emoji']
 author: "Eric Arellano"

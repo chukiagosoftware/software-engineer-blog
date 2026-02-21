@@ -1,6 +1,6 @@
 ---
 title: "Internet Municipal en San Francisco, USA"
-date: December 2, 2017
+date: 2017-12-02
 categories: ["MejorInternet"]
 tags: ['Technology']
 author: "Eric Arellano"

@@ -1,6 +1,6 @@
 ---
 title: "Analyzing Logs with Python"
-date: September 18, 2022
+date: 2022-09-18
 categories: ["Python"]
 tags: ['', 'SRE', 'DevOps', 'Data Science']
 author: "Eric Arellano"

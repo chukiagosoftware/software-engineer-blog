@@ -1,6 +1,6 @@
 ---
 title: "My DevOps Days La Paz presentation with Terraform Cloud, GKE, Skaffold"
-date: October 15, 2022
+date: 2022-10-15
 categories: ["Terraform"]
 tags: ['Terraform', 'Skaffold', 'Kubernetes', 'GKE', 'CloudDeploy', 'Grafana']
 author: "Eric Arellano"

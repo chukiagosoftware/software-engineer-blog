@@ -1,6 +1,6 @@
 ---
 title: "Descargas asíncronas con Aiohttp | Async file download"
-date: December 1, 2020
+date: 2020-12-01
 categories: ["Python"]
 tags: ['Python', 'Asyncio', 'Emoji', 'requests', 'aiohttp']
 author: "Eric Arellano"

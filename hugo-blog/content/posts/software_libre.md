@@ -1,6 +1,6 @@
 ---
 title: "Software Libre Soberano?"
-date: November 10, 2020
+date: 2020-11-10
 categories: ["Tecnologia"]
 tags: ['Linux', 'Nube', 'Economia']
 author: "Eric Arellano"

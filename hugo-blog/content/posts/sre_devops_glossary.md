@@ -1,6 +1,6 @@
 ---
 title: "Glosario DevOps"
-date: June 15, 2020
+date: 2020-06-15
 categories: ["SRE"]
 tags: ['DevOps', 'IaC', 'CICD', 'PaaS', 'SRE', 'Terraform']
 author: "Eric Arellano"

@@ -1,6 +1,6 @@
 ---
 title: "Deploying FastAPI Docker container to AWS Lambda"
-date: October 1, 2022
+date: 2022-10-01
 categories: ["CICD"]
 tags: ['AWS', 'FastAPI', 'Lambda', 'Docker', 'Python']
 author: "Eric Arellano"

@@ -1,6 +1,6 @@
 ---
 title: "WTF"
-date: January 1, 2020
+date: 2020-01-01
 categories: ["Tecnologia"]
 tags: ['Startups', 'Nube', 'Tecnologia', 'Economia']
 author: "Eric Arellano"

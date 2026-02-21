@@ -1,6 +1,6 @@
 ---
 title: "The Devops Rough cli / Bash Guide"
-date: July 24, 2021
+date: 2021-07-24
 categories: ["SRE"]
 tags: ['DevOps', 'Bash', 'Linux', 'Emojis']
 author: "Eric Arellano"
