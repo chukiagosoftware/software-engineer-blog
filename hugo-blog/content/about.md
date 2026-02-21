@@ -21,7 +21,7 @@ OpenTelemetry and AI of course. {{< emoji horse >}}
 I've built and helped to scale and observe a variety of SaaS, Webex Videoconferencing, Jitsi videoconference,
 SIP/WebRTC VoIP and IP Telephony Contact Center, Big Data parallel processing, Machine Learning neural network models, 
 Large Language Generative Pretrained Transformer Models, Confluent Kafka event streaming, Postgre/MySQL/Redshift/Auror database
-modelling, data ingestion, processing, LLM model fine-tuning.
+modeling, data ingestion, processing, LLM model finetuning.
 
 Recently I've worked on vectorizing data with Go for RAG, modelling input data with AWS Glue, Athena and Redshift
 implementing performant AI-based systems in AWS Kubernetes with
@@ -69,7 +69,7 @@ Other options I considered for deployment over the years were Google App Engine,
 Ocean or a [free Oracle VM](https://docs.oracle.com/es-ww/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm).
 
 After running off a Google Bucket with local-only Pelican html generation, I settled on Netlify a few years back because 
-it works very nicely, can scale to a fullblown app with CDN and content managment and
+it works very nicely, can scale to a full-blown app with CDN and content managment and
 more importantly [Netlify had Python 3.10]({{< ref "posts/netlify.md" >}})  compatible images at the time.
 
 ~~This is a static HTML with some Javascript and a Pelican template. So, there is only one contributor, no
