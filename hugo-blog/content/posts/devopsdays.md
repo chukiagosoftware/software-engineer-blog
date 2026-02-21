@@ -8,13 +8,13 @@ description: "DevOps Days La Paz 2022. Terraform, Kubernetes, Cloud Deploy, Skaf
 draft: false
 ---
 
-# DevOps de Noche :sunrise_over_mountains:
+# DevOps de Noche {{< emoji sunrise_over_mountains >}}
 
 Today we will deploy Google Kubernetes Engine, Terraform Cloud worspaces and variable sets, Cloud Build triggers, Cloud 
 Deploy Delivery Pipeline providing Continuous Delivery for Grafana and the sample (Google) microservices app via 
 Skaffold.
 
-## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
+## {{< emoji cloud >}} Un repositorio y presentación para DevOps Days La Paz 2022
 
 [https://github.com/edamsoft-sre/DevOpsDeNoche](github.com/edamsoft-sre/DevOpsDeNoche)
 
@@ -44,14 +44,14 @@ Skaffold.
 </div>
 
 
-## Configuración completa de Google Cloud Platform y Google Kubernetes Engine :mountain_bicyclist:
+## Configuración completa de Google Cloud Platform y Google Kubernetes Engine {{< emoji mountain_bicyclist >}}
 
 * incluye red Compute Network
 * CICD con Cloud Build y Cloud Deploy
 * apps de ejemplo Grafana (monitoreo) y Microservices (ejemplo Google Kubernetes)
 
 ---
-# :eight_pointed_black_star: Instalación
+# {{< emoji eight_pointed_black_star >}} Instalación
 
 * Cuenta gratuita de Terraform Cloud y API Token
 * Cuenta Free Tier de Google Cloud Platform
@@ -73,7 +73,7 @@ Skaffold.
 
 ---
 
-# :eight_spoked_asterisk: Configuración de Terraform Cloud para Workspaces y Variables Compartidas
+# {{< emoji eight_spoked_asterisk >}} Configuración de Terraform Cloud para Workspaces y Variables Compartidas
 
 En 3_infraestructura_escalable/terraform-cloud se encuentra la base de la Infraestructura como Código, los 
 Workspaces y Variables base de Terraform Cloud.  Primero se configura este Workspace de forma manual con las 
@@ -102,7 +102,7 @@ De esta forma no es necesario repetir las variables en cada Workspace y configur
 Workspace de trabajo, se añade la llave JSON de Google Cloud omo variable de entorno *GOOGLE_CREDENTIALS*
 
 ---
-# :eight_spoked_asterisk: Workspaces de Trabajo
+# {{< emoji eight_spoked_asterisk >}} Workspaces de Trabajo
 
 ### devops-days-servicios-google
 
@@ -115,7 +115,7 @@ Workspace de trabajo, se añade la llave JSON de Google Cloud omo variable de en
 * Configuración de una Red VPC (Google Compute Network), Subnetworks, Router y Cloud NAT 
 
 ---
-# :eight_spoked_asterisk: Kubernetes
+# {{< emoji eight_spoked_asterisk >}} Kubernetes
 
 Esto permite crear clusters Kubernetes / Private GKE con subnets ya definidas y con acceso a Internet.  
 
@@ -133,7 +133,7 @@ Esto permite crear clusters Kubernetes / Private GKE con subnets ya definidas y 
 
 ---
 
-# :eight_spoked_asterisk: CICD
+# {{< emoji eight_spoked_asterisk >}} CICD
 
 ### devops-days-cicd
 
@@ -143,7 +143,7 @@ Esto permite crear clusters Kubernetes / Private GKE con subnets ya definidas y 
 
 --- 
 
-# :space_invader:  Apps de Ejemplo
+# {{< emoji space_invader >}}  Apps de Ejemplo
 
 ### Grafana
   * Se despliega Grafana de la siguiente forma:

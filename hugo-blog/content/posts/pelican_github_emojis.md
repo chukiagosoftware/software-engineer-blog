@@ -63,7 +63,7 @@ clase GheEmoji que permite bajar los datos de Github: ```{ shortname: image_url}
 
 Markdown requiere una expresión regular o **regex** para encontrar cada shortname por ejemplo
 
-``` \:robot\: ``` =>  :robot:
+``` \:robot\: ``` =>  {{< emoji robot >}}
 
 
 Permitiremos +1 y tags con _
@@ -149,9 +149,9 @@ correspondiente que convierte a los emoji en inline_block del tamaño del texto.
 Test/usage
 
         txt = """
-         line 1 :fight:
-         line 2 :smiley:
-         line 3 :metal:
+         line 1 {{< emoji fight >}}
+         line 2 {{< emoji smiley >}}
+         line 3 {{< emoji metal >}}
          """
         
         result = markdown.markdown(txt, extensions=[GheEmoji.load_from_github()])
@@ -179,7 +179,7 @@ configuramos Netlify para hacer un branch deploy.
 
    ![Branch Deploy](/images/netlify_branch.png)
    
-Y zás, está este blog emojiado :bowing_man:
+Y zás, está este blog emojiado {{< emoji bowing_man >}}
 
 ---
 
@@ -187,7 +187,7 @@ Y zás, está este blog emojiado :bowing_man:
 
 En [CICD con Netlify]({{< ref "netlify.md" >}}) hablare más sobre estrategias de despliegue.
 
-#### Referencias :book:
+#### Referencias {{< emoji book >}}
 
 [github-emoji-list](https://github.com/Dellos7/github-emoji-list)
 

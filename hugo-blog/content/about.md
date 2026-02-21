@@ -1,14 +1,15 @@
 ---
 title: "About"
+date: 2026-02-01
 draft: false
 ---
 
 
-:sunrise:
+{{< emoji sunrise >}}
 
 
 
-## Another software engineering blog :mage_man:
+## Another software engineering blog {{< emoji mage_man >}}
 
 Officially a Computer and Electrical Engineer, B.Sc. (nice!). I've also been a Network and Security, then Devops,
 Site Reliability and more recently an AI, AWS and Go engineer. This is my blog, not a portfolio. Just some notes and
@@ -21,9 +22,10 @@ for an end to end system such as for Generative AI (Large Language Models) appli
 While I am solely responsible for all this crap- I mean, content- I do have to thank Grok and Claude for helping make the
 conversion fast and mostly painless. Also, thanks to my friends and family for supporting me and my wife.
 
+<!--more-->
 
 
-### The Icons :shipit:
+### The Icons {{< emoji shipit >}}
 
 ~~The site runs on Python 3.10 with the Pelican 4.8.0 microblog software and my custom Python Markdown 3.4.1 extension
 for the Github Emojis. These are just the publicly available emojis which you can see around the pages. I find that
@@ -35,7 +37,7 @@ At some point I will figure out what/how to get sweet Github Emojis or a better 
 
 For now, we have Hugo's emojis which are not bad.
 
-### The Platform :godmode:
+### The Platform {{< emoji godmode >}}
 
 The code is deployed based on Git ops. In other words, the Python code which generates html, is pushed to a main branch
 integrated with Ci/Cd service [Netlify](https://www.netlify.com)
@@ -58,7 +60,7 @@ Again, the above is not true. This is a Go Hugo static microblog which is publis
 The conversion was done with the help of Grok to provide some handy Python scripts.
 
 
-### The Future :crystal_ball:
+### The Future {{< emoji crystal_ball >}}
 
 I plan to add more content, add Github emojis back in using the proper Go templating.
 
@@ -67,7 +69,7 @@ static site generator.~~
 
 Actually, this migration is done. This is now a Go Hugo site. Did I mention that?
 
-### The Links :link:
+### The Links {{< emoji link >}}
 
 Here are some useful links:
 

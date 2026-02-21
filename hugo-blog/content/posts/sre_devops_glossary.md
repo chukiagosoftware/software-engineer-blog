@@ -1,7 +1,7 @@
 ---
-title: "Glosario DevOps"
+title: "DevOps Glossary in Spanish"
 date: 2020-06-15
-categories: ["SRE"]
+categories: ["SRE", "Devops", "IaC"]
 tags: ['DevOps', 'IaC', 'CICD', 'PaaS', 'SRE', 'Terraform']
 author: "Eric Arellano"
 description: "A Glossary of DevOps and SRE-related tools and terminology"
@@ -66,17 +66,17 @@ mediante una solicitud como
 Y tener la certeza de que la infra backend va a existir al completar la operación y recibir un HTTP 200, luego de un 
 tiempo de espera por supuesto.
 
-#### DevOps  :loop:
+#### DevOps  {{< emoji loop >}}
 
 La combinación de Desarollo y Operaciones. Por ejemplo, conjugar el Gitflow de ingenieros de software con el testing 
 y QA, el monitoreo y el troubleshooting realizado por equipos de Operaciones, Soporte, Producto.
 
-#### Gitflow :hourglass_flowing_sand:
+#### Gitflow {{< emoji hourglass_flowing_sand >}}
 
 Git flow es la práctica de gestionar el Unit Testing, Functional Testing o Continuous Integration de un paquete de 
 software a partir de uno o varios repositorios de código que automáticamente generan pruebas y estatus a partir de 
 cada Push de cambios. Esto se realiza con Webhooks estilo Github-Gitlab u otros mecanismos, la cosa es que sea 
-automático, rápido y a prueba de balas :bullettrain_front: 
+automático, rápido y a prueba de balas {{< emoji bullettrain_front >}} 
 
 Generalmente, se utiliza en branches de desarrollo, prueba y staging para luego pasar el código 
 verificado a main y ponerlo en producción mediante Continous Deployment.
@@ -107,7 +107,7 @@ logs, trazas y alertas oportunas.
 
 ## Las Herramientas
 
-#### [Terraform](https://www.terraform.io/intro/index.html) :metal:
+#### [Terraform](https://www.terraform.io/intro/index.html) {{< emoji metal >}}
 
 Terraform brinda un lenguaje de configuración [HCL](https://www.terraform.io/docs/configuration/syntax.html) 
 abstracto encima de las API de proveedores de nube y datacenter comunes como AWS, Azure, GCP, VMWare, DigitalOcean, 
@@ -116,7 +116,7 @@ a Python en su lógica.
 
 Por debajo, Terraform utiliza *providers* para cada nube, y está escrito en Go. 
     
-#### [Ansible](https://www.ansible.com) :metal:
+#### [Ansible](https://www.ansible.com) {{< emoji metal >}}
     
 Ansible es un sistema y lenguaje de configuración en YAML que permite actualizar y configurar servidores, 
 dispositivos de red y nubes completas mediante ssh con una configuración sencilla.
@@ -135,13 +135,13 @@ Packer de Hashicorp es una herramienta para crear imágenes AMI (AWS), OVF (VMwa
 requerido, o tomar una imágen automatizada de un sistema existente. Se puede partir de un sistema vivo o un .iso y 
 ejecutar un provisioner de forma similar a Terraform, que puede ser Ansible por ejemplo.
 
-#### [Fabric](http://www.fabfile.org) :metal:
+#### [Fabric](http://www.fabfile.org) {{< emoji metal >}}
  
 Fabric es una librería completa en Python para configuración y automatización remota o local del sistema en base a 
 SSH u otros transportes. Es un rival empedernido de Ansible y las demás cool kids on the block que tiene un lugar 
 importante en algunas empresas.
  
-#### Jenkins :point_up:
+#### Jenkins {{< emoji point_up >}}
 
 El estándar industrial para la automatización del desarrollo. 
 

@@ -187,7 +187,7 @@ CodeDeploy service account permission to execute on it's behalf.
 #### aws command to create deployment-group
 
      aws deploy create-deployment-group --application-name <name> --deployment-group-name <deployments_name>> \
-                                         --service-role-arn arn:aws:iam::<AWS account>:role/CodeDeployServiceRole
+                                         --service-role-arn arn{{< emoji aws >}}iam::<AWS account>:role/CodeDeployServiceRole
 
      {
        "deploymentGroupId": "<id>"

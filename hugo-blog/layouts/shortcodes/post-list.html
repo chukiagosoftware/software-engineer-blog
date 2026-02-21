@@ -1,0 +1,10 @@
+{{/* post-list.html - Lists recent posts on the home page */}}
+<div class="post-list">
+    {{ range .Site.RegularPages }}
+    <article class="post-item">
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Summary | plainify | truncate 150 }}</p>
+        <small>{{ .Date.Format "January 2, 2006" }}</small>
+    </article>
+    {{ end }}
+</div>

@@ -8,7 +8,7 @@ description: "Useful bash commands for DevOps"
 draft: false
 ---
 
-## Useful Bash commands for DevOps work    :toolbox:
+## Useful Bash commands for DevOps work    {{< emoji toolbox >}}
 
 So Bash is no longer the hottest ticket on the market. Happens. I may have seen the actual point where this peaked 
 and let me tell you, that's something. Still, there's some cool stuff to be done with Bash.
@@ -21,16 +21,16 @@ com/edamsoft-sre/jitsi-azure-terraform/blob/trunk/environments/prod/templates
 /setup.tpl)
 
 
-### 1.  iterm2 or csshX  :tv:
+### 1.  iterm2 or csshX  {{< emoji tv >}}
 
 The best terminal software will practically do your job for you. Just install, sit back and cash in. If you don't 
 know what either is, try iterm2 first. If you can find csshX and install it, then all your problems will be solved.  
-You will have new ones, for sure. :crocodile: but the old ones, gone.  Using multiple windows efficiently is almost 
+You will have new ones, for sure. {{< emoji crocodile >}} but the old ones, gone.  Using multiple windows efficiently is almost 
 better than actually automating anything.  It can be lot's of fun, and also very dangerous.
 
 
 
-###### iterm Shortcuts :cactus:
+###### iterm Shortcuts {{< emoji cactus >}}
 
     Ctrl-shift-i - Send output to all windows AND tabs (watch out!)
     Ctrl-D - Open a window to the right
@@ -40,10 +40,10 @@ better than actually automating anything.  It can be lot's of fun, and also very
  
  *If you need or WANT to have dozens of servers open and send commands to different sub groups, and, and, and....*
 
- [Get csshX](https://formulae.brew.sh/formula/csshx) !!! Then, relax and eat some ramen :ramen: 
+ [Get csshX](https://formulae.brew.sh/formula/csshx) !!! Then, relax and eat some ramen {{< emoji ramen >}} 
 ***
 
-#### 2. top   :crystal_ball:
+#### 2. top   {{< emoji crystal_ball >}}
 
 The Linux *top* command is pretty well documented. 
 
@@ -123,7 +123,7 @@ Other than that, use your ~/.ssh/config file to set some sensible defaults
      ssh-add ~/path/to/my/key
      ssh-add -l
      
- :bulb: Use a passphrase on your keys. Why not.
+ {{< emoji bulb >}} Use a passphrase on your keys. Why not.
 
 ***
 
@@ -134,7 +134,7 @@ in class. But you still have thousands of websites and production platforms rely
 trust me.
 
 
- :bulb: Use *sed* to replace text with regex
+ {{< emoji bulb >}} Use *sed* to replace text with regex
  
  Sed allows simple regular expression matching which is what you're going to have to do to fix your mistakes. All of them.
   
@@ -157,7 +157,7 @@ trust me.
 ### 7.  While and For Loops
 
 These are also useful.  You can make a list of numbers like {1..100}. This is where you realize Bash really IS a 
-programming language. Imagine that!  :unlock:
+programming language. Imagine that!  {{< emoji unlock >}}
 
     for i in {1..100};
        do echo "Some interesting thing one hundred times with an index: $i";
@@ -185,4 +185,4 @@ Databases and stuff. Thought you should know.
       echo $feedback > /dev/null
 
 
-:pause_button:
+{{< emoji pause_button >}}

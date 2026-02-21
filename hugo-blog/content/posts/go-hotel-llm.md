@@ -11,6 +11,8 @@ draft: false
 
 A comprehensive Go microservice that fetches, consolidates, and analyzes hotel data from multiple sources. Features multi-source data aggregation, review crawling, and LLM-powered recommendation analysis.
 
+
+
 ## Architecture
 
 Alpaca is a single microservice that:
@@ -22,6 +24,8 @@ Alpaca is a single microservice that:
 - Stores data in SQLite (default) with raw SQL
 - Uses a generalized provider interface for easy API integration
 - Processes data in concurrent batches with rate limiting
+
+
 
 ## Project Structure
 
@@ -65,6 +69,8 @@ alpaca/
 - **Google Places**: Hotel data and reviews (interface ready)
 - **Booking.com**: Hotel data and reviews (interface ready)
 - **Consolidated Schema**: Unified hotel table with ratings from all sources
+
+<!--more-->
 
 ### ✅ Review Processing & LLM Analysis
 - **Multi-Source Review Crawling**: Automatically fetches reviews from:

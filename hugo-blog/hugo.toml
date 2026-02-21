@@ -7,6 +7,12 @@ theme = "PaperMod"
 enableEmoji = true
 buildFuture = true
 
+[markup.goldmark.extensions.emoji]
+  src = "https://github.githubassets.com/images/icons/emoji/"
+  size = 20  # Optional: Adjust the size in pixels
+  class = "emoji"  # Optional: Add a CSS class for styling
+
+
 [params]
   subtitle = 'Software Engineering, AI and Cloud'
   author = 'Eric Arellano'

@@ -20,8 +20,8 @@ se pueden ver por este blog. Bueno, en realidad bajamos el archivo json de Githu
 y utilizamos los enlaces para armar tags *img*. Poco a poco hemos mejorado algunas cosas, como regualr el tamaño de 
 los íconos 64x64 con CSS.
 
-Para descargar los 1793 emojis de GitHub :copyright:  la operación toma mucho tiempo para tan solo 9.1M: como 15 
-minutos :stopwatch: 
+Para descargar los 1793 emojis de GitHub {{< emoji copyright >}}  la operación toma mucho tiempo para tan solo 9.1M: como 15 
+minutos {{< emoji stopwatch >}} 
 
 En realidad es solamente esperar el round trip time entre nosotros y github.com 1800 veces, lo cual es una 
 aplicación perfecta para IO mediante Async. 
@@ -34,7 +34,7 @@ Podríamos utilizar *threading.Thread* pero la idea es mirar hacia adelante con 
 A veces, un diff vale mil palabras y esperemos que esta es una de esas veces.
 
 Como se puede ver, es fácil añadir un poco de concurrencia async a un sencillo código en Python con 
-Async y aiohttp.  :godmode:  Ahorramos valiosos minutos, que en una aplicación compleja pueden ser importantes.
+Async y aiohttp.  {{< emoji godmode >}}  Ahorramos valiosos minutos, que en una aplicación compleja pueden ser importantes.
 
 
 ![async_download](/images/async_download.png)

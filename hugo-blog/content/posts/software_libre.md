@@ -48,7 +48,7 @@ Aprovecho de añadir mi granito de arena con otras perspectivas.
 
 * No existe soporte - que tal [stackoverflow](www.stackoverflow.com), [google.com](google.com), [quora](www.quora.com)  ??
 
-:smiley:
+{{< emoji smiley >}}
 
 * Software libre es revolucionario (ver arriba)
  
@@ -76,7 +76,7 @@ Aprovecho de añadir mi granito de arena con otras perspectivas.
 <br/>
 ## Entonces, ¿Linux dónde en el Estado?
 
-:cloud:
+{{< emoji cloud >}}
 
 
 Así es. En la nube!!

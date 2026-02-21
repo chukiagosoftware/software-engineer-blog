@@ -58,7 +58,7 @@ Una vez confirmado, ejecuto siempre el setup.py ya que quiero tener esos Emoji.
 
 ---
 
-### Stork Search (Rust)  :muscle:
+### Stork Search (Rust)  {{< emoji muscle >}}
 
 Adicionalmente en la última encarnación, el Blog utiliza el tema Papyrus, que incluye pelican-search además de las 
 tablas de contenido.  El Pelican Search se basa en un módulo Rust que es [Stork Search](https://stork-search.net) y 
@@ -73,13 +73,13 @@ ejecución y falla sin encontrarlo. Probablemente es una medida de seguridad imp
 binarios arbitrarios, entonces no le busqué más pies al gato y asumo el costo de instalar todo Rust stable 
 en cada deploy por ahora.
 
-:hankey: Could not find Stork in $Path
+{{< emoji hankey >}} Could not find Stork in $Path
 
     wget https://files.stork-search.net/releases/v1.5.0/stork-ubuntu-20-04
     chmod +x stork-ubuntu-20-04
     
 
-Site has been deployed. :boom: 
+Site has been deployed. {{< emoji boom >}} 
 
      #!/usr/bin/env bash
      rustup toolchain install stable
