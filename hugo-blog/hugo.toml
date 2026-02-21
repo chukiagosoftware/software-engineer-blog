@@ -2,6 +2,7 @@ baseURL = 'https://blog.ericarellano.tech'
 languageCode = 'en-us'
 title = 'Go, Python, AI, Devops, AWS, GCP, Cloud Architecture'
 timezone = 'America/Los_Angeles'
+themesDir = "../themes"
 theme = "PaperMod"
 
 [params]
