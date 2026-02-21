@@ -9,13 +9,18 @@ draft: false
 
 
 
-## Another software engienering blog :mage_man:
+## Another software engieering blog :mage_man:
 
-I am a Computer and Electrical Engineer by training that has worked as a Network and Security engineer in the 2000's, 
-SaaS Web, DevOps and SRE in the 2010's and an AI, AWS and Go engineer in the 2020's. 
+Officially a Computer and Electrical Engineer, B.Sc. (nice!). I've also been a Network and Security, then Devops,
+ Site Reliability and more recently an AI, AWS and Go engineer. This is my blog, not a portfolio. Just some notes and 
+my most recent CI/CD and programming language which is Github Actions and Go. I've also used Jenkins, ArgoCD, Cloudbuild, 
+Python, Javascript but, I'm not going to talk about those.
 
 My speciality is building, deploying and whooping ass with Go and Python software, AWS, Kubernetes, OpenTelemetry and Prometheus 
 end to end for Generative AI (Large Language Models) applications.
+
+While I am solely responsible for all this crap- I mean, content- I do have to thank Grok and Claude for helping make the 
+conversion fast and mostly painless. Also, thanks to my friends and family for supporting me and my wife.
 
 ### The Icons :shipit:
 
