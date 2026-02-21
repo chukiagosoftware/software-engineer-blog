@@ -15,7 +15,7 @@ Just some notes and musings on my journey as a software engineer. {{< emoji sun 
 My passion is building fun applications, staying at the cutting edge of Cloud, Kubernetes, 
 OpenTelemetry and AI of course. {{< emoji horse >}} 
 
-{{< emoji server >}}
+{{< emoji engineering >}}
 
 
 I've built and helped to scale and observe a variety of SaaS, Webex Videoconferencing, Jitsi videoconference,
