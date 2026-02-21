@@ -2,32 +2,39 @@
 title: "Alpaca - Hotel Data Microservice"
 date: 2026-02-21
 categories: ["Go", "Microservices", "AWS"]
-tags: ["Go", "API", "LLM", "SQLite", "Amadeus", "DevOps"]
+tags: ["Go", "RAG", "API", "LLM", "SQLite", "Amadeus", "DevOps"]
 author: "Eric Arellano"
-description: "A comprehensive Go microservice for fetching, consolidating, and analyzing hotel data from multiple sources, featuring multi-source aggregation, review crawling, and LLM-powered recommendations."
+description: "A Go microservice for analyzing hotel data, RAG engine and providing LLM-powered recommendations with RAG."
 draft: false
 ---
 
 
-A comprehensive Go microservice that fetches, consolidates, and analyzes hotel data from multiple sources. Features multi-source data aggregation, review crawling, and LLM-powered recommendation analysis.
+A comprehensive Go microservice that fetches, consolidates, and analyzes hotel data from multiple sources. 
 
+Features multi-source data aggregation, Retrieval Augmented Generation based recommendation engine with cutting edge LLMs.
 
+Status: In active development.
+
+URL: Not yet public.
 
 ## Architecture
 
-Alpaca is a single microservice that:
+Alpaca is a microservice and utility suite that:
 - Fetches hotel data from multiple sources (Amadeus, Expedia, Tripadvisor, Google, Booking.com)
 - Consolidates hotel data into a unified schema
 - Crawls reviews from multiple sources (Tripadvisor, Google, Expedia, Booking, hotel websites, etc.)
+- Vectorizes reviews and hotel data into RAG capable vector database.
 - Uses LLM (GPT-4, Claude, Grok) to analyze reviews for Quality and Quiet
 - Generates intelligent recommendations based on review analysis
 - Stores data in SQLite (default) with raw SQL
 - Uses a generalized provider interface for easy API integration
 - Processes data in concurrent batches with rate limiting
 
+<!--more-->
 
+## Current Project Structure 
 
-## Project Structure
+Note this is a development stage service and will likely undergo changes.
 
 ```
 alpaca/
@@ -58,7 +65,7 @@ alpaca/
 
 ### ✅ Simplified Architecture
 - **Single Microservice**: One focused service for hotel data collection
-- **Raw SQL**: No ORM overhead, direct SQL control
+- **Raw SQL**: No ORM overhead, direct SQL control, ready for Redshift/Postgres
 - **SQLite First**: Simple, file-based database (easy to migrate to Postgres/Redshift later)
 - **Generalized API Interface**: Easy to add new hotel data providers
 
@@ -76,7 +83,8 @@ alpaca/
 - **Multi-Source Review Crawling**: Automatically fetches reviews from:
     - Tripadvisor, Google, Expedia, Booking.com
     - Hotel websites, Bing, Yelp
-- **LLM-Powered Analysis**: Uses GPT-4, Claude, or Grok to analyze reviews
+- Vector database will be used for fine-tuned models in iteration 2
+- **LLM-Powered Analysis**: Uses GPT-4, Claude, or Grok to analyze areviews
 - **Quality Detection**: Identifies hotels with excellent service, cleanliness, amenities
 - **Quiet Detection**: Identifies quiet, peaceful hotels away from noise
 - **Intelligent Recommendations**: Combines quality and quiet analysis for recommendations
@@ -141,6 +149,8 @@ The service will:
 ## Database Schema
 
 The service uses a simple normalized schema with three main tables:
+
+<!--more-->
 
 ```sql
 -- Basic hotel information
@@ -269,7 +279,8 @@ recommendationService := services.NewRecommendationService(
 err := recommendationService.ProcessHotelRecommendations(ctx, "hotel-id")
 ```
 
-## Next Steps & Recommendations
+## Takeaways
+
 
 ### Database Backend Options
 
@@ -283,15 +294,15 @@ err := recommendationService.ProcessHotelRecommendations(ctx, "hotel-id")
 
 3. **AWS Redshift**: For analytics workloads
     - Pros: Columnar storage, optimized for analytics
-    - Cons: More complex setup, better for read-heavy analytics
+    - Cons: More complex setup, better for read-heavy analytics once data is standardized
 
-4. **MongoDB**: If you need document flexibility
+4. **MongoDB**: If we need future document flexibility and secondary storage
     - Pros: Native JSON, flexible schema
     - Cons: Different query model, may need to rethink relationships
 
 **Recommendation**: Start with SQLite for development, migrate to PostgreSQL for production. The raw SQL approach makes migration straightforward.
 
-### Code Simplification Opportunities
+### Code Simplification ToDo
 
 1. **Struct Simplification**:
     - Consider flattening some nested JSON structures
@@ -310,12 +321,13 @@ err := recommendationService.ProcessHotelRecommendations(ctx, "hotel-id")
 
 4. **Configuration**:
     - Move hardcoded values to config file
+    - Implement feature flags
     - Add validation for environment variables
-    - Support multiple city codes
+    - Support multiple city codes with Geolocation
 
 5. **Testing**:
     - Add unit tests for database operations
-    - Add integration tests for API provider
+    - Add integration tests for API provider, LLM and Vectors
     - Mock external API calls for testing
 
 ## Development

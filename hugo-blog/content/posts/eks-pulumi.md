@@ -20,6 +20,8 @@ The EKS cluster itself is instantiated with `eks.NewCluster`, taking arguments l
 
 To support private networking, we added VPC endpoints using `aws.ec2.VpcEndpoint`. The EKS endpoint (`com.amazonaws.us-east-1.eks`) and ECR endpoints (`com.amazonaws.us-east-1.ecr.dkr` and `.ecr.api`) are Interface types with `PrivateDnsEnabled: true`, tied to `privateSubnets` and the cluster’s node security group (`cluster.NodeSecurityGroupIds`). The S3 Gateway endpoint (`com.amazonaws.us-east-1.s3`) uses `RouteTableIds` derived dynamically from `privateSubnets` with an `ApplyT` function calling `ec2.LookupRouteTable`, corrected to target `arn{{< emoji aws >}}s3:::prod-us-east-1-starport-layer-bucket/*` after fixing a `ctx.Stack()` bug. The final touch exports the kubeconfig (`ctx.Export("kubeconfig", cluster.Kubeconfig)`), enabling `kubectl` access.
 
+[Github Repo](https://www.github.com/chukiagosoftware/eks-pulumi)
+
 ## Challenge 1: Bootstrapping AL2023 Nodes
 
 **Problem**: Nodes wouldn’t register; kubelet failed with “Failed to load environment files” errors, and `bootstrap.sh` was missing.
