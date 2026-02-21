@@ -1,5 +1,5 @@
 ---
-title: "Alpaca - Hotel Data Microservice"
+title: "Alpaca - Hotel Quality Recommendations"
 date: 2026-02-21
 categories: ["Go", "Microservices", "AWS"]
 tags: ["Go", "RAG", "API", "LLM", "SQLite", "Amadeus", "DevOps"]
@@ -29,6 +29,8 @@ Alpaca is a microservice and utility suite that:
 - Stores data in SQLite (default) with raw SQL
 - Uses a generalized provider interface for easy API integration
 - Processes data in concurrent batches with rate limiting
+
+[Github Repo](https://github.com/chukiagosoftware/alpaca)
 
 <!--more-->
 
