@@ -1,6 +1,6 @@
 baseURL = 'https://blog.ericarellano.tech'
 languageCode = 'en-us'
-title = 'Go, Python, AI, Devops, AWS, GCP, Cloud Architecture'
+title = 'Another Software Engineering Blog'
 timezone = 'America/Los_Angeles'
 themesDir = "../themes"
 theme = "PaperMod"
@@ -17,6 +17,27 @@ buildFuture = true
   subtitle = 'Software Engineering, AI and Cloud'
   author = 'Eric Arellano'
   copyright = '©2026'
+  description = "Musings and snippets of Go, Python, Devops, AI"
+  keywords = ["Go", "Python", "AI", "DevOps", "AWS", "GCP", "Cloud Architecture", "Software Engineering"]
+  [params.search]
+    enabled = true
+    contentLength = 4000  # Optional: Truncate long previews
+    placeholder = "Search..."  # Optional: Custom placeholder text
+  [params.profileMode]
+   enabled = true
+   title = "Hi, I'm Eric Arellano"
+   imageUrl = "/images/author.jpg"  # Optional: Path to your profile image
+   imageWidth = 120  # Optional: Image width in pixels
+   imageHeight = 120  # Optional: Image height in pixels
+   color = 'auto'
+    # Show reading time, word count, etc.
+   ShowReadingTime = true
+   ShowWordCount = true
+   ShowShareButtons = true
+   ShowPostNavLinks = true
+   ShowBreadCrumbs = true
+   ShowCodeCopyButtons = true
+   ShowPostMeta = true
 
 [params.social]
   github = 'https://github.com/chukiagosoftware'

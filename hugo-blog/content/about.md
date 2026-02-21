@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Intro" 
 date: 2026-02-01
 draft: false
 ---
@@ -8,8 +8,7 @@ draft: false
 {{< emoji sunrise >}}
 
 
-
-## Another software engineering blog {{< emoji mage_man >}}
+## About Me {{< emoji mage_man >}}
 
 Officially a Computer and Electrical Engineer, B.Sc. (nice!). I've also been a Network and Security, then Devops,
 Site Reliability and more recently an AI, AWS and Go engineer. This is my blog, not a portfolio. Just some notes and
