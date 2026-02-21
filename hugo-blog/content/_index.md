@@ -52,8 +52,10 @@ like Jekyll or Hugo, but rather a microblog.
 
 ### The Future :crystal_ball:
 
-I plan to add more content, improve the theme, and add more features. I also plan to migrate to Hugo or another
-static site generator.
+I plan to add more content, add Github emojis back in using the Go templating.
+
+~~I also plan to migrate to Hugo or another
+static site generator.~~
 
 Actually, this migration is done. This is now a Go Hugo site.
 
