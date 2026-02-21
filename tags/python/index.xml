@@ -7,8 +7,12 @@ se pueden ver por este blog. Bueno, en realidad bajamos el archivo json de Githu
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;y utilizamos los enlaces para armar tags &lt;em&gt;img&lt;/em&gt;. Poco a poco hemos mejorado algunas cosas, como regualr el tamaño de
 los íconos 64x64 con CSS.&lt;/p&gt;
-&lt;p&gt;Para descargar los 1793 emojis de GitHub &amp;#xa9;&amp;#xfe0f; la operación toma mucho tiempo para tan solo 9.1M: como 15
-minutos &amp;#x23f1;&amp;#xfe0f;&lt;/p&gt;</description></item><item><title>Emojis de Github con Python Markdown</title><link>https://blog.ericarellano.tech/posts/pelican_github_emojis/</link><pubDate>Fri, 10 Jul 2020 00:00:00 -0700</pubDate><guid>https://blog.ericarellano.tech/posts/pelican_github_emojis/</guid><description>Python Markdown extension for Github Emojis used in this Pelican blog</description></item><item><title>Deploy Pelican on Netlify</title><link>https://blog.ericarellano.tech/posts/netlify/</link><pubDate>Tue, 30 Jun 2020 00:00:00 -0700</pubDate><guid>https://blog.ericarellano.tech/posts/netlify/</guid><description>&lt;p&gt;Authors: Eric Arellano&lt;/p&gt;
+&lt;p&gt;Para descargar los 1793 emojis de GitHub
+:copyright:
+la operación toma mucho tiempo para tan solo 9.1M: como 15
+minutos
+:stopwatch:
+&lt;/p&gt;</description></item><item><title>Emojis de Github con Python Markdown</title><link>https://blog.ericarellano.tech/posts/pelican_github_emojis/</link><pubDate>Fri, 10 Jul 2020 00:00:00 -0700</pubDate><guid>https://blog.ericarellano.tech/posts/pelican_github_emojis/</guid><description>Python Markdown extension for Github Emojis used in this Pelican blog</description></item><item><title>Deploy Pelican on Netlify</title><link>https://blog.ericarellano.tech/posts/netlify/</link><pubDate>Tue, 30 Jun 2020 00:00:00 -0700</pubDate><guid>https://blog.ericarellano.tech/posts/netlify/</guid><description>&lt;p&gt;Authors: Eric Arellano&lt;/p&gt;
 &lt;h3 id="netlify"&gt;Netlify&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$ The fastest way to build the fastest sites.
 &lt;/code&gt;&lt;/pre&gt;
