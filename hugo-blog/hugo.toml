@@ -1,4 +1,4 @@
-baseURL = 'https://blog.ericarellano.tech'
+baseURL = 'https://ericarellano.tech'
 languageCode = 'en-us'
 title = 'Another Software Engineering Blog'
 timezone = 'America/Los_Angeles'
