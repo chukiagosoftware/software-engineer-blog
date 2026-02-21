@@ -12,36 +12,47 @@ buildFuture = true
   size = 20  # Optional: Adjust the size in pixels
   class = "emoji"  # Optional: Add a CSS class for styling
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
   subtitle = 'Software Engineering, AI and Cloud'
+  enableSearch = true
   author = 'Eric Arellano'
   copyright = '©2026'
   description = "Musings and snippets of Go, Python, Devops, AI"
   keywords = ["Go", "Python", "AI", "DevOps", "AWS", "GCP", "Cloud Architecture", "Software Engineering"]
-  [params.search]
-    enabled = true
-    contentLength = 4000  # Optional: Truncate long previews
-    placeholder = "Search..."  # Optional: Custom placeholder text
-  [params.profileMode]
-   enabled = true
-   title = "Hi, I'm Eric Arellano"
-   imageUrl = "/images/author.jpg"  # Optional: Path to your profile image
-   imageWidth = 120  # Optional: Image width in pixels
-   imageHeight = 120  # Optional: Image height in pixels
-   color = 'auto'
-    # Show reading time, word count, etc.
-   ShowReadingTime = true
-   ShowWordCount = true
-   ShowShareButtons = true
-   ShowPostNavLinks = true
-   ShowBreadCrumbs = true
-   ShowCodeCopyButtons = true
-   ShowPostMeta = true
 
-[params.social]
-  github = 'https://github.com/chukiagosoftware'
-  linkedin = 'https://www.linkedin.com/in/eric-arellano-martinez/'
+[params.profileMode]
+  enabled = true
+  title = "Hi, I'm Eric Arellano"
+  imageUrl = "/images/author.jpg"  # Optional: Path to your profile image
+  imageWidth = 120  # Optional: Image width in pixels
+  imageHeight = 120  # Optional: Image height in pixels
+  color = 'auto'
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowPostMeta = true
+
+[[params.profileMode.buttons]]
+  name = "Posts"
+  url = "/posts"
+
+[[params.profileMode.buttons]]
+  name = "About"
+  url = "/about"
+
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/chukiagosoftware"
+[[params.socialIcons]]
+  name = "linkedin"
+  url = 'https://www.linkedin.com/in/eric-arellano-martinez/'
 
 [[params.links]]
   name = 'X'
@@ -59,9 +70,15 @@ buildFuture = true
 [[menu.main]]
   name = "About"
   url = "/about"
-  weight = 20
+  weight = 10
 
 [[menu.main]]
   name = "Posts"
   url = "/posts"
-  weight = 10
+  weight = 20
+
+[[menu.main]]
+  name = "Search"
+  url = "/search"
+  weight = 30
+

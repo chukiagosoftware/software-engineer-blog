@@ -10,7 +10,7 @@ draft: false
 Officially a Computer and Electrical Engineer, B.Sc. (nice!). I've mostly been a Network and Security, then Devops,
 Site Reliability and more recently an AI, AWS/GCP and Go engineer. This is my blog, not really a portfolio and not too serious. 
 
-Just some notes and musings on my journey as a software engineer. {{< emoji sun >}}
+Just some notes and musings on my journey as a software engineer. {{< emoji bubble_tea >}}
 
 My passion is building fun applications, staying at the cutting edge of Cloud, Kubernetes, 
 OpenTelemetry and AI of course. {{< emoji horse >}} 
@@ -34,7 +34,9 @@ Python, Javascript, Ansible but, I'm not going to talk about those.
 My speciality du jour is building, deploying apps written in Go and Python and handling AWS, Kubernetes, OpenTelemetry or Prometheus metrics 
 for an end to end system such as for Generative AI (Large Language Models) applications.
 
-I'm somewhat of a nerd and I am {{< emoji nerd_face >}} really good with Terraform. Like stupid good.
+I'm somewhat of a nerd and I am {{< emoji nerd_face >}} really good with Terraform. 
+
+Like {{< emoji hippopotamus >}} good.
 
 While I am solely responsible for all this crap- I mean, content- I do have to thank Grok and Claude for helping make the
 conversion fast and mostly painless. Also, thanks to my friends and family for supporting me and my wife.
