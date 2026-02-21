@@ -30,6 +30,11 @@ buildFuture = true
   pagerSize = 10
 
 [[menu.main]]
- name = "Posts"
- url = "/posts"
- weight = 10
+  name = "About"
+  url = "/about"
+  weight = 20
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts"
+  weight = 10
