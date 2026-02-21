@@ -14,18 +14,9 @@ Today we will deploy Google Kubernetes Engine, Terraform Cloud worspaces and var
 Deploy Delivery Pipeline providing Continuous Delivery for Grafana and the sample (Google) microservices app via 
 Skaffold.
 
-![Keynote Presentation](/images/devops_presentation.png)
-
 ## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
 
 [https://github.com/edamsoft-sre/DevOpsDeNoche](github.com/edamsoft-sre/DevOpsDeNoche)
-
-## Keynote Video
-
-
-<div class="youtube youtube-16x9">
-<iframe src="https://www.youtube.com/embed/LOgSO0KcyTY" allowfullscreen seamless frameBorder="0"></iframe>
-</div>
 
 ### How to use the Terraform resources 
 
@@ -41,6 +32,16 @@ Skaffold.
 * Private Google Kubernetes clusters with access control.
 * Private Google Cloud Build worker pool 
 * Skaffold via Cloud Build and via Cloud Deploy
+
+
+## Keynote Video
+
+![Keynote Presentation](/images/devops_presentation.png)
+
+
+<div class="youtube youtube-16x9">
+<iframe src="https://www.youtube.com/embed/LOgSO0KcyTY" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
 
 
 ## Configuración completa de Google Cloud Platform y Google Kubernetes Engine :mountain_bicyclist:
@@ -179,3 +180,5 @@ Tabla de Contenido del Repositorio
 
 # Capítulo Cuatro: CI/CD y Pipelines para Desarrollo y Publicacion Agiles
 [3 Pipelines](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/3_infraestructura_escalable/pipelines)
+
+

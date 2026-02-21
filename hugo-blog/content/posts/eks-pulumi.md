@@ -1,6 +1,6 @@
 ---
 title: "Building a Modern Application on AWS EKS with Pulumi: A Practical Journey"
-date: 2026-02-21
+date: 2026-01-10
 categories: ["AWS", "EKS", "IaC"]
 tags: ["Pulumi", "Go", "Kubernetes", "DevOps", "PostgreSQL", "Kafka"]
 author: "Eric Arellano"

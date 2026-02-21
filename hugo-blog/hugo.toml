@@ -4,6 +4,8 @@ title = 'Go, Python, AI, Devops, AWS, GCP, Cloud Architecture'
 timezone = 'America/Los_Angeles'
 themesDir = "../themes"
 theme = "PaperMod"
+enableEmoji = true
+buildFuture = true
 
 [params]
   subtitle = 'Software Engineering, AI and Cloud'
@@ -26,3 +28,8 @@ theme = "PaperMod"
 
 [pagination]
   pagerSize = 10
+
+[[menu.main]]
+ name = "Posts"
+ url = "/posts"
+ weight = 10
