@@ -9,11 +9,13 @@ draft: false
 
 
 
-## A microblog for SRE, DevOps, MLOps :mage_man:
+## Another software engienering blog :mage_man:
 
 I am a Computer and Electrical Engineer by training that has worked as a Network and Security engineer in the 2000's, 
-Web, DevOps and SRE in the 2010s and 2020s. Currently I am a Site Reliability Engineering Technical Lead for AWS 
-infra and Generative AI-based distributed applications.
+SaaS Web, DevOps and SRE in the 2010's and an AI, AWS and Go engineer in the 2020's. 
+
+My speciality is building, deploying and whooping ass with Go and Python software, AWS, Kubernetes, OpenTelemetry and Prometheus 
+end to end for Generative AI (Large Language Models) applications.
 
 ### The Icons :shipit:
 
@@ -21,6 +23,9 @@ The site runs on Python 3.10 with the Pelican 4.8.0 microblog software and my cu
 for the Github Emojis. These are just the publicly available emojis which you can see around the pages. I find that 
 there are some really, really cool ones and thus without further ado.
 
+Actually, this is no longer true. This is now a Go Hugo site. Which is why you don't see any emojis yet. 
+
+At some point I will figure out what/how to get sweet Github Emojis or a better alternative going.
 
 ### The Platform :godmode:
 
@@ -40,6 +45,7 @@ merging, PRs and other differences with a production distributed microservice or
 oriented application. Nonetheless, the core principle is the same and using Git actually makes publishing this blog a 
 breeze.
 
+Again, this is now a Go Hugo site deployed with Github Actions rather than Netlify.
 
 ## Infrastructure as Code :suspect:
 
