@@ -15,25 +15,29 @@ Site Reliability and more recently an AI, AWS and Go engineer. This is my blog, 
 my most recent CI/CD and programming language which is Github Actions and Go. I've also used Jenkins, ArgoCD, Cloudbuild,
 Python, Javascript but, I'm not going to talk about those.
 
-My speciality is building, deploying and whooping ass with Go and Python software, AWS, Kubernetes, OpenTelemetry and Prometheus
-end to end for Generative AI (Large Language Models) applications.
+My speciality du jour is building, deploying apps written in Go and Python and handling AWS, Kubernetes, OpenTelemetry or Prometheus metrics 
+for an end to end system such as for Generative AI (Large Language Models) applications.
 
 While I am solely responsible for all this crap- I mean, content- I do have to thank Grok and Claude for helping make the
 conversion fast and mostly painless. Also, thanks to my friends and family for supporting me and my wife.
 
+
+
 ### The Icons :shipit:
 
-The site runs on Python 3.10 with the Pelican 4.8.0 microblog software and my custom Python Markdown 3.4.1 extension
+~~The site runs on Python 3.10 with the Pelican 4.8.0 microblog software and my custom Python Markdown 3.4.1 extension
 for the Github Emojis. These are just the publicly available emojis which you can see around the pages. I find that
-there are some really, really cool ones and thus without further ado.
+there are some really, really cool ones and thus without further ado.~~
 
-Actually, this is no longer true. This is now a Go Hugo site. Which is why you don't see any emojis yet.
+Actually, this is no longer true. This is now a Go Hugo site. Which is why you don't see most emojis yet.
 
 At some point I will figure out what/how to get sweet Github Emojis or a better alternative going.
 
+For now, we have Hugo's emojis which are not bad.
+
 ### The Platform :godmode:
 
-The code is deployed based on Git ops. In other words the Python code which generates html, is pushed to a main branch
+The code is deployed based on Git ops. In other words, the Python code which generates html, is pushed to a main branch
 integrated with Ci/Cd service [Netlify](https://www.netlify.com)
 
 I use Jetbrains Pycharm, so this is done either by typing *git push* in the Terminal or Cmd-K in the IDE window. I
@@ -49,15 +53,19 @@ merging, PRs and other differences with a production distributed microservice or
 architecture. Netlify has a nice build image for Python and static sites. This is not a static site generator
 like Jekyll or Hugo, but rather a microblog.
 
+Again, the above is not true. This is a Go Hugo static microblog which is published via Github Actions to a Github Pages.
+
+The conversion was done with the help of Grok to provide some handy Python scripts.
+
 
 ### The Future :crystal_ball:
 
-I plan to add more content, add Github emojis back in using the Go templating.
+I plan to add more content, add Github emojis back in using the proper Go templating.
 
 ~~I also plan to migrate to Hugo or another
 static site generator.~~
 
-Actually, this migration is done. This is now a Go Hugo site.
+Actually, this migration is done. This is now a Go Hugo site. Did I mention that?
 
 ### The Links :link:
 
