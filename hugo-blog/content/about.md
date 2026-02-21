@@ -21,10 +21,10 @@ OpenTelemetry and AI of course. {{< emoji horse >}}
 
 I've built and helped to scale and observe a variety of SaaS, Webex Videoconferencing, Jitsi videoconference,
 SIP/WebRTC VoIP and IP Telephony Contact Center, Big Data parallel processing, Machine Learning neural network models, 
-Large Language Generative Pretrained Transformer Models, Confluent Kafka event streaming, Postgre/MySQL/Redshift/Auror database
-modeling, data ingestion, processing, LLM model finetuning.
+Large Language Generative Pretrained Transformer Models, Confluent Kafka event streaming, Postgres/MySQL/Redshift/Aurora database
+modeling, data ingestion, processing, LLM model fine-tuning.
 
-Recently I've worked on vectorizing data with Go for RAG, modelling input data with AWS Glue, Athena and Redshift
+Recently I've worked on vectorizing data with Go for RAG, modeling input data with AWS Glue, Athena and Redshift
 implementing performant AI-based systems in AWS Kubernetes with
 OpenTelemetry, Prometheus and/or Datadog for real time metrics and analytics.
 
@@ -36,7 +36,7 @@ for an end to end system such as for Generative AI (Large Language Models) appli
 
 I'm somewhat of a nerd and I am {{< emoji nerd_face >}} really good with Terraform. 
 
-Like {{< emoji hippopotamus >}} good.
+Like {{< emoji hippopotamus >}} good? Maybe.
 
 While I am solely responsible for all this crap- I mean, content- I do have to thank Grok and Claude for helping make the
 conversion fast and mostly painless. Also, thanks to my friends and family for supporting me and my wife.
