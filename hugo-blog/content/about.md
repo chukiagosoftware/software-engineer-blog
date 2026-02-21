@@ -5,25 +5,25 @@ draft: false
 ---
 
 
-{{< emoji sunrise >}}
-
-
 ## About Me {{< emoji mage_man >}}
 
 Officially a Computer and Electrical Engineer, B.Sc. (nice!). I've mostly been a Network and Security, then Devops,
 Site Reliability and more recently an AI, AWS/GCP and Go engineer. This is my blog, not really a portfolio and not too serious. 
 
-Just some notes and musings on my journey as a software engineer.
+Just some notes and musings on my journey as a software engineer. {{< emoji sun >}}
 
 My passion is building fun applications, staying at the cutting edge of Cloud, Kubernetes, 
 OpenTelemetry and AI of course. {{< emoji horse >}} 
 
+{{< emoji software >}}
+
 I've built and helped to scale and observe a variety of SaaS, Webex Videoconferencing, Jitsi videoconference,
 SIP/WebRTC VoIP and IP Telephony Contact Center, Big Data parallel processing, Machine Learning neural network models, 
 Large Language Generative Pretrained Transformer Models, Confluent Kafka event streaming, Postgre/MySQL/Redshift/Auror database
-modelling, data ingestion, processing, LLM model finetuning.
+modelling, data ingestion, processing, LLM model fine-tuning.
 
-Recently I've worked on vectorizing data with Go for RAG, implementing performant AI based systems in AWS Kubernetes with
+Recently I've worked on vectorizing data with Go for RAG, modelling input data with AWS Glue, Athena and Redshift
+implementing performant AI-based systems in AWS Kubernetes with
 OpenTelemetry, Prometheus and/or Datadog for real time metrics and analytics.
 
 My most recent CI/CD and programming language are Github Actions and Go. I've also worked heavily with Jenkins (I know), ArgoCD, Google Cloudbuild,

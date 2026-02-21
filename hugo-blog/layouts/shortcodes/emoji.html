@@ -1,6 +1,2 @@
-{{ $name := .Get 0 }}
-{{ with (index site.Data.emojis $name) }}
-<img src="{{ . }}" alt=":{{ $name }}:" class="emoji" style="height: 1em; vertical-align: text-bottom;" />
-{{ else }}
-:{{ $name }}:
-{{ end }}
+{{ $name := .Get 0 }}{{- with (index site.Data.emojis $name) -}}
+<img src="{{ . }}" alt=":{{ $name }}:" class="emoji" style="display: inline-block; height: 1em; width: 1em; vertical-align: middle;" />{{- else -}}:{{ $name }}:{{- end }}
