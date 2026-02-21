@@ -27,10 +27,10 @@ jobs:
       - name: Build Hugo site
         run: |
           cd hugo-blog
-          hugo --minify --destination ../public
+          hugo --minify --destination public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ../public
+          publish_dir: hugo-blog/public
