@@ -19,7 +19,7 @@ tool your employer has had the brilliant idea to use instead of industry best pr
 Take this Revolutionary moment in time:
 
 ---
-time="1968-05-02 00:01:49.150" level=MERDE msg="[ Paris is on Fire! ] \"DELETE https://capitalism from A.
+time="1968-05-02 00:00:49.150" level=MERDE msg="[ Paris is on Fire! ] \"DELETE https://capitalism from A.
 Bunch.of.Situationists - 200 200B in 3100 µs"
 ---
 
