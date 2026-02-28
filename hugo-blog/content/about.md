@@ -35,17 +35,17 @@ message queues, databases en data engineering tools such as AWS Athena and Redsh
 
 
 
-I am about equally useful with AWS, EKS, Sagemaker and GCP, GKE, Vertex AI, for example.  {{< emoji biohazard }}
+I am about equally useful with AWS, EKS, Sagemaker and GCP, GKE, Vertex AI, for example.  {{< emoji biohazard >}}
 
 Recently I've worked on gathering inputs from HTML, PDF, and SQL data with Go and generating vectorized embeddings to implement
-Retrieval-Augmented Generation (RAG) on top of OpenAI, Anthropic, Google, and Open Source models.  {{< emoji bookmark }}
+Retrieval-Augmented Generation (RAG) on top of OpenAI, Anthropic, Google, and Open Source models.  {{< emoji bookmark >}}
 
-{{< emoji compass }}
+{{< emoji compass >}}
 
 I hold a DeepLearning.AI Professional Data Engineer certification from 2024, multiple Cisco networking certs in the 2000's and 2010's,
 and enjoy keeping up with new programming languages and frameworks, the latest being Go.
 
-{{< emoji construction_worker_man }}
+{{< emoji construction_worker_man >}}
 
 I'm definitely a nerd. {{< emoji nerd_face >}} and am real good using Terraform from ground up to deploying pipelines with 
 Github Actions, or Terraform Cloud.
@@ -65,11 +65,11 @@ most recent Python-to-Go conversion fast and painless. Also, thanks to my friend
 for the Github Emojis. These are just the publicly available emojis which you can see around the pages. I find that
 there are some really, really cool ones and thus without further ado.~~
 
-Actually, this is no longer true. This is now a Go Hugo site.  A moment of silence for Python {{< emoji snake }}
+Actually, this is no longer true. This is now a Go Hugo site.  A moment of silence for Python {{< emoji snake >}}
 and Pelican, which served me well for years.
 
 
-{{< emoji swimmer }}
+{{< emoji swimmer >}}
 
 Hugo is really cool, has a built-in Go templating engine, allows emojis and other HTML features easily using shortcodes.  I'm looking forward to 
 adding on to the site with Go's ecosystem as I develop my Hotel Recommendations RAG/LLM application. 
@@ -89,7 +89,7 @@ integrated with Ci/Cd service [Netlify](https://www.netlify.com)~~
 highly recommend it.~~
 
 
-{{< emoji thinking }}
+{{< emoji thinking >}}
 Other options I considered for deployment over the years were Google App Engine, [Render](https://www.render.com) and a VM on Digital
 Ocean or a [free Oracle VM](https://docs.oracle.com/es-ww/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm).
 
@@ -115,7 +115,7 @@ Someday, this blog may undergo its next conversion using Rust, unless another co
 Also, once work on [Alpaca](https://github.com/chukiagosoftware/alpaca) is complete, we will have a widget with my Hotel Recommendation assistant, or some nice tables
 and graphs with Hotel Review data, or both.
 
-{{< emoji congratulations }}
+{{< emoji congratulations >}}
 
 Thanks for reading! 
 
