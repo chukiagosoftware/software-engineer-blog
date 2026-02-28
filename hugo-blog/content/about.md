@@ -5,7 +5,7 @@ draft: false
 ---
 
 
-## About Me {{< emoji mage_man >}}
+### About Me {{< emoji mage_man >}}
 
 Hey! A while ago I received my degree as a Computer and Electrical Engineer, B.Sc. (2005, U. Texas at Austin). 
 
@@ -14,6 +14,7 @@ Contact Centers, Go, Python, Javascript, Java, and Bash shell scripting. I've he
 
 In the last 7 years my work has focused on AI and Machine Learning operations and product development, Devops, Site Reliability, and Clouds.
 
+#### Startups {{< emoji dna >}}
 I am very knowledgeable in helping to scale new products and services using AWS/GCP, Kubernetes, Terraform, Ci/Cd, and 
 proper telemetry or observability. I can also help to certify for SOC2, FedRAMP and generally maintain security best practices
 for cloud infrastructure, data, and applications.
@@ -24,8 +25,7 @@ My passion is building fun applications, staying at the cutting edge of Go, Clou
 OpenTelemetry, and AI of course. {{< emoji bearded_person >}} 
 
 
-{{< emoji computer >}}
-
+#### Experience {{< emoji computer >}}
 
 I've built and helped to scale and observe a variety of services providing from Web SaaS, Webex Video, Jitsi video, IP Telephony Contact Center,
 Big Data processing, Machine Learning with NN and LLM Gen AI models.Confluent Kafka event streaming, Postgres/MySQL/Redshift/Aurora database
@@ -34,32 +34,31 @@ I am experienced at building, integrating, and scaling Confluent Kafka, Postgres
 message queues, databases en data engineering tools such as AWS Athena and Redshift or Google BigQuery.
 
 
+#### Clouds {{< emoji biohazard >}}
+I am about equally useful with AWS, EKS, Sagemaker and GCP, GKE, Vertex AI, for example.  
 
-I am about equally useful with AWS, EKS, Sagemaker and GCP, GKE, Vertex AI, for example.  {{< emoji biohazard >}}
 
+#### Projects {{< emoji construction_worker_man >}}
 Recently I've worked on gathering inputs from HTML, PDF, and SQL data with Go and generating vectorized embeddings to implement
-Retrieval-Augmented Generation (RAG) on top of OpenAI, Anthropic, Google, and Open Source models.  {{< emoji bookmark >}}
+Retrieval-Augmented Generation (RAG) on top of OpenAI, Anthropic, Google, and Open Source models.
 
-{{< emoji compass >}}
 
+#### Other Skills {{< emoji brain >}}
 I hold a DeepLearning.AI Professional Data Engineer certification from 2024, multiple Cisco networking certs in the 2000's and 2010's,
 and enjoy keeping up with new programming languages and frameworks, the latest being Go.
 
-{{< emoji construction_worker_man >}}
 
-I'm definitely a nerd. {{< emoji nerd_face >}} and am real good using Terraform from ground up to deploying pipelines with 
+Definitely a nerd {{< emoji nerd_face >}}, I am real good using Terraform from zero up to deploying pipelines with 
 Github Actions, or Terraform Cloud.
 
-I have worked extensively in building telemetry with Go and Python and ML teams with end to end observability and
-distributed tracing into Datadog or Tempo using OpenTelemetry, Prometheus, or Datadog native metrics.
 
-While I am solely responsible for all this content- I do have to thank Grok and Claude for helping make the
-most recent Python-to-Go conversion fast and painless. Also, thanks to my friends and family for supporting me and my wife.
+I've also worked extensively in building telemetry with Go and Python and ML teams with end-to-end observability and
+distributed tracing into Datadog or Tempo using OpenTelemetry, Prometheus, or Datadog native metrics.
 
 <!--more-->
 
 
-### The Icons {{< emoji shipit >}}
+#### The Icons {{< emoji shipit >}}
 
 ~~The site runs on Python 3.10 with the Pelican 4.8.0 microblog software and my custom Python Markdown 3.4.1 extension
 for the Github Emojis. These are just the publicly available emojis which you can see around the pages. I find that
@@ -69,7 +68,7 @@ Actually, this is no longer true. This is now a Go Hugo site.  A moment of silen
 and Pelican, which served me well for years.
 
 
-{{< emoji swimmer >}}
+### This microblog {{< emoji swimmer >}}
 
 Hugo is really cool, has a built-in Go templating engine, allows emojis and other HTML features easily using shortcodes.  I'm looking forward to 
 adding on to the site with Go's ecosystem as I develop my Hotel Recommendations RAG/LLM application. 
@@ -78,7 +77,8 @@ I resisted updating this blog- and learning more Go-for several years mainly bec
 framework worked out. But I've since found that Go is my new favorite language and am thrilled with the power and simplicity of
 the standard library and tools. Python Async and FastAPI can't really hold a candle to Go routines and net/http (sorry!).
 
-### The Platform {{< emoji godmode >}}
+
+#### The Platform {{< emoji godmode >}}
 
 The blog HTML and Javascript/CSS code is deployed based on simple Git ops with Github Actions. 
 
@@ -89,7 +89,7 @@ integrated with Ci/Cd service [Netlify](https://www.netlify.com)~~
 highly recommend it.~~
 
 
-{{< emoji thinking >}}
+#### Alternatives {{< emoji thinking >}}
 Other options I considered for deployment over the years were Google App Engine, [Render](https://www.render.com) and a VM on Digital
 Ocean or a [free Oracle VM](https://docs.oracle.com/es-ww/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm).
 
@@ -108,19 +108,18 @@ The conversion from Python (Pelican) to Go (Hugo) was done with the help of Grok
 is now very mature and Github Actions allows me to build the suite upon pushes to Main, then deploy off a special branch all without leaving Github.
 
 
-### The Future {{< emoji crystal_ball >}}
+#### The Future {{< emoji crystal_ball >}}
 
 Someday, this blog may undergo its next conversion using Rust, unless another cooler language comes along first.
 
 Also, once work on [Alpaca](https://github.com/chukiagosoftware/alpaca) is complete, we will have a widget with my Hotel Recommendation assistant, or some nice tables
 and graphs with Hotel Review data, or both.
 
-{{< emoji congratulations >}}
 
-Thanks for reading! 
+##### Thanks for reading! {{< emoji dollar >}}
 
 
-### The Links {{< emoji link >}}
+#### Some Links {{< emoji link >}}
 
 Here are some useful links:
 
