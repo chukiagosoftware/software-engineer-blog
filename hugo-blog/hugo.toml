@@ -1,6 +1,6 @@
 baseURL = 'https://ericarellano.tech'
 languageCode = 'en-us'
-title = 'Another Software Engineering Blog'
+title = "Eric's Software Engineering Blog"
 timezone = 'America/Los_Angeles'
 themesDir = "../themes"
 theme = "PaperMod"
