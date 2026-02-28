@@ -15,7 +15,7 @@ Skaffold.
 
 ## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
 
-[https://github.com/edamsoft-sre/DevOpsDeNoche](github.com/edamsoft-sre/DevOpsDeNoche)
+[https://github.com/chukiagosoftware/DevOpsDeNoche](github.com/edamsoft-sre/DevOpsDeNoche)
 
 ## Keynote Video
 
@@ -62,7 +62,7 @@ Skaffold.
   * Service Usage Admin
 
 * Esta llave se coloca en Terraform Cloud como variable de entorno *GOOGLE_CREDENTIALS*
-* Hacer Git Fork del repositorio https://github.com/edamsoft-sre/DevOpsDeNoche
+* Hacer Git Fork del repositorio https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform
 * Actualizar *vcs_repo* en los recursos *tfe_workspace* con los datos del Fork en 
   
      3_infraestructura_escalable/terraform-cloud/workspaces.tf
@@ -160,19 +160,19 @@ Esto permite crear clusters Kubernetes / Private GKE con subnets ya definidas y 
 Tabla de Contenido del Repositorio
 
 # Capítulo Zero: Formato y pruebas de variables Terraform
-[1 Probando Variables](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/1probando_variables/readme.md)
+[1 Probando Variables](https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform/blob/main/1probando_variables/readme.md)
 
 # Capítulo Uno: Diseñando Organizacion Google en Terraform para Escalar a Trescientos Desarrolladores.
 
-[2 Arquitectura de la Organización DevOps](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/2_organizacion_acme.com.bo/readme.md)
+[2 Arquitectura de la Organización DevOps](https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform/blob/main/2_organizacion_acme.com.bo/readme.md)
 
 # Capítulo Dos: Definir la Organizacion, Roles y Permisos en Terraform
-[3 Terraform Cloud, GCP Network, Kubernetes, IAM](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/3_infraestructura_escalable/servicios-google/readme.md)
+[3 Terraform Cloud, GCP Network, Kubernetes, IAM](https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform/blob/main/3_infraestructura_escalable/servicios-google/readme.md)
 
 # Capítulo Tres: Kubernetes, Red VPC
 
-[3 Kubernetes](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/3_infraestructura_escalable/kubernetes/readme.md)
-[3 Red VPC](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/3_infraestructura_escalable/red)
+[3 Kubernetes](https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform/blob/main/3_infraestructura_escalable/kubernetes/readme.md)
+[3 Red VPC](https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform/blob/main/3_infraestructura_escalable/red)
 
 # Capítulo Cuatro: CI/CD y Pipelines para Desarrollo y Publicacion Agiles
-[3 Pipelines](https://github.com/edamsoft-sre/DevOpsDeNoche/blob/main/3_infraestructura_escalable/pipelines)
+[3 Pipelines](https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform/blob/main/3_infraestructura_escalable/pipelines)

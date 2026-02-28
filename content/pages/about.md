@@ -158,7 +158,7 @@ and [Pydantic](http://www.google.com?q=pydantic). Provides GetMutualFollowers, G
 <a name="terraform"></a>
 ### Terraform :rocket:
 
-Architected secure, scalable cloud infrastructure on [Google Cloud Platform](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/),
+Architected secure, scalable cloud infrastructure on [Google Cloud Platform](https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform/tree/main/3_infraestructura_escalable/),
 Amazon Web Services, [Microsoft Azure](https://github.com/edamsoft-sre/jitsi-azure-terraform) and Oracle Cloud using Terraform.
 
 Terraform grows on you, I promise. As your attorney, I would strongly advise you to use Terraform Cloud, Terragrunt, 
@@ -179,7 +179,7 @@ But the best way to learn Kubernetes is by deploying a cluster. If you will be u
 Terraform modules to deploy a fully secure Private GKE cluster and demo microservices app. This is important for SOC2 
 and other security standards or policies such as GDPR.
 
-[DevOpsDeNoche](https://github.com/edamsoft-sre/DevOpsDeNoche/tree/main/3_infraestructura_escalable/kubernetes)
+[DevOpsDeNoche](https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform/tree/main/3_infraestructura_escalable/kubernetes)
 
 ---
 ### Nomad  :speedboat: 
