@@ -15,7 +15,7 @@ Deploy Continuous Delivery Pipeline. Demo apps from Google + Grafana for metric.
 
 ## {{< emoji cloud >}} Un repositorio y presentación para DevOps Days La Paz 2022
 
-[https://github.com/chukiagosoftware/DevOpsDeNoche](github.com/edamsoft-sre/DevOpsDeNoche)
+[https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform](https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform)
 
 ### How to use the Terraform resources 
 

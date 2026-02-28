@@ -15,7 +15,7 @@ Skaffold.
 
 ## :cloud: Un repositorio y presentación para DevOps Days La Paz 2022
 
-[https://github.com/chukiagosoftware/DevOpsDeNoche](github.com/edamsoft-sre/DevOpsDeNoche)
+[https://github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform](github.com/chukiagosoftware/GoogleKubernetesEngine-Terraform)
 
 ## Keynote Video
 
