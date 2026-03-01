@@ -32,7 +32,7 @@ My passion is building fun applications, and currently staying at the cutting ed
 
 #### Experience {{< emoji computer >}}
 I've built and helped to scale and observe a variety of services providing from Web SaaS, Webex Video, Jitsi video, IP Telephony Contact Center,
-Big Data processing, Machine Learning with NN and LLM Gen AI models.
+Big Data processing, Machine Learning with NN, and LLM Gen AI models.
 
 As part of this I helped to deploy, integrate, and operate Confluent Kafka, Postgres on RDS, AWS SQS, Redis on Elastic Cache, 
 ActiveMQ/RabbitMQ, MySQL, Microsoft SQL Server in addition to cloud data engineering tools such as AWS Athena and Redshift 
@@ -44,29 +44,29 @@ I am equally useful with AWS running EKS and Sagemaker and GCP running GKE and V
 extensively with Terraform, Pulumi, Ansible, Python, and workflow/automation tools such as ArgoCD and Stackstorm.
 
 In the realm of Kubernetes I have expert-level experience with Helm, Kustomize, controllers, Prometheus, Grafana, Load Balancing 
-Controllers such as AWS LB, Nginx, and application gateway layers from AWS, Google and Istio.
+Controllers such as AWS LB, Nginx, and application gateway layers from AWS, Google, and Istio.
 
 #### Projects {{< emoji construction_worker_man >}}
 Recently I helped to code and deploy a Go service with API endpoints for gathering document inputs as HTML, PDF, and SQL data
 and processing them with Go for Weaviate and Google AI Search. This allowed the data to be stored as embeddings in vector tables
 and correspondingly allowed vector similarity searches to build a set of documents as input for a final LLM completion.
 
-Further I've helped to deploy this service on Kubernetes as part of a complete Retrieval-Augmented Generation (RAG) system  
+Furthermore, I've helped to deploy this service on Kubernetes as part of a complete Retrieval-Augmented Generation (RAG) system  
 on top of OpenAI GPT 3/4, Anthropic Claude, Google Gemini, and other LLM and NN models for prompt completion as well as
-question classification, security guardrails and custom policy enforcement.
+question classification, security guardrails and policy enforcement.
 
 
 #### Other Skills {{< emoji brain >}}
 As of November 2024, I hold a DeepLearning.AI Professional Data Engineer certification covering Python, Jupyter and production
-data analysis, design, schema transformation and other aspects of ETL and ELT.
+data analysis, design, schema transformation, and other aspects of ETL and ELT data pipelines.
 
-In the past, I've held multiple Cisco CCNA networking certs in the 2000's and 2010's, SIP Voice over IP SSCA and SSCVVP in 2016.
+In the past, I held a Cisco CCNA networking certification, and SIP Schools SSCA and SSCVVP VoIP certifications.
 
-I always \enjoy keeping up with new programming languages and frameworks, the latest being Go and some dabbling in Rust.
+I always enjoy keeping up with new programming languages and frameworks, the latest being Go and some dabbling in Rust.
 
 Yes, I'm most definitely a nerd {{< emoji nerd_face >}}!!
 
-As far as building AWS or GCP cloud infra for ML/Kubernetes/compute, I am real good using Terraform and Pulumi or Ansible.
+As far as building AWS or GCP cloud infrastructure, I love using Terraform and Pulumi or Ansible and Stackstorm for automation.
 
 <!--more-->
 
