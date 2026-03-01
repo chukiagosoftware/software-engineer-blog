@@ -32,7 +32,7 @@ My passion is building fun applications, and currently staying at the cutting ed
 
 #### Experience {{< emoji computer >}}
 I've built and helped to scale and observe a variety of services providing from Web SaaS, Webex Video, Jitsi video, IP Telephony Contact Center,
-Big Data processing, Machine Learning with NN and LLM Gen AI models.Confluent Kafka event streaming, Postgres/MySQL/Redshift/Aurora database
+Big Data processing, Machine Learning with NN and LLM Gen AI models.
 
 As part of this I helped to deploy, integrate, and operate Confluent Kafka, Postgres on RDS, AWS SQS, Redis on Elastic Cache, 
 ActiveMQ/RabbitMQ, MySQL, Microsoft SQL Server in addition to cloud data engineering tools such as AWS Athena and Redshift 
