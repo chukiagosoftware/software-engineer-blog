@@ -9,51 +9,64 @@ draft: false
 
 Hey! A while ago I received my degree as a Computer and Electrical Engineer, B.Sc. (2005, U. Texas at Austin). 
 
-Throughout my career I've learned many aspects of modern Software Engineering, including Development, Network Security, Enterprise Autonomics, Web SaaS,
-Contact Centers, Go, Python, Javascript, Java, and Bash shell scripting. I've held roles across small, medium-sized, and large companies.
+Throughout my career I've learned many aspects of modern Software Engineering, including AI, Software Development, Network Security, Enterprise Autonomics, SaaS,
+and Contact Centers. Wherein I've coded, deployed, and operated services written in Go, Python, JavaScript, Java, as well as Bash shell script. 
 
-In the last 7 years my work has focused on AI and Machine Learning operations and product development, Devops, Site Reliability, and Clouds.
+I've held roles across small, medium-sized, and large companies.
+
+In the last 7 years my work focused on AI and Machine Learning operations and product development leveraging Devops, Site Reliability, and Clouds.
 
 #### Startups {{< emoji dna >}}
-I am very knowledgeable in helping to scale new products and services using AWS/GCP, Kubernetes, Terraform, Ci/Cd, and 
-proper telemetry or observability. I can also help to certify for SOC2, FedRAMP and generally maintain security best practices
-for cloud infrastructure, data, and applications.
+Regarding startups, I'm very knowledgeable in helping to scale new products and services using AWS/GCP/Azure, Kubernetes, Terraform, ArgoCD, Jenkins, 
+and implementing proper telemetry for metrics, traces, and logs.
 
-This is my personal blog, not really a portfolio and not too serious. Just some notes and musings on my journey as a software engineer. {{< emoji bubble_tea >}}
+I can help to certify software and platform for SOC2 and FedRAMP and maintain security best practices
+for cloud infrastructure and data.
 
-My passion is building fun applications, staying at the cutting edge of Go, Cloud, Kubernetes, 
-OpenTelemetry, and AI of course. {{< emoji bearded_person >}} 
+##### {{< emoji bubble_tea >}}
+Although, this is just a personal blog mostly containing random notes and musings on my journey as a software engineer. 
+
+{{< emoji bearded_person >}}
+My passion is building fun applications, and currently staying at the cutting edge of Go, Cloud, Kubernetes, OpenTelemetry, and Machine Learning.
 
 
 #### Experience {{< emoji computer >}}
-
 I've built and helped to scale and observe a variety of services providing from Web SaaS, Webex Video, Jitsi video, IP Telephony Contact Center,
 Big Data processing, Machine Learning with NN and LLM Gen AI models.Confluent Kafka event streaming, Postgres/MySQL/Redshift/Aurora database
 
-I am experienced at building, integrating, and scaling Confluent Kafka, Postgres/RDS, AWS SQS, Redis and several other
-message queues, databases en data engineering tools such as AWS Athena and Redshift or Google BigQuery.
+As part of this I helped to deploy, integrate, and operate Confluent Kafka, Postgres on RDS, AWS SQS, Redis on Elastic Cache, 
+ActiveMQ/RabbitMQ, MySQL, Microsoft SQL Server in addition to cloud data engineering tools such as AWS Athena and Redshift 
+or Google BigQuery and Cloud SQL.
 
 
 #### Clouds {{< emoji biohazard >}}
-I am about equally useful with AWS, EKS, Sagemaker and GCP, GKE, Vertex AI, for example.  
+I am equally useful with AWS running EKS and Sagemaker and GCP running GKE and Vertex AI.  For example, I've deployed both
+extensively with Terraform, Pulumi, Ansible, Python, and workflow/automation tools such as ArgoCD and Stackstorm.
 
+In the realm of Kubernetes I have expert-level experience with Helm, Kustomize, controllers, Prometheus, Grafana, Load Balancing 
+Controllers such as AWS LB, Nginx, and application gateway layers from AWS, Google and Istio.
 
 #### Projects {{< emoji construction_worker_man >}}
-Recently I've worked on gathering inputs from HTML, PDF, and SQL data with Go and generating vectorized embeddings to implement
-Retrieval-Augmented Generation (RAG) on top of OpenAI, Anthropic, Google, and Open Source models.
+Recently I helped to code and deploy a Go service with API endpoints for gathering document inputs as HTML, PDF, and SQL data
+and processing them with Go for Weaviate and Google AI Search. This allowed the data to be stored as embeddings in vector tables
+and correspondingly allowed vector similarity searches to build a set of documents as input for a final LLM completion.
+
+Further I've helped to deploy this service on Kubernetes as part of a complete Retrieval-Augmented Generation (RAG) system  
+on top of OpenAI GPT 3/4, Anthropic Claude, Google Gemini, and other LLM and NN models for prompt completion as well as
+question classification, security guardrails and custom policy enforcement.
 
 
 #### Other Skills {{< emoji brain >}}
-I hold a DeepLearning.AI Professional Data Engineer certification from 2024, multiple Cisco networking certs in the 2000's and 2010's,
-and enjoy keeping up with new programming languages and frameworks, the latest being Go.
+As of November 2024, I hold a DeepLearning.AI Professional Data Engineer certification covering Python, Jupyter and production
+data analysis, design, schema transformation and other aspects of ETL and ELT.
 
+In the past, I've held multiple Cisco CCNA networking certs in the 2000's and 2010's, SIP Voice over IP SSCA and SSCVVP in 2016.
 
-Definitely a nerd {{< emoji nerd_face >}}, I am real good using Terraform from zero up to deploying pipelines with 
-Github Actions, or Terraform Cloud.
+I always \enjoy keeping up with new programming languages and frameworks, the latest being Go and some dabbling in Rust.
 
+Yes, I'm most definitely a nerd {{< emoji nerd_face >}}!!
 
-I've also worked extensively in building telemetry with Go and Python and ML teams with end-to-end observability and
-distributed tracing into Datadog or Tempo using OpenTelemetry, Prometheus, or Datadog native metrics.
+As far as building AWS or GCP cloud infra for ML/Kubernetes/compute, I am real good using Terraform and Pulumi or Ansible.
 
 <!--more-->
 
@@ -64,9 +77,9 @@ distributed tracing into Datadog or Tempo using OpenTelemetry, Prometheus, or Da
 for the Github Emojis. These are just the publicly available emojis which you can see around the pages. I find that
 there are some really, really cool ones and thus without further ado.~~
 
-Actually, this is no longer true. This is now a Go Hugo site.  A moment of silence for Python {{< emoji snake >}}
-and Pelican, which served me well for years.
-
+Actually, the above is no longer true. This is now a Go Hugo site.  A moment of silence for Python {{< emoji snake >}}
+and Pelican, which served me well for years, and my custom Markdown extension for Github Emojis which is superceded by Hugo's
+built-in support for shortcodes.
 
 ### This microblog {{< emoji swimmer >}}
 
@@ -80,7 +93,9 @@ the standard library and tools. Python Async and FastAPI can't really hold a can
 
 #### The Platform {{< emoji godmode >}}
 
-The blog HTML and Javascript/CSS code is deployed based on simple Git ops with Github Actions. 
+The blog HTML and JavaScript/CSS code is deployed based on simple Git ops with Github Actions. The HTML is stored in a separate
+branch, and each push to the main branch triggers a build and deployment to Github Pages. DNS is handled by another provider with
+CNAM records, nothing fancy.
 
 ~~In other words, the Python code which generates html, is pushed to a main branch
 integrated with Ci/Cd service [Netlify](https://www.netlify.com)~~
@@ -90,11 +105,11 @@ highly recommend it.~~
 
 
 #### Alternatives {{< emoji thinking >}}
-Other options I considered for deployment over the years were Google App Engine, [Render](https://www.render.com) and a VM on Digital
+Other options I had tested for deployment over the years were Google App Engine, [Render](https://www.render.com) and a VM on Digital
 Ocean or a [free Oracle VM](https://docs.oracle.com/es-ww/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm).
 
 After running off a Google Bucket with local-only Pelican html generation, I settled on Netlify a few years back because 
-it works very nicely, can scale to a full-blown app with CDN and content management, and
+it worked very nicely, can scale to a full-blown app with CDN and content management, and
 more importantly [Netlify had Python 3.10]({{< ref "posts/netlify.md" >}}) compatible images at the time.
 
 ~~This is a static HTML with some Javascript and a Pelican template. So, there is only one contributor, no
@@ -105,15 +120,15 @@ architecture. Netlify has a nice build image for Python and static sites.~~
 The above is no longer true (again). This is now a Hugo static microblog, which is published via Github Actions to Github Pages. 
 
 The conversion from Python (Pelican) to Go (Hugo) was done with the help of Grok to provide some handy Python scripts. Github Pages
-is now very mature and Github Actions allows me to build the suite upon pushes to Main, then deploy off a special branch all without leaving Github.
+is now very mature, and Github Actions allows me to build the suite upon pushes to Main, then deploy off a special branch all without leaving Github.
 
 
 #### The Future {{< emoji crystal_ball >}}
 
-Someday, this blog may undergo its next conversion using Rust, unless another cooler language comes along first.
+Someday, this blog may undergo its next conversion using Rust, unless another cooler language or Go framework comes along first.
 
-Also, once work on [Alpaca](https://github.com/chukiagosoftware/alpaca) is complete, we will have a widget with my Hotel Recommendation assistant, or some nice tables
-and graphs with Hotel Review data, or both.
+Also, once my work on [Alpaca](https://github.com/chukiagosoftware/alpaca) is complete, we will have a widget with my Hotel Recommendation assistant and mabye even
+some nice tables with Hotel Review data analysis.
 
 
 ##### Thanks for reading! {{< emoji dollar >}}
