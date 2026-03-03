@@ -9,7 +9,7 @@ draft: false
 ---
 
 
-"I needed to gather as Hotel reviews as possible to process them with RAG (Retrieval Augmented Generation). The goal is to input hotel reviews to LLMs for a Generative AI based assistant and find the best hotels in any given city.  
+The goal: I need to gather as many Hotel reviews as possible to process them with RAG (Retrieval Augmented Generation). All results will be input as hotel reviews to Generative AI (GenAI) LLM models such as Gemini, Llama, Grok, Claude and ChatGPT for a Generative AI based assistant which finds the best hotels in any given city.  
 
 However, it turns out that the available Hotel APIs are not very charitable.  Google Places and Yelp only give you five hotel results per city, even with a paid plan, and TripAdvisor has a difficult to understand pay as you go model.  Expedia and Booking also restrict access to their prized reviews behind an obscure API pay model.
 
@@ -17,7 +17,7 @@ So, we were forced to scrape HTML for this project. The saviour: AppleScript.
 
 With Applescript, I was able to run MacOS native Safari web queries, browsing each location's hotel list, and gathering reviews from each hotel without a $1,000+  price tag.  Do note, if this were a commercial project would not mind spending money on the APIs. But the amount of red tape and restrictive pricing versus lack of information and ambiguity in the documentation led me to accept the call of the wild.
 
-Without further ado, we have the [alpaca](github.com/chukiagosoftware/alpaca/) scraping package, which allows us to gather Hotel Reviews from any city with just an m1 Mac and a broadband connection.
+Without further ado, we have the [alpaca](https://www.github.com/chukiagosoftware/alpaca/) scraping package, which allows us to gather Hotel Reviews from any city with just an m1 Mac and a broadband connection.
 
 The details:
 
