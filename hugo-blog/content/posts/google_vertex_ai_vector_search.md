@@ -1,7 +1,7 @@
 ---
 title: "Retrieval Augmented Generation with Vertex AI"
 date: 2026-03-14
-categories: ["Go", "Python", "Google Vertex", "RAG", "AI", "Vector Search", "Generative AI", "Text Embeddings]
+categories: ["Go", "Python", "Google Vertex", "RAG", "AI", "Vector Search", "Generative AI", "Text Embeddings"]
 tags: ['Go', 'Python', 'Vector', 'Google Vertex', 'AI', 'RAG', 'Vector Search', 'Vertex Search', 'Generative AI', 'gemini', 'text embeddings']
 author: "Eric Arellano"
 description: "Working with Google Cloud's Vertex AI Vector Search features for RAG (Retrieval Augmented Generation)"
