@@ -47,7 +47,7 @@ Under Vertex AI platform we can still deploy Gemini models, and for the Alpaca p
 
 
 ### Google Vertex AI Vector Search
-Vertex Vector Search is a partially managed Vector Database service to which we can import our vector embeddings from Big Query, and serve an Index Endpoint for similarity searches.  This gives a medium level of control and flexibility where we can choose the embedding models, batch sizes, metadata, scaling of the endpoint and other features. I chose to use the latest Gemini-001 text embeddings model which is a 732 dimensions model and is better than the old text-embedding-004 per the Google Docs.
+Vertex Vector Search is a partially managed Vector Database service to which we can import our vector embeddings from Big Query, and serve an Index Endpoint for similarity searches.  This gives a medium level of control and flexibility where we can choose the embedding models, batch sizes, metadata, scaling of the endpoint and other features. I chose to use the latest Gemini-001 text embeddings model which is a 3072 vector dimension model and is better than the old text-embedding-004 per the Google Docs.
 
 Once an index exists, we can upload data to it from BigQuery using the following command. This will be done with Python via GHA because the Go SDK is not fantastic yet. Actually, for one-time or batch processes a pipeline or even Terraform might be better than Go code. We'll stick to Go for querying, orchestrating and any other intensive or real-time stuff.
 
