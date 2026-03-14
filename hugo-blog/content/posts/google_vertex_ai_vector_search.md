@@ -16,7 +16,7 @@ Google Cloud has a bunch of new features and services which are similar but conf
 ### BigQuery Text Embeddings
 Under Vertex AI platform we can still deploy Gemini models, and for the Alpaca project, we will use Vertex Vector Search and Gemini-001 Text Embeddings. To generate embeddings on BigQuery table, we run the following command. ML.GENERATE_EMBEDDINGS is the older function which requires some GCP IAM magic. For new development use AI.GENERATE_EMBEDDINGS which allows more seamless IAM permissions flow and also will support streaming new table data into the embeddings table.
 
-    CREATE OR REPLACE TABLE `golang1212025.alpacaCentral.review_embeddings`
+    CREATE OR REPLACE TABLE `<project-id>.alpacaCentral.review_embeddings`
     AS
     SELECT
     r.id,
@@ -26,17 +26,17 @@ Under Vertex AI platform we can still deploy Gemini models, and for the Alpaca p
     h.Country AS country,
     embeddings.ml_generate_embedding_result AS embedding
     FROM
-    `golang1212025.alpacaCentral.reviews` AS r
+    `<project-id>.alpacaCentral.reviews` AS r
     JOIN
     `golang1212025.alpacaCentral.hotels` AS h
     ON
     r.hotel_id = h.hotel_id -- Corrected join condition
     JOIN
     ML.GENERATE_EMBEDDING(
-    MODEL `golang1212025.alpacaCentral.alpaca-gemini-embedding-001`,
+    MODEL `<project-id>.alpacaCentral.alpaca-gemini-embedding-001`,
     (
     SELECT reviews.id, reviews.review_text AS content
-    FROM `golang1212025.alpacaCentral.reviews` AS reviews
+    FROM `<project-id>.alpacaCentral.reviews` AS reviews
     WHERE reviews.review_text IS NOT NULL AND LENGTH(reviews.review_text) > 0
     ),
     STRUCT(TRUE AS flatten_json_output)
