@@ -107,9 +107,37 @@ The fully managed Google Vertex AI Search offering doesn't yet allow Gemini-001 
 There is also the Vertex AI RAG Engine, which is a managed service that can be used to build RAG systems as well. RAG Engine and AI Search both take input from GCS Buckets, JSON documents, even things like Jira or other information platforms.
 
 ### GO SDK Support
-The Go Libraries for Vector Search Index Creation, Embedding creation (with Gemini calls to GenAi library) and Index Creation/Management didn't work out, so this will be handed using Python with Github Actions in the automation production stage.  For now, Indexes were created manually or using gcloud commands.
+The Go Libraries calls for Vector Search Index Creation, Embedding creation and Endpoint didn't work out, so this will be handed using Python with Github Actions in the automation production stage.  For now, Indexes were created manually and updated using gcloud commands. The embeddings were generated via the BigQuery functions as previously described.
 
-We will use the Go SDK for Vertex AI Vector Search to query the index and generate a response. To convert a user question into vectors we use the Go SDK for Generative AI.
+Here we will take an HTML form input and generate a vector embedding for the question to feed into our RAG system.
+
+    // GenerateEmbedding converts a user question string into a 768-dimensional vector using Gemini embedding model
+    func (s *VertexSearchService) GenerateEmbedding(ctx context.Context, question string) ([]float32, error) {
+        client, err := genai.NewClient(ctx, nil)
+        if err != nil {
+        return nil, fmt.Errorf("failed to create GenAI client: %w", err)
+        }
+        // not Close method defer client.Close()
+    
+        content := genai.NewContentFromText(question, "")
+        result, err := client.Models.EmbedContent(ctx, "gemini-embedding-001", []*genai.Content{content}, nil)
+        if err != nil {
+            return nil, fmt.Errorf("failed to generate embedding: %w", err)
+        }
+    
+        if len(result.Embeddings) == 0 {
+            return nil, fmt.Errorf("no embeddings generated")
+        }
+    
+        // Convert to []float32
+        embedding := make([]float32, len(result.Embeddings[0].Values))
+        for i, v := range result.Embeddings[0].Values {
+            embedding[i] = float32(v)
+        }
+        return embedding, nil
+    }
+
+We will use the Go SDK "cloud.google.com/go/aiplatform/apiv1" for Vertex AI Vector Search (RAG, basically) to query the index and generate a response. To convert a user question into a vector array we used the Go SDK for Generative AI "google.golang.org/genai".
 
 {{< emoji accordion >}}
 
