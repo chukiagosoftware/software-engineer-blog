@@ -28,7 +28,7 @@ Under Vertex AI platform we can still deploy Gemini models, and for the Alpaca p
     FROM
     `<project-id>.alpacaCentral.reviews` AS r
     JOIN
-    `golang1212025.alpacaCentral.hotels` AS h
+    `<project-id>>.alpacaCentral.hotels` AS h
     ON
     r.hotel_id = h.hotel_id -- Corrected join condition
     JOIN
