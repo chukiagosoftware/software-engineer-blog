@@ -1,8 +1,8 @@
 ---
 title: "Retrieval Augmented Generation with Vertex AI"
 date: 2026-03-14
-categories: ["Go", "Python", "Google Vertex", "RAG", "AI", "Vector Search", "Generative AI", "Text Embeddings"]
-tags: ['Go', 'Python', 'Vector', 'Google Vertex', 'AI', 'RAG', 'Vector Search', 'Vertex Search', 'Generative AI', 'gemini', 'text embeddings']
+categories: ["Go", "Python", "Google Vertex", "RAG", "AI", "Vector Search", "Generative AI", "Text Embeddings", "MLops"]
+tags: ['Go', 'Python', 'Vector', 'Google Vertex', 'AI', 'RAG', 'Vector Search', 'Vertex Search', 'Generative AI', 'gemini', 'text embeddings', 'mlops']
 author: "Eric Arellano"
 description: "Working with Google Cloud's Vertex AI Vector Search features for RAG (Retrieval Augmented Generation)"
 draft: false
@@ -98,6 +98,51 @@ where config.json is:
     ]
     }
     
+
+#### What success looks like
+
+Upon successful import, the operations query endpoint will return done: true. This upload should be done with Python (or Go once the SDK is improved).  But first, we need to get similarity search working end to end using this pilot index and a Go server deployed in Kubernetes. Because, reasons.
+
+Well to be honest, the model querying, question answering and data serving components may be generic, but they are more fun to work on than deciphering obscure Gemini/Vertex Go SDK and GCP CLIs. This was necessary MLops work but we could migrate to Sagemaker, or even use our own Vector Database also. Options.
+
+    Using endpoint [https://<location>-aiplatform.googleapis.com/]
+    done: true
+    metadata:
+    '@type': type.googleapis.com/google.cloud.aiplatform.v1beta1.UpdateIndexOperationMetadata
+    genericMetadata:
+    createTime: '2026-03-14T06:58:03.768807Z'
+    updateTime: '2026-03-14T07:28:16.694113Z'
+    nearestNeighborSearchOperationMetadata:
+    contentValidationStats:
+    - sourceGcsUri: gs://caip-tenant-values>/values>/bq-export/<values>/export-000000000001.json
+    validRecordCount: '12086'
+      - sourceGcsUri: gs://caip-tenant-<values>/values>/bq-export/values>/export-000000000000.json
+      validRecordCount: '12126'
+      name: projects/<values>/locations/<location>>/indexes/<index-id>>/operations/756618008847187968
+      response:
+      '@type': type.googleapis.com/google.cloud.aiplatform.v1beta1.Index
+      createTime: '2026-03-13T22:50:07.506856Z'
+      description: Alpaca Hotel Reviews Embedding with Gemini-001
+      displayName: alpacaReviewsGemini001
+      encryptionSpec: {}
+      etag: AMEw9yMa4E1giqL87OSEKrMOgQvF6V0yPc2pdlMTO3Wpd11TgnhdOYfw9hdokoxLd6o3
+      indexStats:
+      shardsCount: 1
+      indexUpdateMethod: BATCH_UPDATE
+      metadata:
+      config:
+      algorithmConfig:
+      treeAhConfig:
+      fractionLeafNodesToSearch: 0.05
+      leafNodeEmbeddingCount: '1000'
+      approximateNeighborsCount: 10
+      dimensions: 3072
+      distanceMeasureType: DOT_PRODUCT_DISTANCE
+      featureNormType: NONE
+      shardSize: SHARD_SIZE_SMALL
+      metadataSchemaUri: gs://google-cloud-aiplatform/schema/matchingengine/metadata/nearest_neighbor_search_1.0.0.yaml
+      name: projects/<project>>/locations/<location>/indexes/<index-id>>
+      updateTime: '2026-03-13T22:53:18.342670Z'
 
 
 ### Google Vertex AI Search
