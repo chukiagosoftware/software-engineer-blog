@@ -4,7 +4,7 @@ date: 2026-03-03
 categories: ["hotel", "scraping", "go", "colly", "applescript", "hotel reviews"]
 tags: ['Go', 'Colly', 'Applescript', 'hotel reviews', 'tripadvisor', 'google places', 'expedia', 'vertex', 'vector search']
 author: "Eric Arellano"
-description: "We are forced to scrape TripAdvisor Hotel Reviews with Go Colly and Applescript."
+description: "I am forced to scrape TripAdvisor Hotel Reviews with Go Colly and Applescript."
 draft: false
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Retrieval Augmented Generation with Vertex AI"
+title: "Retrieval Augmented Generation with Vertex AI and Go"
 date: 2026-03-14
 categories: ["Go", "Python", "Google Vertex", "RAG", "AI", "Vector Search", "Generative AI", "Text Embeddings", "MLops"]
 tags: ['Go', 'Python', 'Vector', 'Google Vertex', 'AI', 'RAG', 'Vector Search', 'Vertex Search', 'Generative AI', 'gemini', 'text embeddings', 'mlops']
@@ -8,13 +8,19 @@ description: "Working with Google Cloud's Vertex AI Vector Search features for R
 draft: false
 ---
 
-Building a RAG system with Vertex AI Vector Search is a great way to get started with the Google Cloud platform's latest Generative AI and Machine Learning tools. This post will walk you through the process of setting up a RAG system with Vertex AI Vector Search.
+I am building a Go-based Hotel Reviews RAG system with Vertex AI Vector Search, BigQuery and Gemini. This post will describe some MLops, AI Text models, and overall working with Google Cloud platform's latest Generative AI and Machine Learning tools. 
 
-### Gemini API vs Vertex AI
-Google Cloud has a bunch of new features and services which are similar but confusingly named. Gemini is the umbrella name for their Generative AI platform featuring the models of the same name and can be used for quick development as a ChatGPT/Llama alternative at https://ai.google.dev/gemini. However, that is separate from Enterprise level Vertex AI.
+I will walk you through the process of setting up an end-to-end Retrieval Augmented Generation system with Vertex AI Vector Search. The project is called [Alpaca](https://github.com/chukiagosoftware/alpaca) which is my Hotel Review Search turbocharged with AI.  End goal: finding quality hotels that meet your criteria based on natural language analysis and a fine-tuned curation of LLMs, Vector Similarity Search, and the related APIs. My preliminary research shows that it is possible to do better than a raw ChatGPT/Grok/Gemini/Llama question and answer prompt.
 
-### BigQuery Text Embeddings
-Under Vertex AI platform we can still deploy Gemini models, and for the Alpaca project, we will use Vertex Vector Search and Gemini-001 Text Embeddings. To generate embeddings on BigQuery table, we run the following command. ML.GENERATE_EMBEDDINGS is the older function which requires some GCP IAM magic. For new development use AI.GENERATE_EMBEDDINGS which allows more seamless IAM permissions flow and also will support streaming new table data into the embeddings table.
+### Google Gemini API vs Vertex AI
+Google Cloud has a bunch of new features and services which are similar but confusingly named. Vertex AI is the longstanding AI and Machine Learning platform suite. Gemini is the umbrella name for their Generative AI platform featuring the various models of the same name. Gemini API can be used for quick development as a ChatGPT/Llama alternative at https://ai.google.dev/gemini. However, that is separate from Enterprise level Vertex AI and doesn't include the batteries, picks, and shovels that Vertex does.
+
+### BigQuery Text Embeddings Generation
+Under the enterprise Vertex AI platform one can still deploy Gemini models including text and diffusion, embeddings, and video generation. For the Alpaca project, I will use Vertex Vector Search with Gemini-001 Text Embeddings and Gemini 2 or 3 LLM initially. To generate embeddings on a BigQuery table, I ran the following command. ML.GENERATE_EMBEDDINGS is the older function that requires some GCP IAM magic. For new development I would use AI.GENERATE_EMBEDDINGS, which allows seamless IAM authentication and will support streaming new table data into the embeddings table, in the near term.
+
+So, the Generative AI RAG journey begins with SQL on BigQuery. Actually, it began with SQLite, Go's `net/http`, Object Relational Mapping (ORM) and data ingestion.  To upload my SQL data to BigQuery I chose to use the GO Vertex SDKs and I honestly don't recommend it. The Go Python SDKs are far more mature, better documented, and it's easy to navigate and find answers to issues you find along the way. Even using `gcloud ai` and `gcloud bigquery` CLI commands was more productive and reliable than deciphering the sparse mix of Marketing, API Docs, Structs, and Protobuffers which constitute the Go Vertex AI SDKs. Hopefully this will change in the future as GenAI adoption rapidly increases and the need for performant software is paramount.
+
+In short, I used the standard `*bigquery.Client` nested in a Go struct with my metadata to upload the City, IATA, Hotel, and Review data to BigQuery. This part works well. For generating embeddings, you can attempt to use the SDK to run queries, revert to Python where it will just work, or use the trusty GCP BigQuery console to execute. Since these are one-time queries, I just did that and will iterate to coding the embedding process if and when the need for streaming arises. 
 
     CREATE OR REPLACE TABLE `<project-id>.alpacaCentral.review_embeddings`
     AS
@@ -47,9 +53,37 @@ Under Vertex AI platform we can still deploy Gemini models, and for the Alpaca p
 
 
 ### Google Vertex AI Vector Search
-Vertex Vector Search is a partially managed Vector Database service to which we can import our vector embeddings from Big Query, and serve an Index Endpoint for similarity searches.  This gives a medium level of control and flexibility where we can choose the embedding models, batch sizes, metadata, scaling of the endpoint and other features. I chose to use the latest Gemini-001 text embeddings model which is a 3072 vector dimension model and is better than the old text-embedding-004 per the Google Docs.
+Vertex Vector Search is a partially managed Vector Database as a service, to which we can import our vector embeddings from Big Query or GCS Buckets. The import process is partially documented in at least 5 different documentation paths and was not easy to figure out at first. When creating a Vector Search Index you are required to provide a GCS Bucket path which contains `json, parquet, avro` files but you can ignore that and just create it or provide a dummy path and then import for BigQuery.  The key input information is the BigQuery embeddings table and the metadata which Vertex Vector Search Index requires in json form.
 
-Once an index exists, we can upload data to it from BigQuery using the following command. This will be done with Python via GHA because the Go SDK is not fantastic yet. Actually, for one-time or batch processes a pipeline or even Terraform might be better than Go code. We'll stick to Go for querying, orchestrating and any other intensive or real-time stuff.
+##### importIndex.json
+    
+    "name": "projects/<project-id>/locations/<location>>/indexes/<index-id>",
+        "isCompleteOverwrite": <true|false>,
+        "config": {
+            "bigQuerySourceConfig": {
+            "tablePath": "bq://<project-id>>.<dataset-id>>.<embeddings_table_name>",
+            "datapointFieldMapping": {
+            "idColumn": "id",
+            "embeddingColumn": "embedding",
+            "restricts": [
+                {
+                "namespace": "<field_name>",
+                "allowColumn": ["allow_field_name"]
+                },
+                {
+                "namespace": "<other_field_name>",
+                "allowColumn": ["<allow_other_field_name>"]
+                }],
+            "metadataColumns": [...]
+            }
+        }
+    }
+    
+
+
+Once data is imported to an Index, we verify the `dense vector count` and create Index Endpoint to query for similarity searches. This gives a medium level of control and flexibility where we can choose the text embedding model, batch size, metadata, query restrict filter columns, shard size, machineType, and auto-scaling configuration of each IndexEndpoint. I chose to use the latest Gemini-001 text embeddings model, using 3072 vector dimensions over the older text-embedding-004 per the Google Docs that deprecate the latter. Both are really good and based on Google's original 2020 [ScaNN whitepaper](https://research.google/blog/announcing-scann-efficient-vector-similarity-search/). 
+
+Once an index exists, we can upload data to it from BigQuery using the following command and configuration. This can best be done with Python in a Github Actions (or Google Cloudbuild) pipeline because the equivalent Go SDK is not fantastic yet.  For one-time or batch processes a Python pipeline or even Pulumi in Go is the better alternative. We'll stick to Go for querying endpoints, orchestrating LLM calls, serving HTTP, traditional database CRUD, BigQuery CRUD, OpenTelemetry, and other performant real-time and per-request tasks.
 
     curl -X POST \
     -H "Authorization: Bearer $(gcloud auth print-access-token)" \
@@ -57,53 +91,12 @@ Once an index exists, we can upload data to it from BigQuery using the following
     -d "@vertex/importIndex.json" \
     "https://<location>-aiplatform.googleapis.com/v1beta1/projects/<project-id>/locations/<location>/indexes/<index-id>:import"
 
-where config.json is:
 
-    {
-    "name": "projects/<project-id>/locations/<location>/indexes/<index-id>",
-    "isCompleteOverwrite": true,
-    "config": {
-    "bigQuerySourceConfig": {
-    "tablePath": "bq://<project-id>.alpacaCentral.review_embeddings",
-    "datapointFieldMapping": {
-    "idColumn": "id",
-    "embeddingColumn": "embedding",
-    "restricts": [
-    {
-    "namespace": "hotel_name",
-    "allowColumn": ["hotel_name"]
-    },
-    {
-    "namespace": "city",
-    "allowColumn": ["city"]
-    },
-    {
-    "namespace": "country",
-    "allowColumn": ["country"]
-    }
-    ],
-    "numericRestricts": [
-    {
-    "namespace": "rating",
-    "valueColumn": "rating",
-    "valueType": "INT"
-    }
-    ],
-    "metadataColumns": [
-    "review_text",
-    "hotel_name",
-    "city",
-    "country",
-    "rating"
-    ]
-    }
     
 
 #### What success looks like
 
-Upon successful import, the operations query endpoint will return done: true. This upload should be done with Python (or Go once the SDK is improved).  But first, we need to get similarity search working end to end using this pilot index and a Go server deployed in Kubernetes. Because, reasons.
-
-Well to be honest, the model querying, question answering and data serving components may be generic, but they are more fun to work on than deciphering obscure Gemini/Vertex Go SDK and GCP CLIs. This was necessary MLops work but we could migrate to Sagemaker, or even use our own Vector Database also. Options.
+Upon successful import, the operations query endpoint will return done: true. The Index will show a Dense Vector Count that should match the number of records in the BigQuery embeddings table. Sources of errors include mismatched BigQuery table schema, duplicate IDs, and other issues. By default BigQuery does not enforce a primaryKey or unique constraint on `id` fields so this is a common pitfall for iterative uploads from local database to BigQuery.
 
     Using endpoint [https://<location>-aiplatform.googleapis.com/]
     done: true
@@ -144,19 +137,36 @@ Well to be honest, the model querying, question answering and data serving compo
       name: projects/<project>>/locations/<location>/indexes/<index-id>>
       updateTime: '2026-03-13T22:53:18.342670Z'
 
+In a future blog post I will describe in greater detail the MLops steps and pipeline for:
+
+1. Creating a BigQuery table with embeddings
+2. Creating a Vertex AI Vector Search Index
+3. Uploading embeddings to the Index
+4. Deploying an Index Endpoint with Go Pulumi
+
+We will also cover the basics of setting up OpenTelemetry to gather trace and metrics of our Embedding, Gemini LLM prompt completion, HTTP server, and API calls.
 
 ### Google Vertex AI Search
-The fully managed Google Vertex AI Search offering doesn't yet allow Gemini-001 and only has the older models for embeddings. The AI Search can be used for similarity search, but essentially is more appropriate for website indexing and navigating a large body of text rather than for similarity RAG searches. 
+The fully managed Google Vertex AI Search offering doesn't yet allow Gemini-001 and only has the older models for embeddings. The AI Search can be used for similarity search, but essentially is more appropriate for website indexing and navigating a large body of text rather than for similarity RAG searches. It does not allow the flexibility of choosing embedding models, fine-tuning your own data columns for search filters, autoscaling of nodes, and using a single node IndexEndpoint for testing.
 
 ### Google Vertex RAG Engine
-There is also the Vertex AI RAG Engine, which is a managed service that can be used to build RAG systems as well. RAG Engine and AI Search both take input from GCS Buckets, JSON documents, even things like Jira or other information platforms.
+There is also the Vertex AI RAG Engine, which is a fully managed service that can be used to build RAG systems as well. RAG Engine and AI Search both take input from GCS Buckets, JSON documents, even things like Jira or other information platforms. The RAG engine handles the heavy lifting of embedding and indexing and is more expensive and less configurable. It also signified that you are tied-in to Google Vertex platform whereas with Vector Search, I can eventually replace it with AWS Sagemaker and AWS Aurora Vector Database for embeddings and Bedrock for the Index, or a Weaviate Vector Database. I could also use non-Google text embedding model if that becomes a priority. 
 
 ### GO SDK Support
-The Go Libraries calls for Vector Search Index Creation, Embedding creation and Endpoint didn't work out, so this will be handed using Python with Github Actions in the automation production stage.  For now, Indexes were created manually and updated using gcloud commands. The embeddings were generated via the BigQuery functions as previously described.
+The Go Libraries calls for Vector Search Index crud, Embeddings generation, and IndexEndpoint are not too well documented. There are two or three alternative functions and corresponding data structs for almost every function call. Mostly because each is an iteration of autogenerated code from OpenAPI specs, Vertex Go SDK was spit up into feature-specific libraries but the main SDK continues to be developed also. Probably a majority of developers use the Vertex Python/Typescript SDK or middleware such as Pulumi, LangChain depending on which component of the system they are working on.
 
-Here we will take an HTML form input and generate a vector embedding for the question to feed into our RAG system.
+I use Pulumi Go for the infrastructure aspects such as creating one-time resources (BigQuery Table, Index, IndexEndpoint, Kubernetes Cluster, App Engine Deployment, etc.), `gcloud` CLI commands orchestrated with Bash scripts for development and Python SDK in a pipeline for any recurring data operations that will run on a continuous schedule.
 
-    // GenerateEmbedding converts a user question string into a 768-dimensional vector using Gemini embedding model
+The below Go SDK-based codebase takes an HTML form input via Gin HTTP server. It then does the following:
+
+
+1. Generates a 3072 dimension vector embedding for the question with Gemini-001 embeddings model.
+2. Queries a deployed Vertex AI Vector Search IndexEndpoint for the nearest neighbors including search filters.
+3. Feeds the resulting nearest neighbor results and metadata into a custom LLM prompt to generate a verified response of the top 3 results.
+
+    
+GenerateEmbedding converts a user question string into a 3072-dimensional vector using Gemini embedding model
+
     func (s *VertexSearchService) GenerateEmbedding(ctx context.Context, question string) ([]float32, error) {
         client, err := genai.NewClient(ctx, nil)
         if err != nil {
@@ -182,9 +192,8 @@ Here we will take an HTML form input and generate a vector embedding for the que
         return embedding, nil
     }
 
-We will use the Go SDK "cloud.google.com/go/aiplatform/apiv1" for Vertex AI Vector Search (RAG, basically) to query the index and generate a response. To convert a user question into a vector array we used the Go SDK for Generative AI "google.golang.org/genai".
+I will use the Go SDK "cloud.google.com/go/aiplatform/apiv1" for Vertex AI Vector Search RAG similarity lookup. To convert a user question into a vector array I used the Go SDK for Generative AI "google.golang.org/genai".
 
 {{< emoji accordion >}}
 
-Since this is under active development, please check back soon for updates, links, pictures and other fine content.
-
+This project is under active development, please check back soon for updates, demos, and further detailed how-to's.
